@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -49,6 +50,14 @@
     <Compile Include="BackEnd\Controllers\Class1.cs" />
     <Compile Include="BackEnd\Helpers\Class1.cs" />
     <Compile Include="BackEnd\Models\Class1.cs" />
+    <Compile Include="BackEnd\Models\Entities\Alquiler.cs" />
+    <Compile Include="BackEnd\Models\Entities\Cliente.cs" />
+    <Compile Include="BackEnd\Models\Entities\Madre.cs" />
+    <Compile Include="BackEnd\Models\Entities\Marca.cs" />
+    <Compile Include="BackEnd\Models\Entities\Modelo.cs" />
+    <Compile Include="BackEnd\Models\Entities\TipoCombustible.cs" />
+    <Compile Include="BackEnd\Models\Entities\TipoTransmision.cs" />
+    <Compile Include="BackEnd\Models\Entities\Vehiculo.cs" />
     <Compile Include="BackEnd\Repositories\Implementations\Class1.cs" />
     <Compile Include="BackEnd\Repositories\Interfaces\Class1.cs" />
     <Compile Include="Form1.cs">
