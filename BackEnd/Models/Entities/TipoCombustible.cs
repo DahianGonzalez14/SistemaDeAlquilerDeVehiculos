@@ -8,16 +8,10 @@ using System.Threading.Tasks;
 
 namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities
 {
-    [Table("TipoCombustible")]
-    class TipoCombustible
+    public class TipoCombustible : Base
     {
-        [Required]
-        public int TipoCombustibleId { get; set; }
-
-        [MaxLength(100)]
-        [Column(TypeName = "varchar")]
         public string Nombre { get; set; }
-        public List<Madre> MadreId { get; set; }
+        public List<Vehiculo> Vehiculos { get; set; }   
 
     }
 }

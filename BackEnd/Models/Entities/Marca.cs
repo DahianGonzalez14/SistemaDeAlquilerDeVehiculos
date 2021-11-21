@@ -8,17 +8,10 @@ using System.Threading.Tasks;
 
 namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities
 {
-    [Table("Marca")]
-    class Marca
+    public class Marca : Base
     {
-        [Required]
-        public int MarcaId { get; set; }
-
-        [MaxLength(100)]
-        [Column(TypeName = "varchar")]
         public string Nombre { get; set; }
-
-        public List<Madre> MadreId { get; set; }
+        public List<Modelo> Modelos { get; set; }
 
     }
 }

@@ -6,3 +6,19 @@ C:\Users\Michael Castillo\Source\Repos\DahianGonzalez14\SistemaDeAlquilerDeVehic
 C:\Users\Michael Castillo\Source\Repos\DahianGonzalez14\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.csproj.CoreCompileInputs.cache
 C:\Users\Michael Castillo\Source\Repos\DahianGonzalez14\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.exe
 C:\Users\Michael Castillo\Source\Repos\DahianGonzalez14\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.pdb
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\bin\Debug\SistemaDeAlquilerDeVehiculos.exe.config
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\bin\Debug\SistemaDeAlquilerDeVehiculos.exe
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\bin\Debug\SistemaDeAlquilerDeVehiculos.pdb
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\bin\Debug\EntityFramework.xml
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.csproj.SuggestedBindingRedirects.cache
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.exe
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.pdb
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.Migrations.initial.resources

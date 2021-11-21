@@ -8,43 +8,22 @@ using System.Threading.Tasks;
 
 namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities
 {
-    [Table("Vehiculo")]
-    class Vehiculo
+    public class Vehiculo : Base
     {
-        [Required]
-        public int AlquilerId { get; set; }
-        public List<TipoTransmision> TransId { get; set; }
-        public List<TipoCombustible> CombusId { get; set; }
-
-        public List<Modelo> ModeloId { get; set; }
-        [MaxLength(100)]
-        [Column(TypeName = "varchar")]
-        public string Chasis { get; set; }
-
-        [MaxLength(20)]
-        [Column(TypeName = "varchar")]
-        public string Placa { get; set; }
-
-        [MaxLength(4)]
-        [Column(TypeName = "varchar")]
+        public int TipoTransmisionId { get; set; }
+        public int TipoCombustibleId { get; set; }
+        public int ModeloId { get; set; }
+        public string Chasis { get;set; }
+        public string Placa { get; set; }   
         public string Anio { get; set; }
-
-        [MaxLength(20)]
-        [Column(TypeName = "varchar")]
         public string Color { get; set; }
-
-        [MaxLength(10)]
-        [Column(TypeName = "varchar")]
-        public string Cilindraje { get; set; }
-
-        [MaxLength(50)]
-        [Column(TypeName = "varchar")]
+        public string Cilindraje { get; set; }  
         public string KilometrosTablero { get; set; }
-
         public int CantidadPuerta { get; set; }
-
         public decimal Precio { get; set; }
-        public List<Madre> MadreId { get; set; }
-
+        public TipoTransmision TipoTransmision { get; set; }
+        public TipoCombustible TipoCombustible { get; set; }
+        public Modelo Modelo { get; set; }  
+        public List<Alquiler> Alquileres { get; set; }
     }
 }

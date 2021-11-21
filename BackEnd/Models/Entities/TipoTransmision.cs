@@ -8,19 +8,9 @@ using System.Threading.Tasks;
 
 namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities
 {
-    [Table("TipoTransmision")]
-    class TipoTransmision
+    public class TipoTransmision : Base
     {
-
-        [Required]
-        public int TipoTransmisionId { get; set; }
-
-        [MaxLength(100)]
-        [Column(TypeName = "varchar")]
         public string Nombre { get; set; }
-        public List<Madre> MadreId { get; set; }
-
-
-
+        public List<Vehiculo> Vehiculos { get; set; }
     }
 }
