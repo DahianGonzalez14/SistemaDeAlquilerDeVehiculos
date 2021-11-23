@@ -56,8 +56,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackEnd\Controllers\Class1.cs" />
-    <Compile Include="BackEnd\Helpers\Class1.cs" />
+    <Compile Include="BackEnd\Controllers\AlquilerController.cs" />
+    <Compile Include="BackEnd\Controllers\ModeloController.cs" />
+    <Compile Include="BackEnd\Controllers\VehiculoController.cs" />
+    <Compile Include="BackEnd\Controllers\ClienteController.cs" />
+    <Compile Include="BackEnd\Helpers\OperationResult.cs" />
     <Compile Include="BackEnd\Models\Context\Context.cs" />
     <Compile Include="BackEnd\Models\Entities\Alquiler.cs" />
     <Compile Include="BackEnd\Models\Entities\Cliente.cs" />
@@ -67,8 +70,15 @@
     <Compile Include="BackEnd\Models\Entities\TipoCombustible.cs" />
     <Compile Include="BackEnd\Models\Entities\TipoTransmision.cs" />
     <Compile Include="BackEnd\Models\Entities\Vehiculo.cs" />
-    <Compile Include="BackEnd\Repositories\Implementations\Class1.cs" />
-    <Compile Include="BackEnd\Repositories\Interfaces\Class1.cs" />
+    <Compile Include="BackEnd\Repositories\Implementations\ModeloRepository.cs" />
+    <Compile Include="BackEnd\Repositories\Implementations\MarcaRepository.cs" />
+    <Compile Include="BackEnd\Repositories\Implementations\TipoCombustibleRepository.cs" />
+    <Compile Include="BackEnd\Repositories\Implementations\TipoTransmisionRepository.cs" />
+    <Compile Include="BackEnd\Repositories\Implementations\VehiculoRepository.cs" />
+    <Compile Include="BackEnd\Repositories\Implementations\ClienteRepository.cs" />
+    <Compile Include="BackEnd\Repositories\Implementations\Repository.cs" />
+    <Compile Include="BackEnd\Repositories\Implementations\AlquilerRepository.cs" />
+    <Compile Include="BackEnd\Repositories\Interfaces\IRepository.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
