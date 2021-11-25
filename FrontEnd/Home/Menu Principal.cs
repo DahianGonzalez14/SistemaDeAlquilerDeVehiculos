@@ -46,5 +46,10 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
         {
 
         }
+
+        private void mantenimientoTipoTransmisionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
