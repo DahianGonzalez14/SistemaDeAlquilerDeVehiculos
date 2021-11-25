@@ -24,20 +24,26 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities
 
         public OperationResult Create(TipoCombustible tipoCombustible)
         {
+            Console.WriteLine(tipoCombustible);
             var existTipoCombustible= tipoCombustibleRepository.Find(x => x.Nombre.Equals(tipoCombustible.Nombre));
+            
             if (existTipoCombustible == null)
             {
-                return new OperationResult() { Data = null, Message = "Error modelo existente", Success = false };
+                var createdTipoCombustible = tipoCombustibleRepository.Create(tipoCombustible);
+
+                return new OperationResult() { Data = createdTipoCombustible, Message = "Modelo creado satisfatoria mente", Success = true };
+       
 
             }
-            var createdTipoCombustible = tipoCombustibleRepository.Create(tipoCombustible);
+            return new OperationResult() { Data = null, Message = "Error  existente", Success = false };
+            //var createdTipoCombustible = tipoCombustibleRepository.Create(tipoCombustible);
 
-            return new OperationResult() { Data = createdTipoCombustible, Message = "Modelo creado satisfatoria mente", Success = true };
+          //  return new OperationResult() { Data = createdTipoCombustible, Message = "Modelo creado satisfatoria mente", Success = true };
         }
 
         public OperationResult Edit(TipoCombustible tipoCombustible)
         {
-            var existTipoCombustible = tipoCombustibleRepository.Find(x => x.Nombre.Equals(tipoCombustible.Nombre));
+            var existTipoCombustible = tipoCombustibleRepository.Find(x => x.Id.Equals(tipoCombustible.Id));
             if (existTipoCombustible != null)
             {
                 return tipoCombustibleRepository.Update(tipoCombustible);

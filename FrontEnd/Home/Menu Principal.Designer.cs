@@ -119,6 +119,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.mantenimientoTipoCombustibleToolStripMenuItem.Name = "mantenimientoTipoCombustibleToolStripMenuItem";
             this.mantenimientoTipoCombustibleToolStripMenuItem.Size = new System.Drawing.Size(311, 26);
             this.mantenimientoTipoCombustibleToolStripMenuItem.Text = "Mantenimiento TipoCombustible";
+            this.mantenimientoTipoCombustibleToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoTipoCombustibleToolStripMenuItem_Click);
             // 
             // mantenimientoTipoTransmisionToolStripMenuItem
             // 

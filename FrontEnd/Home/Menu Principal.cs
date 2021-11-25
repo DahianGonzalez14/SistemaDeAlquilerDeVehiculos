@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -50,6 +51,12 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
         private void mantenimientoTipoTransmisionToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void mantenimientoTipoCombustibleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MantenimientoTipoCombustible mante = new MantenimientoTipoCombustible();
+            mante.Show();
         }
     }
 }
