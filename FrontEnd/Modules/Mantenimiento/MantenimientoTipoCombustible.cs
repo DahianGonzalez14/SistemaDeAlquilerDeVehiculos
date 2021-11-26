@@ -42,8 +42,8 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento
                 {
                     Nombre=textBox1.Text,
                     Estatus=textBox2.Text,
-                    FechaRegistro=DateTime.Now,
-                    FechaModificacion= DateTime.Now,
+                    FechaRegistro= DateTime.Now,
+                    FechaModificacion = null,
                     Borrado=false,
                 };
 
@@ -99,7 +99,6 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento
                    Id = Int32.Parse(textBox5.Text),
                     Nombre = textBox4.Text,
                     Estatus = textBox3.Text,
-                 
                     FechaModificacion = DateTime.Now,
                     Borrado = false,
                 };
@@ -163,6 +162,11 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento
                 }
 
             }
+
+        }
+
+        private void MantenimientoTipoCombustible_Load(object sender, EventArgs e)
+        {
 
         }
     }

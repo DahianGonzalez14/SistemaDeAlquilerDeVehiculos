@@ -46,7 +46,9 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities
             var existTipoCombustible = tipoCombustibleRepository.Find(x => x.Id.Equals(tipoCombustible.Id));
             if (existTipoCombustible != null)
             {
-                return tipoCombustibleRepository.Update(tipoCombustible);
+                existTipoCombustible.Nombre = tipoCombustible.Nombre;
+                existTipoCombustible.FechaModificacion = tipoCombustible.FechaModificacion;
+                return tipoCombustibleRepository.Update(existTipoCombustible);
             }
             return new OperationResult() { Data = null, Message = "Error existe una transmicion con dicho nombre", Success = false };
         }

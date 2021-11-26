@@ -13,6 +13,6 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities
         public string Estatus { get; set; }
         public bool Borrado { get; set; }
         public DateTime FechaRegistro { get; set; }
-        public DateTime FechaModificacion { get; set; }
+        public DateTime? FechaModificacion { get; set; }
     }
 }

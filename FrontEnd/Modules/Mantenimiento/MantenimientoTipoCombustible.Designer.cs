@@ -52,32 +52,36 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 128);
+            this.label1.Location = new System.Drawing.Point(46, 104);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 17);
+            this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(126, 128);
+            this.textBox1.Location = new System.Drawing.Point(94, 104);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(295, 22);
+            this.textBox1.Size = new System.Drawing.Size(222, 20);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(524, 128);
+            this.textBox2.Location = new System.Drawing.Point(393, 104);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(295, 22);
+            this.textBox2.Size = new System.Drawing.Size(222, 20);
             this.textBox2.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(460, 128);
+            this.label2.Location = new System.Drawing.Point(345, 104);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 17);
+            this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Estatus";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -85,18 +89,20 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(74, 60);
+            this.label3.Location = new System.Drawing.Point(56, 49);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(198, 17);
+            this.label3.Size = new System.Drawing.Size(147, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Guardar Tipo de Combustible ";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(841, 128);
+            this.button1.Location = new System.Drawing.Point(631, 104);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(56, 19);
             this.button1.TabIndex = 5;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
@@ -104,9 +110,10 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(841, 280);
+            this.button2.Location = new System.Drawing.Point(631, 228);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(56, 19);
             this.button2.TabIndex = 11;
             this.button2.Text = "Actualizar";
             this.button2.UseVisualStyleBackColor = true;
@@ -115,88 +122,98 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(74, 212);
+            this.label4.Location = new System.Drawing.Point(56, 172);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(199, 17);
+            this.label4.Size = new System.Drawing.Size(149, 13);
             this.label4.TabIndex = 10;
             this.label4.Text = "Actulizar Tipo de Combustible ";
             this.label4.Click += new System.EventHandler(this.label4_Click_1);
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(524, 280);
+            this.textBox3.Location = new System.Drawing.Point(393, 228);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(295, 22);
+            this.textBox3.Size = new System.Drawing.Size(222, 20);
             this.textBox3.TabIndex = 9;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(460, 280);
+            this.label5.Location = new System.Drawing.Point(345, 228);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 17);
+            this.label5.Size = new System.Drawing.Size(42, 13);
             this.label5.TabIndex = 8;
             this.label5.Text = "Estatus";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(126, 280);
+            this.textBox4.Location = new System.Drawing.Point(94, 228);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(295, 22);
+            this.textBox4.Size = new System.Drawing.Size(222, 20);
             this.textBox4.TabIndex = 7;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(62, 280);
+            this.label6.Location = new System.Drawing.Point(46, 228);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 17);
+            this.label6.Size = new System.Drawing.Size(44, 13);
             this.label6.TabIndex = 6;
             this.label6.Text = "Nombre";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(136, 242);
+            this.textBox5.Location = new System.Drawing.Point(102, 197);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(295, 22);
+            this.textBox5.Size = new System.Drawing.Size(222, 20);
             this.textBox5.TabIndex = 13;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(72, 242);
+            this.label7.Location = new System.Drawing.Point(54, 197);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(24, 21);
+            this.label7.Size = new System.Drawing.Size(16, 13);
             this.label7.TabIndex = 12;
             this.label7.Text = "Id";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(126, 359);
+            this.textBox6.Location = new System.Drawing.Point(94, 292);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(295, 22);
+            this.textBox6.Size = new System.Drawing.Size(222, 20);
             this.textBox6.TabIndex = 21;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(62, 359);
+            this.label8.Location = new System.Drawing.Point(46, 292);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(19, 17);
+            this.label8.Size = new System.Drawing.Size(16, 13);
             this.label8.TabIndex = 20;
             this.label8.Text = "Id";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(463, 359);
+            this.button3.Location = new System.Drawing.Point(347, 292);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(56, 19);
             this.button3.TabIndex = 19;
             this.button3.Text = "Eliminiar";
             this.button3.UseVisualStyleBackColor = true;
@@ -205,18 +222,19 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(64, 329);
+            this.label9.Location = new System.Drawing.Point(48, 267);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(199, 17);
+            this.label9.Size = new System.Drawing.Size(148, 13);
             this.label9.TabIndex = 18;
             this.label9.Text = "Eliminart Tipo de Combustible ";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // MantenimientoTipoCombustible
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1101, 450);
+            this.ClientSize = new System.Drawing.Size(826, 366);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button3);
@@ -235,8 +253,10 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MantenimientoTipoCombustible";
             this.Text = "MantenimientoTipoCombustible";
+            this.Load += new System.EventHandler(this.MantenimientoTipoCombustible_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

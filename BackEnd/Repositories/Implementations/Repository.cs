@@ -73,7 +73,6 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Repositories.Implementations
             {
                 return new OperationResult() { Data = null, Message = "No existe", Success = false };
             }
-
             context.Entry(entity).State = System.Data.Entity.EntityState.Modified;
             context.SaveChanges();
             return new OperationResult() { Success = true, Data = entity, Message = "Actualizado satisfactoriamente" };

@@ -34,12 +34,12 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Context
             alquiler.Property(e => e.Costo).HasColumnName("Costo").HasColumnType("decimal").HasPrecision(10,2).IsRequired();
             alquiler.Property(e => e.FechaDesde).HasColumnName("FechaDesde").HasColumnType("datetime").IsRequired();
             alquiler.Property(e => e.FechaHasta).HasColumnName("FechaHasta").HasColumnType("datetime").IsRequired();
-            alquiler.Property(e => e.FechaDevolucion).HasColumnName("FechaDevolucion").HasColumnType("datetime");
+            alquiler.Property(e => e.FechaDevolucion).HasColumnName("FechaDevolucion").HasColumnType("datetime").IsOptional();
             alquiler.Property(e => e.Penalidad).HasColumnName("Penalidad").HasColumnType("decimal").HasPrecision(10, 2);
             alquiler.Property(e => e.Estatus).HasColumnName("Estatus").HasColumnType("varchar").HasMaxLength(2).IsRequired();
             alquiler.Property(e => e.Borrado).HasColumnName("Borrado").HasColumnType("bit").IsRequired();
             alquiler.Property(e => e.FechaRegistro).HasColumnName("FechaRegistro").HasColumnType("datetime").IsRequired();
-            alquiler.Property(e => e.FechaModificacion).HasColumnName("FechaModificacion").HasColumnType("datetime");
+            alquiler.Property(e => e.FechaModificacion).HasColumnName("FechaModificacion").HasColumnType("datetime").IsOptional();
             //foreing keys
             alquiler.HasRequired(e => e.Cliente).WithMany(e => e.Alquileres).HasForeignKey(e => e.ClienteId);
             alquiler.HasRequired(e => e.Vehiculo).WithMany(e => e.Alquileres).HasForeignKey(e => e.VehiculoId);
@@ -53,12 +53,12 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Context
             cliente.Property(e => e.Apellido).HasColumnName("Apellido").HasColumnType("varchar").HasMaxLength(100).IsRequired();
             cliente.Property(e => e.Direccion).HasColumnName("Direccion").HasColumnType("varchar").HasMaxLength(500).IsRequired();
             cliente.Property(e => e.Telefono).HasColumnName("Telefono").HasColumnType("varchar").HasMaxLength(20).IsRequired();
-            cliente.Property(e => e.Correo).HasColumnName("Correo").HasColumnType("varchar").HasMaxLength(100);
+            cliente.Property(e => e.Correo).HasColumnName("Correo").HasColumnType("varchar").HasMaxLength(100).IsOptional();
             cliente.Property(e => e.Cedula).HasColumnName("Cedula").HasColumnType("varchar").HasMaxLength(11).IsRequired();
             cliente.Property(e => e.Estatus).HasColumnName("Estatus").HasColumnType("varchar").HasMaxLength(2).IsRequired();
             cliente.Property(e => e.Borrado).HasColumnName("Borrado").HasColumnType("bit").IsRequired();
             cliente.Property(e => e.FechaRegistro).HasColumnName("FechaRegistro").HasColumnType("datetime").IsRequired();
-            cliente.Property(e => e.FechaModificacion).HasColumnName("FechaModificacion").HasColumnType("datetime");
+            cliente.Property(e => e.FechaModificacion).HasColumnName("FechaModificacion").HasColumnType("datetime").IsOptional();
 
             var marca = modelBuilder.Entity<Marca>();
             marca.ToTable("Marca");
@@ -69,7 +69,7 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Context
             marca.Property(e => e.Estatus).HasColumnName("Estatus").HasColumnType("varchar").HasMaxLength(2).IsRequired();
             marca.Property(e => e.Borrado).HasColumnName("Borrado").HasColumnType("bit").IsRequired();
             marca.Property(e => e.FechaRegistro).HasColumnName("FechaRegistro").HasColumnType("datetime").IsRequired();
-            marca.Property(e => e.FechaModificacion).HasColumnName("FechaModificacion").HasColumnType("datetime");
+            marca.Property(e => e.FechaModificacion).HasColumnName("FechaModificacion").HasColumnType("datetime").IsOptional();
 
             var modelo = modelBuilder.Entity<Modelo>();
             modelo.ToTable("Modelo");
@@ -80,7 +80,7 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Context
             modelo.Property(e => e.Estatus).HasColumnName("Estatus").HasColumnType("varchar").HasMaxLength(2).IsRequired();
             modelo.Property(e => e.Borrado).HasColumnName("Borrado").HasColumnType("bit").IsRequired();
             modelo.Property(e => e.FechaRegistro).HasColumnName("FechaRegistro").HasColumnType("datetime").IsRequired();
-            modelo.Property(e => e.FechaModificacion).HasColumnName("FechaModificacion").HasColumnType("datetime");
+            modelo.Property(e => e.FechaModificacion).HasColumnName("FechaModificacion").HasColumnType("datetime").IsOptional();
             //foreign key
             modelo.HasRequired(e => e.Marca).WithMany(e => e.Modelos).HasForeignKey(e => e.MarcaId);
 
@@ -93,7 +93,7 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Context
             tipoCombustible.Property(e => e.Estatus).HasColumnName("Estatus").HasColumnType("varchar").HasMaxLength(2).IsRequired();
             tipoCombustible.Property(e => e.Borrado).HasColumnName("Borrado").HasColumnType("bit").IsRequired();
             tipoCombustible.Property(e => e.FechaRegistro).HasColumnName("FechaRegistro").HasColumnType("datetime").IsRequired();
-            tipoCombustible.Property(e => e.FechaModificacion).HasColumnName("FechaModificacion").HasColumnType("datetime");
+            tipoCombustible.Property(e => e.FechaModificacion).HasColumnName("FechaModificacion").HasColumnType("datetime").IsOptional();
 
             var tipoTransmision = modelBuilder.Entity<TipoTransmision>();
             tipoTransmision.ToTable("TipoTransmision");
@@ -104,7 +104,7 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Context
             tipoTransmision.Property(e => e.Estatus).HasColumnName("Estatus").HasColumnType("varchar").HasMaxLength(2).IsRequired();
             tipoTransmision.Property(e => e.Borrado).HasColumnName("Borrado").HasColumnType("bit").IsRequired();
             tipoTransmision.Property(e => e.FechaRegistro).HasColumnName("FechaRegistro").HasColumnType("datetime").IsRequired();
-            tipoTransmision.Property(e => e.FechaModificacion).HasColumnName("FechaModificacion").HasColumnType("datetime");
+            tipoTransmision.Property(e => e.FechaModificacion).HasColumnName("FechaModificacion").HasColumnType("datetime").IsOptional();
 
             var vehiculo = modelBuilder.Entity<Vehiculo>();
             vehiculo.ToTable("Vehiculo");
@@ -122,7 +122,7 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Context
             vehiculo.Property(e => e.Estatus).HasColumnName("Estatus").HasColumnType("varchar").HasMaxLength(2).IsRequired();
             vehiculo.Property(e => e.Borrado).HasColumnName("Borrado").HasColumnType("bit").IsRequired();
             vehiculo.Property(e => e.FechaRegistro).HasColumnName("FechaRegistro").HasColumnType("datetime").IsRequired();
-            vehiculo.Property(e => e.FechaModificacion).HasColumnName("FechaModificacion").HasColumnType("datetime");
+            vehiculo.Property(e => e.FechaModificacion).HasColumnName("FechaModificacion").HasColumnType("datetime").IsOptional();
             //foreign key
             vehiculo.HasRequired(e => e.TipoTransmision).WithMany(e => e.Vehiculos).HasForeignKey(e => e.TipoTransmisionId);
             vehiculo.HasRequired(e => e.TipoCombustible).WithMany(e => e.Vehiculos).HasForeignKey(e => e.TipoCombustibleId);

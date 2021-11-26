@@ -223,6 +223,10 @@
     <Compile Include="Migrations\202111211740484_initial.designer.cs">
       <DependentUpon>202111211740484_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111260344130_enableNullOnModificationDate.cs" />
+    <Compile Include="Migrations\202111260344130_enableNullOnModificationDate.designer.cs">
+      <DependentUpon>202111260344130_enableNullOnModificationDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -234,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111211740484_initial.resx">
       <DependentUpon>202111211740484_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111260344130_enableNullOnModificationDate.resx">
+      <DependentUpon>202111260344130_enableNullOnModificationDate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
