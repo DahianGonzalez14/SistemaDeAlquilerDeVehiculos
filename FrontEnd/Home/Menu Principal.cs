@@ -1,4 +1,5 @@
 ﻿using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento;
+using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,6 +58,23 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
         {
             MantenimientoTipoCombustible mante = new MantenimientoTipoCombustible();
             mante.Show();
+        }
+
+        private void mantenimientoMarcaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MantenimientoMarca Marca = new MantenimientoMarca();
+            Marca.Show();
+        }
+
+        private void reporteMarcaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void reporteTipoCobustibleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteTipoCombustible ReporCombus = new ReporteTipoCombustible();
+            ReporCombus.Show();
         }
     }
 }

@@ -31,20 +31,20 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alquilerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoModeloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoTipoCombustibleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoTipoTransmisionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoVehiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteModeloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteTipoCobustibleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteTipoTransmisionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteVehiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alquilerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alquilerDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -75,27 +75,6 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
             this.mantenimientoToolStripMenuItem.Text = "Mantenimiento ";
             // 
-            // reportesToolStripMenuItem
-            // 
-            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reporteClienteToolStripMenuItem,
-            this.reporteMarcaToolStripMenuItem,
-            this.reporteModeloToolStripMenuItem,
-            this.reporteTipoCobustibleToolStripMenuItem,
-            this.reporteTipoTransmisionToolStripMenuItem,
-            this.reporteVehiculoToolStripMenuItem});
-            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
-            this.reportesToolStripMenuItem.Text = "reportes";
-            // 
-            // alquilerToolStripMenuItem
-            // 
-            this.alquilerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.alquilerDeToolStripMenuItem});
-            this.alquilerToolStripMenuItem.Name = "alquilerToolStripMenuItem";
-            this.alquilerToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
-            this.alquilerToolStripMenuItem.Text = "alquiler";
-            // 
             // mantenimientoClienteToolStripMenuItem
             // 
             this.mantenimientoClienteToolStripMenuItem.Name = "mantenimientoClienteToolStripMenuItem";
@@ -107,6 +86,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.mantenimientoMarcaToolStripMenuItem.Name = "mantenimientoMarcaToolStripMenuItem";
             this.mantenimientoMarcaToolStripMenuItem.Size = new System.Drawing.Size(311, 26);
             this.mantenimientoMarcaToolStripMenuItem.Text = "Mantenimiento Marca";
+            this.mantenimientoMarcaToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoMarcaToolStripMenuItem_Click);
             // 
             // mantenimientoModeloToolStripMenuItem
             // 
@@ -134,6 +114,19 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.mantenimientoVehiculoToolStripMenuItem.Size = new System.Drawing.Size(311, 26);
             this.mantenimientoVehiculoToolStripMenuItem.Text = "Mantenimiento Vehiculo ";
             // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reporteClienteToolStripMenuItem,
+            this.reporteMarcaToolStripMenuItem,
+            this.reporteModeloToolStripMenuItem,
+            this.reporteTipoCobustibleToolStripMenuItem,
+            this.reporteTipoTransmisionToolStripMenuItem,
+            this.reporteVehiculoToolStripMenuItem});
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.reportesToolStripMenuItem.Text = "reportes";
+            // 
             // reporteClienteToolStripMenuItem
             // 
             this.reporteClienteToolStripMenuItem.Name = "reporteClienteToolStripMenuItem";
@@ -145,6 +138,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.reporteMarcaToolStripMenuItem.Name = "reporteMarcaToolStripMenuItem";
             this.reporteMarcaToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
             this.reporteMarcaToolStripMenuItem.Text = "Reporte Marca";
+            this.reporteMarcaToolStripMenuItem.Click += new System.EventHandler(this.reporteMarcaToolStripMenuItem_Click);
             // 
             // reporteModeloToolStripMenuItem
             // 
@@ -157,6 +151,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.reporteTipoCobustibleToolStripMenuItem.Name = "reporteTipoCobustibleToolStripMenuItem";
             this.reporteTipoCobustibleToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
             this.reporteTipoCobustibleToolStripMenuItem.Text = "Reporte TipoCobustible";
+            this.reporteTipoCobustibleToolStripMenuItem.Click += new System.EventHandler(this.reporteTipoCobustibleToolStripMenuItem_Click);
             // 
             // reporteTipoTransmisionToolStripMenuItem
             // 
@@ -169,6 +164,14 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.reporteVehiculoToolStripMenuItem.Name = "reporteVehiculoToolStripMenuItem";
             this.reporteVehiculoToolStripMenuItem.Size = new System.Drawing.Size(257, 26);
             this.reporteVehiculoToolStripMenuItem.Text = "Reporte Vehiculo ";
+            // 
+            // alquilerToolStripMenuItem
+            // 
+            this.alquilerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.alquilerDeToolStripMenuItem});
+            this.alquilerToolStripMenuItem.Name = "alquilerToolStripMenuItem";
+            this.alquilerToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
+            this.alquilerToolStripMenuItem.Text = "alquiler";
             // 
             // alquilerDeToolStripMenuItem
             // 

@@ -22,6 +22,11 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities
             return tipoCombustibleRepository.GetAll();
         }
 
+        public TipoCombustible findById(int id)
+        {
+            return tipoCombustibleRepository.FindById(id);
+        }
+
         public OperationResult Create(TipoCombustible tipoCombustible)
         {
             Console.WriteLine(tipoCombustible);

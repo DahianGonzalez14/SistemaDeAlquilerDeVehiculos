@@ -211,6 +211,12 @@
     </Compile>
     <Compile Include="FrontEnd\Modules\Alquiler\Class1.cs" />
     <Compile Include="FrontEnd\Modules\Mantenimiento\Class1.cs" />
+    <Compile Include="FrontEnd\Modules\Mantenimiento\MantenimientoMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Modules\Mantenimiento\MantenimientoMarca.Designer.cs">
+      <DependentUpon>MantenimientoMarca.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrontEnd\Modules\Mantenimiento\MantenimientoTipoCombustible.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,6 +224,18 @@
       <DependentUpon>MantenimientoTipoCombustible.cs</DependentUpon>
     </Compile>
     <Compile Include="FrontEnd\Modules\Reportes\Class1.cs" />
+    <Compile Include="FrontEnd\Modules\Reportes\ReporteMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Modules\Reportes\ReporteMarca.Designer.cs">
+      <DependentUpon>ReporteMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Modules\Reportes\ReporteTipoCombustible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Modules\Reportes\ReporteTipoCombustible.Designer.cs">
+      <DependentUpon>ReporteTipoCombustible.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrontEnd\Resources\Class1.cs" />
     <Compile Include="Migrations\202111211740484_initial.cs" />
     <Compile Include="Migrations\202111211740484_initial.designer.cs">
@@ -233,8 +251,17 @@
     <EmbeddedResource Include="FrontEnd\Home\Menu Principal.resx">
       <DependentUpon>Menu Principal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\MantenimientoMarca.resx">
+      <DependentUpon>MantenimientoMarca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\MantenimientoTipoCombustible.resx">
       <DependentUpon>MantenimientoTipoCombustible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Modules\Reportes\ReporteMarca.resx">
+      <DependentUpon>ReporteMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Modules\Reportes\ReporteTipoCombustible.resx">
+      <DependentUpon>ReporteTipoCombustible.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111211740484_initial.resx">
       <DependentUpon>202111211740484_initial.cs</DependentUpon>

@@ -33,20 +33,26 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
             var existMarca = marcaRepository.Find(x => x.Nombre.Equals(marca.Nombre));
             if (existMarca == null)
             {
-                return new OperationResult() { Data = null, Message = "Error modelo existente", Success = false };
+
+                var createdMarca = marcaRepository.Create(marca);
+                return new OperationResult() { Data = createdMarca, Message = "Marca creado satisfatoria mente", Success = true };
+                
 
             }
-            var createdMarca = marcaRepository.Create(marca);
+           
+            return new OperationResult() { Data = null, Message = "Error modelo existente", Success = false };
 
-            return new OperationResult() { Data = createdMarca, Message = "Marca creado satisfatoria mente", Success = true };
         }
 
         public OperationResult Edit(Marca marca)
         {
-            var existMarca = marcaRepository.Find(x => x.Nombre.Equals(marca.Nombre));
+            var existMarca = marcaRepository.Find(x => x.Id.Equals(marca.Id));
             if (existMarca != null)
             {
-                return marcaRepository.Update(marca);
+                existMarca.Nombre = marca.Nombre;
+                existMarca.FechaModificacion = marca.FechaModificacion;
+
+                return marcaRepository.Update(existMarca);
             }
             return new OperationResult() { Data = null, Message = "Error existe una transmicion con dicho nombre", Success = false };
         }
