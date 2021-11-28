@@ -1,5 +1,8 @@
-﻿using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento;
+﻿
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes;
+using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoTipoCombustible;
+using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoVehiculo;
+using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMantenimiento;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes;
 using System;
 using System.Collections.Generic;
@@ -57,14 +60,12 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
 
         private void mantenimientoTipoCombustibleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MantenimientoTipoCombustible mante = new MantenimientoTipoCombustible();
-            mante.Show();
+            
         }
 
         private void mantenimientoMarcaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MantenimientoMarca Marca = new MantenimientoMarca();
-            Marca.Show();
+
         }
 
         private void reporteMarcaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -109,6 +110,66 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
         {
             BorrarClienteForm borrarClienteForm = new BorrarClienteForm();
             borrarClienteForm.ShowDialog();
+        }
+
+        private void crearToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            CrearTipoCombustible crearTipoCombustible = new CrearTipoCombustible();
+            crearTipoCombustible.ShowDialog();
+        }
+
+        private void actualizarToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            ActualizarTipoCombustible actualizarTipoCombustible = new ActualizarTipoCombustible();
+            actualizarTipoCombustible.ShowDialog();
+        }
+
+        private void borrarToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            DeleteTipoCombustible deleteTipoCombustible = new DeleteTipoCombustible();
+            deleteTipoCombustible.ShowDialog();
+        }
+
+        private void crearToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            CrearMarca crearMarca = new CrearMarca();
+            crearMarca.ShowDialog();
+        }
+
+        private void actualizarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ActualizarMarca actualizarMarca = new ActualizarMarca();
+            actualizarMarca.ShowDialog();
+        }
+
+        private void borrarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            DeleteMarca deleteMarca = new DeleteMarca();
+            deleteMarca.ShowDialog();
+        }
+
+        private void crearToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            CrearVehiculo crearVehiculo = new CrearVehiculo();
+            crearVehiculo.ShowDialog();
+        }
+
+        private void actualizarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            ActualizarVehiculo actualizarVehiculo = new ActualizarVehiculo();
+            actualizarVehiculo.ShowDialog();
+        }
+
+        private void borrarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            DeleteVehiculo deleteVehiculo = new DeleteVehiculo();
+            deleteVehiculo.ShowDialog();
+        }
+
+        private void reporteVehiculoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteVehiculo reporteVehiculo = new ReporteVehiculo();
+            reporteVehiculo.ShowDialog();
         }
     }
 }
