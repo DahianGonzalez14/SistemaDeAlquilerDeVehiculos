@@ -235,12 +235,13 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(282, 492);
+            this.label2.Location = new System.Drawing.Point(242, 490);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(476, 16);
+            this.label2.Size = new System.Drawing.Size(543, 16);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Copyright © 2021 Compañia de Vehiculos S.L. Todos los derechos reservados.";
+            this.label2.Text = "Copyright © 2021 Compañia de Alquiler de Vehiculos S.L. Todos los derechos reserv" +
+    "ados.";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel1
