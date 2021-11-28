@@ -83,7 +83,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.reportesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1067, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1154, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -107,7 +107,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.actualizarToolStripMenuItem,
             this.borrarToolStripMenuItem});
             this.mantenimientoClienteToolStripMenuItem.Name = "mantenimientoClienteToolStripMenuItem";
-            this.mantenimientoClienteToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.mantenimientoClienteToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
             this.mantenimientoClienteToolStripMenuItem.Text = "Clientes";
             // 
             // mantenimientoMarcaToolStripMenuItem
@@ -117,7 +117,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.actualizarToolStripMenuItem1,
             this.borrarToolStripMenuItem1});
             this.mantenimientoMarcaToolStripMenuItem.Name = "mantenimientoMarcaToolStripMenuItem";
-            this.mantenimientoMarcaToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.mantenimientoMarcaToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
             this.mantenimientoMarcaToolStripMenuItem.Text = "Marcas";
             this.mantenimientoMarcaToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoMarcaToolStripMenuItem_Click);
             // 
@@ -128,7 +128,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.actualizarToolStripMenuItem2,
             this.borrarToolStripMenuItem2});
             this.mantenimientoModeloToolStripMenuItem.Name = "mantenimientoModeloToolStripMenuItem";
-            this.mantenimientoModeloToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.mantenimientoModeloToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
             this.mantenimientoModeloToolStripMenuItem.Text = "Modelos";
             // 
             // mantenimientoTipoCombustibleToolStripMenuItem
@@ -138,7 +138,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.actualizarToolStripMenuItem4,
             this.borrarToolStripMenuItem4});
             this.mantenimientoTipoCombustibleToolStripMenuItem.Name = "mantenimientoTipoCombustibleToolStripMenuItem";
-            this.mantenimientoTipoCombustibleToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.mantenimientoTipoCombustibleToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
             this.mantenimientoTipoCombustibleToolStripMenuItem.Text = "Tipos de Combustibles";
             this.mantenimientoTipoCombustibleToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoTipoCombustibleToolStripMenuItem_Click);
             // 
@@ -160,7 +160,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.actualizarToolStripMenuItem3,
             this.borrarToolStripMenuItem3});
             this.mantenimientoVehiculoToolStripMenuItem.Name = "mantenimientoVehiculoToolStripMenuItem";
-            this.mantenimientoVehiculoToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.mantenimientoVehiculoToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
             this.mantenimientoVehiculoToolStripMenuItem.Text = "Vehículos";
             // 
             // reportesToolStripMenuItem
@@ -235,7 +235,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(242, 490);
+            this.label2.Location = new System.Drawing.Point(282, 532);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(543, 16);
@@ -247,7 +247,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Location = new System.Drawing.Point(42, 31);
+            this.panel1.Location = new System.Drawing.Point(86, 31);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(948, 444);
             this.panel1.TabIndex = 5;
@@ -383,7 +383,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1067, 530);
+            this.ClientSize = new System.Drawing.Size(1154, 597);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);
