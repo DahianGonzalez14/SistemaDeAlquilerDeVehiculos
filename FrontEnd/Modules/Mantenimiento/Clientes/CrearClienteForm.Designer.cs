@@ -80,11 +80,11 @@
             // dgvCrearCliente
             // 
             this.dgvCrearCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCrearCliente.Location = new System.Drawing.Point(105, 316);
+            this.dgvCrearCliente.Location = new System.Drawing.Point(91, 316);
             this.dgvCrearCliente.Margin = new System.Windows.Forms.Padding(4);
             this.dgvCrearCliente.Name = "dgvCrearCliente";
             this.dgvCrearCliente.RowHeadersWidth = 51;
-            this.dgvCrearCliente.Size = new System.Drawing.Size(985, 268);
+            this.dgvCrearCliente.Size = new System.Drawing.Size(1005, 268);
             this.dgvCrearCliente.TabIndex = 39;
             // 
             // txtCedula
@@ -220,9 +220,9 @@
             this.panelCrearCliente.Controls.Add(this.lApellido);
             this.panelCrearCliente.Controls.Add(this.txtNombre);
             this.panelCrearCliente.Controls.Add(this.lNombre);
-            this.panelCrearCliente.Location = new System.Drawing.Point(105, 62);
+            this.panelCrearCliente.Location = new System.Drawing.Point(91, 62);
             this.panelCrearCliente.Name = "panelCrearCliente";
-            this.panelCrearCliente.Size = new System.Drawing.Size(985, 238);
+            this.panelCrearCliente.Size = new System.Drawing.Size(1005, 238);
             this.panelCrearCliente.TabIndex = 41;
             this.panelCrearCliente.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCrearCliente_Paint);
             // 
@@ -239,6 +239,7 @@
             this.btnLimpiar.TabIndex = 41;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // CrearClienteForm
             // 
