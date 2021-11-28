@@ -114,16 +114,18 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes
                 }
                 else
                 {
-                    
-                    Cliente cliente = new Cliente();
-                    cliente.Id = clienteId;
-                    cliente.Nombre = txtNombre.Text;
-                    cliente.Apellido = txtApellido.Text;
-                    cliente.Direccion = txtDireccion.Text;
-                    cliente.Telefono = txtTelefono.Text;
-                    cliente.Correo = txtCorreo.Text;
-                    cliente.Cedula = txtCedula.Text;
-                    cliente.Estatus = getValueByEstatus(comboBoxEstatus.Text);
+
+                    Cliente cliente = new Cliente()
+                    {
+                        Id = clienteId,
+                        Nombre = txtNombre.Text,
+                        Apellido = txtApellido.Text,
+                        Direccion = txtDireccion.Text,
+                        Telefono = txtTelefono.Text,
+                        Correo = txtCorreo.Text,
+                        Cedula = txtCedula.Text,
+                        Estatus = getValueByEstatus(comboBoxEstatus.Text)
+                    };
 
                     var updatedCliente = clienteController.Edit(cliente);
                     if (updatedCliente.Success == true)

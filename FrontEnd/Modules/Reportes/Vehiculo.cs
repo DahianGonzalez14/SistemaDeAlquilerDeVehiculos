@@ -12,10 +12,10 @@ using SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities;
 
 namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes
 {
-    public partial class ReporteVehiculo : Form
+    public partial class Vehiculo : Form
     {
         VehiculoController vehiculo = new VehiculoController();
-        public ReporteVehiculo()
+        public Vehiculo()
         {
             InitializeComponent();
         }

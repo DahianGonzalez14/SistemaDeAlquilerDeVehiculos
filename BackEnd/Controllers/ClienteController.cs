@@ -28,11 +28,6 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
             return clienteRepository.FindById(id);
         }
 
-        public Cliente findByCedula(string cedula)
-        {
-            return clienteRepository.Find(x => x.Cedula == cedula && x.Borrado == false);
-        }
-
         public OperationResult Create(Cliente cliente)
         {
             var existsClienteWithSameCedula = clienteRepository.Find(x => x.Cedula.Equals(cliente.Cedula) && x.Borrado == false);

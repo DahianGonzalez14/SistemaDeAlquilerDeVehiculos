@@ -1,7 +1,7 @@
 ﻿
 namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes
 {
-    partial class ReporteVehiculo
+    partial class Vehiculo
     {
         /// <summary>
         /// Required designer variable.

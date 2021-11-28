@@ -145,21 +145,21 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             // crearToolStripMenuItem1
             // 
             this.crearToolStripMenuItem1.Name = "crearToolStripMenuItem1";
-            this.crearToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.crearToolStripMenuItem1.Size = new System.Drawing.Size(158, 26);
             this.crearToolStripMenuItem1.Text = "Crear";
             this.crearToolStripMenuItem1.Click += new System.EventHandler(this.crearToolStripMenuItem1_Click);
             // 
             // actualizarToolStripMenuItem1
             // 
             this.actualizarToolStripMenuItem1.Name = "actualizarToolStripMenuItem1";
-            this.actualizarToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.actualizarToolStripMenuItem1.Size = new System.Drawing.Size(158, 26);
             this.actualizarToolStripMenuItem1.Text = "Actualizar";
             this.actualizarToolStripMenuItem1.Click += new System.EventHandler(this.actualizarToolStripMenuItem1_Click);
             // 
             // borrarToolStripMenuItem1
             // 
             this.borrarToolStripMenuItem1.Name = "borrarToolStripMenuItem1";
-            this.borrarToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.borrarToolStripMenuItem1.Size = new System.Drawing.Size(158, 26);
             this.borrarToolStripMenuItem1.Text = "Borrar";
             this.borrarToolStripMenuItem1.Click += new System.EventHandler(this.borrarToolStripMenuItem1_Click);
             // 
@@ -204,21 +204,21 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             // crearToolStripMenuItem3
             // 
             this.crearToolStripMenuItem3.Name = "crearToolStripMenuItem3";
-            this.crearToolStripMenuItem3.Size = new System.Drawing.Size(224, 26);
+            this.crearToolStripMenuItem3.Size = new System.Drawing.Size(158, 26);
             this.crearToolStripMenuItem3.Text = "Crear";
             this.crearToolStripMenuItem3.Click += new System.EventHandler(this.crearToolStripMenuItem3_Click);
             // 
             // actualizarToolStripMenuItem3
             // 
             this.actualizarToolStripMenuItem3.Name = "actualizarToolStripMenuItem3";
-            this.actualizarToolStripMenuItem3.Size = new System.Drawing.Size(224, 26);
+            this.actualizarToolStripMenuItem3.Size = new System.Drawing.Size(158, 26);
             this.actualizarToolStripMenuItem3.Text = "Actualizar";
             this.actualizarToolStripMenuItem3.Click += new System.EventHandler(this.actualizarToolStripMenuItem3_Click);
             // 
             // borrarToolStripMenuItem3
             // 
             this.borrarToolStripMenuItem3.Name = "borrarToolStripMenuItem3";
-            this.borrarToolStripMenuItem3.Size = new System.Drawing.Size(224, 26);
+            this.borrarToolStripMenuItem3.Size = new System.Drawing.Size(158, 26);
             this.borrarToolStripMenuItem3.Text = "Borrar";
             this.borrarToolStripMenuItem3.Click += new System.EventHandler(this.borrarToolStripMenuItem3_Click);
             // 
@@ -236,21 +236,21 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             // crearToolStripMenuItem4
             // 
             this.crearToolStripMenuItem4.Name = "crearToolStripMenuItem4";
-            this.crearToolStripMenuItem4.Size = new System.Drawing.Size(224, 26);
+            this.crearToolStripMenuItem4.Size = new System.Drawing.Size(158, 26);
             this.crearToolStripMenuItem4.Text = "Crear";
             this.crearToolStripMenuItem4.Click += new System.EventHandler(this.crearToolStripMenuItem4_Click);
             // 
             // actualizarToolStripMenuItem4
             // 
             this.actualizarToolStripMenuItem4.Name = "actualizarToolStripMenuItem4";
-            this.actualizarToolStripMenuItem4.Size = new System.Drawing.Size(224, 26);
+            this.actualizarToolStripMenuItem4.Size = new System.Drawing.Size(158, 26);
             this.actualizarToolStripMenuItem4.Text = "Actualizar";
             this.actualizarToolStripMenuItem4.Click += new System.EventHandler(this.actualizarToolStripMenuItem4_Click);
             // 
             // borrarToolStripMenuItem4
             // 
             this.borrarToolStripMenuItem4.Name = "borrarToolStripMenuItem4";
-            this.borrarToolStripMenuItem4.Size = new System.Drawing.Size(224, 26);
+            this.borrarToolStripMenuItem4.Size = new System.Drawing.Size(158, 26);
             this.borrarToolStripMenuItem4.Text = "Borrar";
             this.borrarToolStripMenuItem4.Click += new System.EventHandler(this.borrarToolStripMenuItem4_Click);
             // 
@@ -268,20 +268,23 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             // crearToolStripMenuItem5
             // 
             this.crearToolStripMenuItem5.Name = "crearToolStripMenuItem5";
-            this.crearToolStripMenuItem5.Size = new System.Drawing.Size(158, 26);
+            this.crearToolStripMenuItem5.Size = new System.Drawing.Size(224, 26);
             this.crearToolStripMenuItem5.Text = "Crear";
+            this.crearToolStripMenuItem5.Click += new System.EventHandler(this.crearToolStripMenuItem5_Click);
             // 
             // actualizarToolStripMenuItem5
             // 
             this.actualizarToolStripMenuItem5.Name = "actualizarToolStripMenuItem5";
-            this.actualizarToolStripMenuItem5.Size = new System.Drawing.Size(158, 26);
+            this.actualizarToolStripMenuItem5.Size = new System.Drawing.Size(224, 26);
             this.actualizarToolStripMenuItem5.Text = "Actualizar";
+            this.actualizarToolStripMenuItem5.Click += new System.EventHandler(this.actualizarToolStripMenuItem5_Click);
             // 
             // borrarToolStripMenuItem5
             // 
             this.borrarToolStripMenuItem5.Name = "borrarToolStripMenuItem5";
-            this.borrarToolStripMenuItem5.Size = new System.Drawing.Size(158, 26);
+            this.borrarToolStripMenuItem5.Size = new System.Drawing.Size(224, 26);
             this.borrarToolStripMenuItem5.Text = "Borrar";
+            this.borrarToolStripMenuItem5.Click += new System.EventHandler(this.borrarToolStripMenuItem5_Click);
             // 
             // alquilerToolStripMenuItem
             // 
@@ -377,7 +380,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.label2.Location = new System.Drawing.Point(282, 532);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(578, 17);
+            this.label2.Size = new System.Drawing.Size(543, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Copyright © 2021 Compañia de Alquiler de Vehiculos S.L. Todos los derechos reserv" +
     "ados.";

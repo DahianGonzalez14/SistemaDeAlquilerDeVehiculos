@@ -35,13 +35,18 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes
             dgvBorrarCliente.DataSource = showListCliente;
         }
 
+        private void LimpiarCampos()
+        {
+            txtCedula.Text = string.Empty;
+        }
+
         private void dgvBorrarCliente_SelectionChanged(object sender, EventArgs e)
         {
             clienteId = Convert.ToInt32(dgvBorrarCliente.CurrentRow.Cells["Id"].Value.ToString());
             txtCedula.Text = dgvBorrarCliente.CurrentRow.Cells["Cedula"].Value.ToString();
         }
 
-        private void btnLimpiar_Click(object sender, EventArgs e)
+        private void btnBorrar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtCedula.Text))
             {
@@ -55,6 +60,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes
                 if (deletedCliente.Success == true)
                 {
                     LlenarDataTable();
+                    LimpiarCampos();
                     MessageBox.Show(deletedCliente.Message);
                 }
                 else

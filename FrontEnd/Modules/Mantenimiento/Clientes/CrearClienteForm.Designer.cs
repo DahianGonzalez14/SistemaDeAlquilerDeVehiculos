@@ -68,6 +68,7 @@
             // 
             // dgvCrearCliente
             // 
+            this.dgvCrearCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCrearCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCrearCliente.Location = new System.Drawing.Point(91, 316);
             this.dgvCrearCliente.Margin = new System.Windows.Forms.Padding(4);
@@ -91,7 +92,7 @@
             this.lCedula.Location = new System.Drawing.Point(442, 130);
             this.lCedula.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lCedula.Name = "lCedula";
-            this.lCedula.Size = new System.Drawing.Size(52, 17);
+            this.lCedula.Size = new System.Drawing.Size(50, 16);
             this.lCedula.TabIndex = 31;
             this.lCedula.Text = "Cédula";
             this.lCedula.Click += new System.EventHandler(this.lCedula_Click);
@@ -111,7 +112,7 @@
             this.lCorreo.Location = new System.Drawing.Point(442, 76);
             this.lCorreo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lCorreo.Name = "lCorreo";
-            this.lCorreo.Size = new System.Drawing.Size(51, 17);
+            this.lCorreo.Size = new System.Drawing.Size(48, 16);
             this.lCorreo.TabIndex = 29;
             this.lCorreo.Text = "Correo";
             // 
@@ -131,7 +132,7 @@
             this.lTelefono.Location = new System.Drawing.Point(444, 24);
             this.lTelefono.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lTelefono.Name = "lTelefono";
-            this.lTelefono.Size = new System.Drawing.Size(64, 17);
+            this.lTelefono.Size = new System.Drawing.Size(61, 16);
             this.lTelefono.TabIndex = 27;
             this.lTelefono.Text = "Teléfono";
             this.lTelefono.Click += new System.EventHandler(this.lTelefono_Click);
@@ -152,7 +153,7 @@
             this.lDireccion.Location = new System.Drawing.Point(6, 133);
             this.lDireccion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lDireccion.Name = "lDireccion";
-            this.lDireccion.Size = new System.Drawing.Size(67, 17);
+            this.lDireccion.Size = new System.Drawing.Size(64, 16);
             this.lDireccion.TabIndex = 25;
             this.lDireccion.Text = "Dirección";
             // 
@@ -170,7 +171,7 @@
             this.lApellido.Location = new System.Drawing.Point(6, 76);
             this.lApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lApellido.Name = "lApellido";
-            this.lApellido.Size = new System.Drawing.Size(58, 17);
+            this.lApellido.Size = new System.Drawing.Size(57, 16);
             this.lApellido.TabIndex = 23;
             this.lApellido.Text = "Apellido";
             // 
@@ -188,7 +189,7 @@
             this.lNombre.Location = new System.Drawing.Point(6, 24);
             this.lNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lNombre.Name = "lNombre";
-            this.lNombre.Size = new System.Drawing.Size(58, 17);
+            this.lNombre.Size = new System.Drawing.Size(56, 16);
             this.lNombre.TabIndex = 21;
             this.lNombre.Text = "Nombre";
             this.lNombre.TextAlign = System.Drawing.ContentAlignment.TopCenter;

@@ -242,6 +242,7 @@
             // 
             // dgvActualizarCliente
             // 
+            this.dgvActualizarCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvActualizarCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvActualizarCliente.Location = new System.Drawing.Point(85, 369);
             this.dgvActualizarCliente.Margin = new System.Windows.Forms.Padding(4);
@@ -266,6 +267,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1154, 607);
             this.Controls.Add(this.panelActualizarCliente);
             this.Controls.Add(this.dgvActualizarCliente);

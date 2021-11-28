@@ -8,11 +8,11 @@ using SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities;
 using SistemaDeAlquilerDeVehiculos.BackEnd.Repositories.Implementations;
 namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
 {
-   public class TipoTransmicionController
+   public class TipoTransmisionController
     {
         TipoTransmisionRepository tipoTransmisionRepository;
 
-        public TipoTransmicionController()
+        public TipoTransmisionController()
         {
             tipoTransmisionRepository = new TipoTransmisionRepository();
         }
@@ -41,14 +41,18 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
         public OperationResult Edit(TipoTransmision tipoTransmision)
         {
             var existsTipoTransmision = tipoTransmisionRepository.Find(x => x.Nombre.Equals(tipoTransmision.Nombre) && x.Borrado == false);
-            if (existsTipoTransmision != null && existsTipoTransmision.Id == tipoTransmision.Id)
+            if (existsTipoTransmision != null && existsTipoTransmision.Id != tipoTransmision.Id)
             {
-                existsTipoTransmision.Nombre = tipoTransmision.Nombre;
-                existsTipoTransmision.FechaModificacion = DateTime.Now;
-
-                return tipoTransmisionRepository.Update(existsTipoTransmision);
+                return new OperationResult() { Data = null, Message = "Error existe un tipo de transmisión con dicho nombre", Success = false };
             }
-            return new OperationResult() { Data = null, Message = "Error existe un tipo de transmisión con dicho nombre", Success = false };
+
+            var currentTipoTransmision = tipoTransmisionRepository.FindById(tipoTransmision.Id);
+            currentTipoTransmision.Nombre = tipoTransmision.Nombre;
+            currentTipoTransmision.Estatus = tipoTransmision.Estatus;
+            currentTipoTransmision.FechaModificacion = DateTime.Now;
+
+            return tipoTransmisionRepository.Update(currentTipoTransmision);
+                     
         }
 
         public OperationResult Delete(TipoTransmision tipoTransmision)

@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes
 {
-    public partial class ReporteTipoCombustible : Form
+    public partial class TipoCombustible : Form
     {
         TipoCombustibleController tipoCombus = new TipoCombustibleController();
-        public ReporteTipoCombustible()
+        public TipoCombustible()
         {
             InitializeComponent();
         }
