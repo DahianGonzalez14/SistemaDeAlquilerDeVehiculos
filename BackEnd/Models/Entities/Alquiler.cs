@@ -14,8 +14,8 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities
         public int VehiculoId { get; set; }
         public string MetodoPago { get; set; }
         public decimal Costo { get; set; }
-        public DateTime? FechaDesde { get; set; }
-        public DateTime? FechaHasta { get; set; }
+        public DateTime FechaDesde { get; set; }
+        public DateTime FechaHasta { get; set; }
         public DateTime? FechaDevolucion { get; set; }
         public decimal Penalidad { get; set; }
         public Cliente Cliente { get; set; }

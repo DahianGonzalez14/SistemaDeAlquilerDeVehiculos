@@ -29,9 +29,8 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
 
         public OperationResult Create(Vehiculo vehiculo)
         {
-            var existsVehiculo = vehiculoRepository.Find(x => x.Chasis.Equals(vehiculo.Chasis) || x.Placa.Equals(vehiculo.Placa));
-
-            if (existsVehiculo == null)
+            var existsVehiculo = vehiculoRepository.Find(x => x.Chasis.Equals(vehiculo.Chasis) || x.Placa.Equals(vehiculo.Placa) && x.Borrado == false);
+            if (existsVehiculo != null)
             {
                 return new OperationResult() { Data = null, Message = "Error vehiculo existente", Success = false };
             }
@@ -42,10 +41,23 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
 
         public OperationResult Edit(Vehiculo vehiculo)
         {
-            var existsVehiculo = vehiculoRepository.Find(x => x.Chasis.Equals(vehiculo.Chasis) || x.Placa.Equals(vehiculo.Placa));
-            if (existsVehiculo != null || existsVehiculo.Id == vehiculo.Id)
+            var existsVehiculo = vehiculoRepository.Find(x => x.Chasis.Equals(vehiculo.Chasis) || x.Placa.Equals(vehiculo.Placa) && x.Borrado == false);
+            if (existsVehiculo != null && existsVehiculo.Id == vehiculo.Id)
             {
-                return vehiculoRepository.Update(vehiculo);
+                existsVehiculo.TipoTransmisionId = vehiculo.TipoTransmisionId;
+                existsVehiculo.TipoCombustibleId = vehiculo.TipoCombustibleId;
+                existsVehiculo.ModeloId = vehiculo.ModeloId;
+                existsVehiculo.Chasis = vehiculo.Chasis;
+                existsVehiculo.Placa = vehiculo.Placa;
+                existsVehiculo.Anio = vehiculo.Anio;
+                existsVehiculo.Color = vehiculo.Color;
+                existsVehiculo.Cilindraje = vehiculo.Cilindraje;
+                existsVehiculo.KilometrosTablero = vehiculo.KilometrosTablero;
+                existsVehiculo.CantidadPuerta = vehiculo.CantidadPuerta;
+                existsVehiculo.Precio = vehiculo.Precio;
+                existsVehiculo.FechaModificacion = DateTime.Now;
+
+                return vehiculoRepository.Update(existsVehiculo);
             }
             return new OperationResult() { Data = null, Message = "Error existe un vehiculo con dicha placa o chasís", Success = false };
         }

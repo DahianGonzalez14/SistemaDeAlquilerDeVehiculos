@@ -10,48 +10,50 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
 {
    public class TipoTransmicionController
     {
-        TipoTransmisionRepository tipoTransmicionRepository;
+        TipoTransmisionRepository tipoTransmisionRepository;
 
         public TipoTransmicionController()
         {
-            tipoTransmicionRepository = new TipoTransmisionRepository();
+            tipoTransmisionRepository = new TipoTransmisionRepository();
         }
 
         public List<TipoTransmision> getAll()
         {
-            return tipoTransmicionRepository.GetAll();
+            return tipoTransmisionRepository.GetAll();
         }
 
         public TipoTransmision findById(int id)
         {
-            return tipoTransmicionRepository.FindById(id);
+            return tipoTransmisionRepository.FindById(id);
         }
 
         public OperationResult Create(TipoTransmision tipoTransmision)
         {
-            var existTipoTrasnsmision = tipoTransmicionRepository.Find(x => x.Nombre.Equals(tipoTransmision.Nombre));
-            if (existTipoTrasnsmision == null)
+            var existsTipoTrasnsmision = tipoTransmisionRepository.Find(x => x.Nombre.Equals(tipoTransmision.Nombre) && x.Borrado == false);
+            if (existsTipoTrasnsmision != null)
             {
-                return new OperationResult() { Data = null, Message = "Error modelo existente", Success = false };
+                return new OperationResult() { Data = null, Message = "Error tipo de transmisión existente", Success = false };
 
             }
-            var createdTipoTransmision = tipoTransmicionRepository.Create(tipoTransmision);
-
-            return new OperationResult() { Data = createdTipoTransmision, Message = "Modelo creado satisfatoria mente", Success = true };
+            var createdTipoTransmision = tipoTransmisionRepository.Create(tipoTransmision);
+            return new OperationResult() { Data = createdTipoTransmision, Message = "Tipo de transmisión creado satisfatoriamente", Success = true };
         }
         public OperationResult Edit(TipoTransmision tipoTransmision)
         {
-            var existsTransmision = tipoTransmicionRepository.Find(x => x.Nombre.Equals(tipoTransmision.Nombre) );
-            if (existsTransmision != null)
+            var existsTipoTransmision = tipoTransmisionRepository.Find(x => x.Nombre.Equals(tipoTransmision.Nombre) && x.Borrado == false);
+            if (existsTipoTransmision != null && existsTipoTransmision.Id == tipoTransmision.Id)
             {
-                return tipoTransmicionRepository.Update(tipoTransmision);
+                existsTipoTransmision.Nombre = tipoTransmision.Nombre;
+                existsTipoTransmision.FechaModificacion = DateTime.Now;
+
+                return tipoTransmisionRepository.Update(existsTipoTransmision);
             }
-            return new OperationResult() { Data = null, Message = "Error existe una transmicion con dicho nombre", Success = false };
+            return new OperationResult() { Data = null, Message = "Error existe un tipo de transmisión con dicho nombre", Success = false };
         }
 
         public OperationResult Delete(TipoTransmision tipoTransmision)
         {
-            return tipoTransmicionRepository.Delete(tipoTransmision.Id);
+            return tipoTransmisionRepository.Delete(tipoTransmision.Id);
         }
 
     }

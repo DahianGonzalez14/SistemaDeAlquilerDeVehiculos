@@ -40,6 +40,7 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Repositories.Implementations
 
             context.Entry(entity).State = System.Data.Entity.EntityState.Modified;
             entity.Borrado = true;
+            entity.Estatus = "I";
             entity.FechaModificacion = DateTime.Now;
             context.SaveChanges();
             return new OperationResult() { Success = true, Data = entity, Message = "Borrado satisfactoriamente"};
@@ -47,7 +48,7 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Repositories.Implementations
 
         public T FindById(int id)
         {
-            return set.FirstOrDefault(x => x.Id == id);
+            return set.FirstOrDefault(x => x.Id == id && x.Borrado == false);
         }
 
         public T Find(Expression<Func<T, bool>> predicate)

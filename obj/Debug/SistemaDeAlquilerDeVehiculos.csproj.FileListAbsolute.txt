@@ -183,3 +183,6 @@ C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerD
 C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.Migrations.enableNullOnModificationDate.resources
 C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoMarca.resources
 C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes.ReporteTipoCombustible.resources
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoMarca.resources
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes.ReporteMarca.resources
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes.ReporteTipoCombustible.resources

@@ -29,33 +29,28 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities
 
         public OperationResult Create(TipoCombustible tipoCombustible)
         {
-            Console.WriteLine(tipoCombustible);
-            var existTipoCombustible= tipoCombustibleRepository.Find(x => x.Nombre.Equals(tipoCombustible.Nombre));
-            
-            if (existTipoCombustible == null)
+            var existsTipoCombustible= tipoCombustibleRepository.Find(x => x.Nombre.Equals(tipoCombustible.Nombre) && x.Borrado == false);
+            if (existsTipoCombustible != null)
             {
-                var createdTipoCombustible = tipoCombustibleRepository.Create(tipoCombustible);
-
-                return new OperationResult() { Data = createdTipoCombustible, Message = "Modelo creado satisfatoria mente", Success = true };
-       
-
+                return new OperationResult() { Data = null, Message = "Error Tipo de combustible existente", Success = false };
             }
-            return new OperationResult() { Data = null, Message = "Error  existente", Success = false };
-            //var createdTipoCombustible = tipoCombustibleRepository.Create(tipoCombustible);
 
-          //  return new OperationResult() { Data = createdTipoCombustible, Message = "Modelo creado satisfatoria mente", Success = true };
+            var createdTipoCombustible = tipoCombustibleRepository.Create(tipoCombustible);
+            return new OperationResult() { Data = createdTipoCombustible, Message = "Tipo de combustible creado satisfatoriamente", Success = true };
         }
 
         public OperationResult Edit(TipoCombustible tipoCombustible)
         {
-            var existTipoCombustible = tipoCombustibleRepository.Find(x => x.Id.Equals(tipoCombustible.Id));
-            if (existTipoCombustible != null)
+            var existsTipoCombustible = tipoCombustibleRepository.Find(x => x.Nombre.Equals(tipoCombustible.Nombre) && x.Borrado == false);
+            if (existsTipoCombustible != null && existsTipoCombustible.Id == tipoCombustible.Id)
             {
-                existTipoCombustible.Nombre = tipoCombustible.Nombre;
-                existTipoCombustible.FechaModificacion = tipoCombustible.FechaModificacion;
-                return tipoCombustibleRepository.Update(existTipoCombustible);
+                existsTipoCombustible.Nombre = tipoCombustible.Nombre;
+                existsTipoCombustible.FechaModificacion = tipoCombustible.FechaModificacion;
+
+                return tipoCombustibleRepository.Update(existsTipoCombustible);
             }
-            return new OperationResult() { Data = null, Message = "Error existe una transmicion con dicho nombre", Success = false };
+
+            return new OperationResult() { Data = null, Message = "Error existe un tipo de combustible con dicho nombre", Success = false };
         }
 
         public OperationResult Delete(TipoCombustible tipoCombustible)

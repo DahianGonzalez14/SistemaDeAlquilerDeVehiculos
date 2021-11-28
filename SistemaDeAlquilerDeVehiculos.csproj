@@ -202,15 +202,13 @@
     <Compile Include="BackEnd\Repositories\Implementations\Repository.cs" />
     <Compile Include="BackEnd\Repositories\Implementations\AlquilerRepository.cs" />
     <Compile Include="BackEnd\Repositories\Interfaces\IRepository.cs" />
-    <Compile Include="FrontEnd\Home\Class1.cs" />
-    <Compile Include="FrontEnd\Home\Menu Principal.cs">
+    <Compile Include="FrontEnd\Home\MenuPrincipalForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrontEnd\Home\Menu Principal.Designer.cs">
-      <DependentUpon>Menu Principal.cs</DependentUpon>
+    <Compile Include="FrontEnd\Home\MenuPrincipalForm.Designer.cs">
+      <DependentUpon>MenuPrincipalForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FrontEnd\Modules\Alquiler\Class1.cs" />
-    <Compile Include="FrontEnd\Modules\Mantenimiento\Class1.cs" />
     <Compile Include="FrontEnd\Modules\Mantenimiento\MantenimientoMarca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,7 +221,6 @@
     <Compile Include="FrontEnd\Modules\Mantenimiento\MantenimientoTipoCombustible.Designer.cs">
       <DependentUpon>MantenimientoTipoCombustible.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Reportes\Class1.cs" />
     <Compile Include="FrontEnd\Modules\Reportes\ReporteMarca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,8 +245,8 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrontEnd\Home\Menu Principal.resx">
-      <DependentUpon>Menu Principal.cs</DependentUpon>
+    <EmbeddedResource Include="FrontEnd\Home\MenuPrincipalForm.resx">
+      <DependentUpon>MenuPrincipalForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\MantenimientoMarca.resx">
       <DependentUpon>MantenimientoMarca.cs</DependentUpon>

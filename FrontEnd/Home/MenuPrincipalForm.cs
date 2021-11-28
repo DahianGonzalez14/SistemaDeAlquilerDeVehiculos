@@ -76,5 +76,20 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             ReporteTipoCombustible ReporCombus = new ReporteTipoCombustible();
             ReporCombus.Show();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Menu_Principal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reporteTipoTransmisionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

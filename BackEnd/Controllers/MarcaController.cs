@@ -30,31 +30,27 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
 
         public OperationResult Create(Marca marca)
         {
-            var existMarca = marcaRepository.Find(x => x.Nombre.Equals(marca.Nombre));
-            if (existMarca == null)
+            var existsMarca = marcaRepository.Find(x => x.Nombre.Equals(marca.Nombre) && x.Borrado == false);
+            if (existsMarca != null)
             {
-
-                var createdMarca = marcaRepository.Create(marca);
-                return new OperationResult() { Data = createdMarca, Message = "Marca creado satisfatoria mente", Success = true };
-                
-
+                return new OperationResult() { Data = null, Message = "Error marca existente", Success = false };
             }
-           
-            return new OperationResult() { Data = null, Message = "Error modelo existente", Success = false };
 
+            var createdMarca = marcaRepository.Create(marca);
+            return new OperationResult() { Data = createdMarca, Message = "Marca creada satisfatoriamente", Success = true };
         }
 
         public OperationResult Edit(Marca marca)
         {
-            var existMarca = marcaRepository.Find(x => x.Id.Equals(marca.Id));
-            if (existMarca != null)
+            var existMarca = marcaRepository.Find(x => x.Id.Equals(marca.Id) && x.Borrado == false);
+            if (existMarca != null && existMarca.Id == marca.Id)
             {
                 existMarca.Nombre = marca.Nombre;
-                existMarca.FechaModificacion = marca.FechaModificacion;
+                existMarca.FechaModificacion = DateTime.Now;
 
                 return marcaRepository.Update(existMarca);
             }
-            return new OperationResult() { Data = null, Message = "Error existe una transmicion con dicho nombre", Success = false };
+            return new OperationResult() { Data = null, Message = "Error existe una marca con dicho nombre", Success = false };
         }
 
         public OperationResult Delete(Marca marca)

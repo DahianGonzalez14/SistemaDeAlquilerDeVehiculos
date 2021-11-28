@@ -29,9 +29,9 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
 
         public OperationResult Create(Cliente cliente)
         {
-            var existsCliente = clienteRepository.Find(x => x.Cedula.Equals(cliente.Cedula));
+            var existsCliente = clienteRepository.Find(x => x.Cedula.Equals(cliente.Cedula) && x.Borrado == false);
 
-            if (existsCliente == null)
+            if (existsCliente != null)
             {
                 return new OperationResult() { Data = null, Message = "Error cliente existente", Success = false };
             }
@@ -42,10 +42,18 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
 
         public OperationResult Edit(Cliente cliente)
         {
-            var existsCliente = clienteRepository.Find(x => x.Cedula.Equals(cliente.Cedula));
-            if (existsCliente != null || existsCliente.Id == cliente.Id)
+            var existsCliente = clienteRepository.Find(x => x.Cedula.Equals(cliente.Cedula) && x.Borrado == false);
+            if (existsCliente != null && existsCliente.Id == cliente.Id)
             {
-                return clienteRepository.Update(cliente);
+                existsCliente.Nombre = cliente.Nombre;
+                existsCliente.Apellido = cliente.Apellido;
+                existsCliente.Direccion = cliente.Direccion;
+                existsCliente.Telefono = cliente.Telefono;
+                existsCliente.Correo = cliente.Correo;
+                existsCliente.Cedula = cliente.Cedula;
+                existsCliente.FechaModificacion = DateTime.Now;
+
+                return clienteRepository.Update(existsCliente);
             }
             return new OperationResult() { Data = null, Message = "Error existe un cliente con dicha cédula", Success = false };
         }
