@@ -107,7 +107,6 @@ C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\bin\Debug\B
 C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
 C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Home.Menu_Principal.resources
 C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.exe.licenses
-C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoTipoCombustible.resources
 C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\bin\Debug\Bunifu.Dataviz.WinForms.dll
 C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\bin\Debug\Bunifu.Licensing.dll
 C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
@@ -181,7 +180,6 @@ C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerD
 C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.exe.licenses
 C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.Migrations.enableNullOnModificationDate.resources
 C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.Migrations.enableNullOnModificationDate.resources
-C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoMarca.resources
 C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes.ReporteTipoCombustible.resources
 C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoMarca.resources
 C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes.ReporteMarca.resources
@@ -189,3 +187,17 @@ C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerD
 C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes.CrearClienteForm.resources
 C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes.ActualizarClienteForm.resources
 C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes.BorrarClienteForm.resources
+C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes.ActualizarClienteForm.resources
+C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes.BorrarClienteForm.resources
+C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes.CrearClienteForm.resources
+C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes.ReporteMarca.resources
+C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoTipoCombustible.ActualizarTipoCombustible.resources
+C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoTipoCombustible.CrearTipoCombustible.resources
+C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoTipoCombustible.DeleteTipoCombustible.resources
+C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMantenimiento.ActualizarMarca.resources
+C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMantenimiento.CrearMarca.resources
+C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMantenimiento.DeleteMarca.resources
+C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoVehiculo.ActualizarVehiculo.resources
+C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoVehiculo.CrearVehiculo.resources
+C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoVehiculo.DeleteVehiculo.resources
+C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes.ReporteVehiculo.resources

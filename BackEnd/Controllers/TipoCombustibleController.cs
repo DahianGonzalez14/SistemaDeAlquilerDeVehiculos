@@ -41,7 +41,7 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities
 
         public OperationResult Edit(TipoCombustible tipoCombustible)
         {
-            var existsTipoCombustible = tipoCombustibleRepository.Find(x => x.Nombre.Equals(tipoCombustible.Nombre) && x.Borrado == false);
+            var existsTipoCombustible = tipoCombustibleRepository.Find(x => x.Id.Equals(tipoCombustible.Id) && x.Borrado == false);
             if (existsTipoCombustible != null && existsTipoCombustible.Id == tipoCombustible.Id)
             {
                 existsTipoCombustible.Nombre = tipoCombustible.Nombre;
