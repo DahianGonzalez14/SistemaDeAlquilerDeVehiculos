@@ -186,3 +186,6 @@ C:\Users\Michael Castillo\Desktop\final\SistemaDeAlquilerDeVehiculos\obj\Debug\S
 C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoMarca.resources
 C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes.ReporteMarca.resources
 C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes.ReporteTipoCombustible.resources
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes.CrearClienteForm.resources
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes.ActualizarClienteForm.resources
+C:\Users\ADMIN\Desktop\SistemaDeAlquilerDeVehiculos\obj\Debug\SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes.BorrarClienteForm.resources

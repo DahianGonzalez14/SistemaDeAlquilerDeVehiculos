@@ -33,43 +33,43 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.borrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.borrarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoModeloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mantenimientoTipoCombustibleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mantenimientoTipoTransmisionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.borrarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoVehiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.borrarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoTipoCombustibleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.borrarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoTipoTransmisionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.borrarToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alquilerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alquilerDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.devoluciónDeVehiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteModeloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteVehiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteTipoCobustibleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteTipoTransmisionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reporteVehiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alquilerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alquilerDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.crearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.borrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.crearToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.borrarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.crearToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.borrarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.crearToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.borrarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.crearToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.borrarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.crearToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.borrarToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.devoluciónDeVehiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteVerTodosLosAlquileresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteHistorialDeAlquileresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -110,6 +110,27 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.mantenimientoClienteToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
             this.mantenimientoClienteToolStripMenuItem.Text = "Clientes";
             // 
+            // crearToolStripMenuItem
+            // 
+            this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
+            this.crearToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.crearToolStripMenuItem.Text = "Crear";
+            this.crearToolStripMenuItem.Click += new System.EventHandler(this.crearToolStripMenuItem_Click);
+            // 
+            // actualizarToolStripMenuItem
+            // 
+            this.actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
+            this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.actualizarToolStripMenuItem.Text = "Actualizar";
+            this.actualizarToolStripMenuItem.Click += new System.EventHandler(this.actualizarToolStripMenuItem_Click);
+            // 
+            // borrarToolStripMenuItem
+            // 
+            this.borrarToolStripMenuItem.Name = "borrarToolStripMenuItem";
+            this.borrarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.borrarToolStripMenuItem.Text = "Borrar";
+            this.borrarToolStripMenuItem.Click += new System.EventHandler(this.borrarToolStripMenuItem_Click);
+            // 
             // mantenimientoMarcaToolStripMenuItem
             // 
             this.mantenimientoMarcaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -121,6 +142,24 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.mantenimientoMarcaToolStripMenuItem.Text = "Marcas";
             this.mantenimientoMarcaToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoMarcaToolStripMenuItem_Click);
             // 
+            // crearToolStripMenuItem1
+            // 
+            this.crearToolStripMenuItem1.Name = "crearToolStripMenuItem1";
+            this.crearToolStripMenuItem1.Size = new System.Drawing.Size(158, 26);
+            this.crearToolStripMenuItem1.Text = "Crear";
+            // 
+            // actualizarToolStripMenuItem1
+            // 
+            this.actualizarToolStripMenuItem1.Name = "actualizarToolStripMenuItem1";
+            this.actualizarToolStripMenuItem1.Size = new System.Drawing.Size(158, 26);
+            this.actualizarToolStripMenuItem1.Text = "Actualizar";
+            // 
+            // borrarToolStripMenuItem1
+            // 
+            this.borrarToolStripMenuItem1.Name = "borrarToolStripMenuItem1";
+            this.borrarToolStripMenuItem1.Size = new System.Drawing.Size(158, 26);
+            this.borrarToolStripMenuItem1.Text = "Borrar";
+            // 
             // mantenimientoModeloToolStripMenuItem
             // 
             this.mantenimientoModeloToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -130,6 +169,52 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.mantenimientoModeloToolStripMenuItem.Name = "mantenimientoModeloToolStripMenuItem";
             this.mantenimientoModeloToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
             this.mantenimientoModeloToolStripMenuItem.Text = "Modelos";
+            // 
+            // crearToolStripMenuItem2
+            // 
+            this.crearToolStripMenuItem2.Name = "crearToolStripMenuItem2";
+            this.crearToolStripMenuItem2.Size = new System.Drawing.Size(158, 26);
+            this.crearToolStripMenuItem2.Text = "Crear";
+            // 
+            // actualizarToolStripMenuItem2
+            // 
+            this.actualizarToolStripMenuItem2.Name = "actualizarToolStripMenuItem2";
+            this.actualizarToolStripMenuItem2.Size = new System.Drawing.Size(158, 26);
+            this.actualizarToolStripMenuItem2.Text = "Actualizar";
+            // 
+            // borrarToolStripMenuItem2
+            // 
+            this.borrarToolStripMenuItem2.Name = "borrarToolStripMenuItem2";
+            this.borrarToolStripMenuItem2.Size = new System.Drawing.Size(158, 26);
+            this.borrarToolStripMenuItem2.Text = "Borrar";
+            // 
+            // mantenimientoVehiculoToolStripMenuItem
+            // 
+            this.mantenimientoVehiculoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.crearToolStripMenuItem3,
+            this.actualizarToolStripMenuItem3,
+            this.borrarToolStripMenuItem3});
+            this.mantenimientoVehiculoToolStripMenuItem.Name = "mantenimientoVehiculoToolStripMenuItem";
+            this.mantenimientoVehiculoToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
+            this.mantenimientoVehiculoToolStripMenuItem.Text = "Vehículos";
+            // 
+            // crearToolStripMenuItem3
+            // 
+            this.crearToolStripMenuItem3.Name = "crearToolStripMenuItem3";
+            this.crearToolStripMenuItem3.Size = new System.Drawing.Size(158, 26);
+            this.crearToolStripMenuItem3.Text = "Crear";
+            // 
+            // actualizarToolStripMenuItem3
+            // 
+            this.actualizarToolStripMenuItem3.Name = "actualizarToolStripMenuItem3";
+            this.actualizarToolStripMenuItem3.Size = new System.Drawing.Size(158, 26);
+            this.actualizarToolStripMenuItem3.Text = "Actualizar";
+            // 
+            // borrarToolStripMenuItem3
+            // 
+            this.borrarToolStripMenuItem3.Name = "borrarToolStripMenuItem3";
+            this.borrarToolStripMenuItem3.Size = new System.Drawing.Size(158, 26);
+            this.borrarToolStripMenuItem3.Text = "Borrar";
             // 
             // mantenimientoTipoCombustibleToolStripMenuItem
             // 
@@ -142,6 +227,24 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.mantenimientoTipoCombustibleToolStripMenuItem.Text = "Tipos de Combustibles";
             this.mantenimientoTipoCombustibleToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoTipoCombustibleToolStripMenuItem_Click);
             // 
+            // crearToolStripMenuItem4
+            // 
+            this.crearToolStripMenuItem4.Name = "crearToolStripMenuItem4";
+            this.crearToolStripMenuItem4.Size = new System.Drawing.Size(158, 26);
+            this.crearToolStripMenuItem4.Text = "Crear";
+            // 
+            // actualizarToolStripMenuItem4
+            // 
+            this.actualizarToolStripMenuItem4.Name = "actualizarToolStripMenuItem4";
+            this.actualizarToolStripMenuItem4.Size = new System.Drawing.Size(158, 26);
+            this.actualizarToolStripMenuItem4.Text = "Actualizar";
+            // 
+            // borrarToolStripMenuItem4
+            // 
+            this.borrarToolStripMenuItem4.Name = "borrarToolStripMenuItem4";
+            this.borrarToolStripMenuItem4.Size = new System.Drawing.Size(158, 26);
+            this.borrarToolStripMenuItem4.Text = "Borrar";
+            // 
             // mantenimientoTipoTransmisionToolStripMenuItem
             // 
             this.mantenimientoTipoTransmisionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -153,15 +256,44 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.mantenimientoTipoTransmisionToolStripMenuItem.Text = "Tipos de Transmisiones";
             this.mantenimientoTipoTransmisionToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoTipoTransmisionToolStripMenuItem_Click);
             // 
-            // mantenimientoVehiculoToolStripMenuItem
+            // crearToolStripMenuItem5
             // 
-            this.mantenimientoVehiculoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.crearToolStripMenuItem3,
-            this.actualizarToolStripMenuItem3,
-            this.borrarToolStripMenuItem3});
-            this.mantenimientoVehiculoToolStripMenuItem.Name = "mantenimientoVehiculoToolStripMenuItem";
-            this.mantenimientoVehiculoToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
-            this.mantenimientoVehiculoToolStripMenuItem.Text = "Vehículos";
+            this.crearToolStripMenuItem5.Name = "crearToolStripMenuItem5";
+            this.crearToolStripMenuItem5.Size = new System.Drawing.Size(158, 26);
+            this.crearToolStripMenuItem5.Text = "Crear";
+            // 
+            // actualizarToolStripMenuItem5
+            // 
+            this.actualizarToolStripMenuItem5.Name = "actualizarToolStripMenuItem5";
+            this.actualizarToolStripMenuItem5.Size = new System.Drawing.Size(158, 26);
+            this.actualizarToolStripMenuItem5.Text = "Actualizar";
+            // 
+            // borrarToolStripMenuItem5
+            // 
+            this.borrarToolStripMenuItem5.Name = "borrarToolStripMenuItem5";
+            this.borrarToolStripMenuItem5.Size = new System.Drawing.Size(158, 26);
+            this.borrarToolStripMenuItem5.Text = "Borrar";
+            // 
+            // alquilerToolStripMenuItem
+            // 
+            this.alquilerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.alquilerDeToolStripMenuItem,
+            this.devoluciónDeVehiculoToolStripMenuItem});
+            this.alquilerToolStripMenuItem.Name = "alquilerToolStripMenuItem";
+            this.alquilerToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.alquilerToolStripMenuItem.Text = "Alquiler";
+            // 
+            // alquilerDeToolStripMenuItem
+            // 
+            this.alquilerDeToolStripMenuItem.Name = "alquilerDeToolStripMenuItem";
+            this.alquilerDeToolStripMenuItem.Size = new System.Drawing.Size(248, 26);
+            this.alquilerDeToolStripMenuItem.Text = "Alquiler de Vehículo ";
+            // 
+            // devoluciónDeVehiculoToolStripMenuItem
+            // 
+            this.devoluciónDeVehiculoToolStripMenuItem.Name = "devoluciónDeVehiculoToolStripMenuItem";
+            this.devoluciónDeVehiculoToolStripMenuItem.Size = new System.Drawing.Size(248, 26);
+            this.devoluciónDeVehiculoToolStripMenuItem.Text = "Devolución de Vehículo";
             // 
             // reportesToolStripMenuItem
             // 
@@ -197,6 +329,12 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.reporteModeloToolStripMenuItem.Size = new System.Drawing.Size(317, 26);
             this.reporteModeloToolStripMenuItem.Text = "Reporte de Modelos";
             // 
+            // reporteVehiculoToolStripMenuItem
+            // 
+            this.reporteVehiculoToolStripMenuItem.Name = "reporteVehiculoToolStripMenuItem";
+            this.reporteVehiculoToolStripMenuItem.Size = new System.Drawing.Size(317, 26);
+            this.reporteVehiculoToolStripMenuItem.Text = "Reporte de Vehículos";
+            // 
             // reporteTipoCobustibleToolStripMenuItem
             // 
             this.reporteTipoCobustibleToolStripMenuItem.Name = "reporteTipoCobustibleToolStripMenuItem";
@@ -211,26 +349,17 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.reporteTipoTransmisionToolStripMenuItem.Text = "Reporte de Tipo de Transmisiones";
             this.reporteTipoTransmisionToolStripMenuItem.Click += new System.EventHandler(this.reporteTipoTransmisionToolStripMenuItem_Click);
             // 
-            // reporteVehiculoToolStripMenuItem
+            // reporteVerTodosLosAlquileresToolStripMenuItem
             // 
-            this.reporteVehiculoToolStripMenuItem.Name = "reporteVehiculoToolStripMenuItem";
-            this.reporteVehiculoToolStripMenuItem.Size = new System.Drawing.Size(317, 26);
-            this.reporteVehiculoToolStripMenuItem.Text = "Reporte de Vehículos";
+            this.reporteVerTodosLosAlquileresToolStripMenuItem.Name = "reporteVerTodosLosAlquileresToolStripMenuItem";
+            this.reporteVerTodosLosAlquileresToolStripMenuItem.Size = new System.Drawing.Size(317, 26);
+            this.reporteVerTodosLosAlquileresToolStripMenuItem.Text = "Reporte de Todos los Alquileres";
             // 
-            // alquilerToolStripMenuItem
+            // reporteHistorialDeAlquileresToolStripMenuItem
             // 
-            this.alquilerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.alquilerDeToolStripMenuItem,
-            this.devoluciónDeVehiculoToolStripMenuItem});
-            this.alquilerToolStripMenuItem.Name = "alquilerToolStripMenuItem";
-            this.alquilerToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
-            this.alquilerToolStripMenuItem.Text = "Alquiler";
-            // 
-            // alquilerDeToolStripMenuItem
-            // 
-            this.alquilerDeToolStripMenuItem.Name = "alquilerDeToolStripMenuItem";
-            this.alquilerDeToolStripMenuItem.Size = new System.Drawing.Size(248, 26);
-            this.alquilerDeToolStripMenuItem.Text = "Alquiler de Vehículo ";
+            this.reporteHistorialDeAlquileresToolStripMenuItem.Name = "reporteHistorialDeAlquileresToolStripMenuItem";
+            this.reporteHistorialDeAlquileresToolStripMenuItem.Size = new System.Drawing.Size(317, 26);
+            this.reporteHistorialDeAlquileresToolStripMenuItem.Text = "Reporte de Historial de Alquileres";
             // 
             // label2
             // 
@@ -252,138 +381,12 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.panel1.Size = new System.Drawing.Size(948, 444);
             this.panel1.TabIndex = 5;
             // 
-            // crearToolStripMenuItem
-            // 
-            this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
-            this.crearToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.crearToolStripMenuItem.Text = "Crear";
-            // 
-            // actualizarToolStripMenuItem
-            // 
-            this.actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
-            this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.actualizarToolStripMenuItem.Text = "Actualizar";
-            // 
-            // borrarToolStripMenuItem
-            // 
-            this.borrarToolStripMenuItem.Name = "borrarToolStripMenuItem";
-            this.borrarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.borrarToolStripMenuItem.Text = "Borrar";
-            // 
-            // crearToolStripMenuItem1
-            // 
-            this.crearToolStripMenuItem1.Name = "crearToolStripMenuItem1";
-            this.crearToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.crearToolStripMenuItem1.Text = "Crear";
-            // 
-            // actualizarToolStripMenuItem1
-            // 
-            this.actualizarToolStripMenuItem1.Name = "actualizarToolStripMenuItem1";
-            this.actualizarToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.actualizarToolStripMenuItem1.Text = "Actualizar";
-            // 
-            // borrarToolStripMenuItem1
-            // 
-            this.borrarToolStripMenuItem1.Name = "borrarToolStripMenuItem1";
-            this.borrarToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.borrarToolStripMenuItem1.Text = "Borrar";
-            // 
-            // crearToolStripMenuItem2
-            // 
-            this.crearToolStripMenuItem2.Name = "crearToolStripMenuItem2";
-            this.crearToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
-            this.crearToolStripMenuItem2.Text = "Crear";
-            // 
-            // actualizarToolStripMenuItem2
-            // 
-            this.actualizarToolStripMenuItem2.Name = "actualizarToolStripMenuItem2";
-            this.actualizarToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
-            this.actualizarToolStripMenuItem2.Text = "Actualizar";
-            // 
-            // borrarToolStripMenuItem2
-            // 
-            this.borrarToolStripMenuItem2.Name = "borrarToolStripMenuItem2";
-            this.borrarToolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
-            this.borrarToolStripMenuItem2.Text = "Borrar";
-            // 
-            // crearToolStripMenuItem3
-            // 
-            this.crearToolStripMenuItem3.Name = "crearToolStripMenuItem3";
-            this.crearToolStripMenuItem3.Size = new System.Drawing.Size(224, 26);
-            this.crearToolStripMenuItem3.Text = "Crear";
-            // 
-            // actualizarToolStripMenuItem3
-            // 
-            this.actualizarToolStripMenuItem3.Name = "actualizarToolStripMenuItem3";
-            this.actualizarToolStripMenuItem3.Size = new System.Drawing.Size(224, 26);
-            this.actualizarToolStripMenuItem3.Text = "Actualizar";
-            // 
-            // borrarToolStripMenuItem3
-            // 
-            this.borrarToolStripMenuItem3.Name = "borrarToolStripMenuItem3";
-            this.borrarToolStripMenuItem3.Size = new System.Drawing.Size(224, 26);
-            this.borrarToolStripMenuItem3.Text = "Borrar";
-            // 
-            // crearToolStripMenuItem4
-            // 
-            this.crearToolStripMenuItem4.Name = "crearToolStripMenuItem4";
-            this.crearToolStripMenuItem4.Size = new System.Drawing.Size(224, 26);
-            this.crearToolStripMenuItem4.Text = "Crear";
-            // 
-            // actualizarToolStripMenuItem4
-            // 
-            this.actualizarToolStripMenuItem4.Name = "actualizarToolStripMenuItem4";
-            this.actualizarToolStripMenuItem4.Size = new System.Drawing.Size(224, 26);
-            this.actualizarToolStripMenuItem4.Text = "Actualizar";
-            // 
-            // borrarToolStripMenuItem4
-            // 
-            this.borrarToolStripMenuItem4.Name = "borrarToolStripMenuItem4";
-            this.borrarToolStripMenuItem4.Size = new System.Drawing.Size(224, 26);
-            this.borrarToolStripMenuItem4.Text = "Borrar";
-            // 
-            // crearToolStripMenuItem5
-            // 
-            this.crearToolStripMenuItem5.Name = "crearToolStripMenuItem5";
-            this.crearToolStripMenuItem5.Size = new System.Drawing.Size(224, 26);
-            this.crearToolStripMenuItem5.Text = "Crear";
-            // 
-            // actualizarToolStripMenuItem5
-            // 
-            this.actualizarToolStripMenuItem5.Name = "actualizarToolStripMenuItem5";
-            this.actualizarToolStripMenuItem5.Size = new System.Drawing.Size(224, 26);
-            this.actualizarToolStripMenuItem5.Text = "Actualizar";
-            // 
-            // borrarToolStripMenuItem5
-            // 
-            this.borrarToolStripMenuItem5.Name = "borrarToolStripMenuItem5";
-            this.borrarToolStripMenuItem5.Size = new System.Drawing.Size(224, 26);
-            this.borrarToolStripMenuItem5.Text = "Borrar";
-            // 
-            // devoluciónDeVehiculoToolStripMenuItem
-            // 
-            this.devoluciónDeVehiculoToolStripMenuItem.Name = "devoluciónDeVehiculoToolStripMenuItem";
-            this.devoluciónDeVehiculoToolStripMenuItem.Size = new System.Drawing.Size(248, 26);
-            this.devoluciónDeVehiculoToolStripMenuItem.Text = "Devolución de Vehículo";
-            // 
-            // reporteVerTodosLosAlquileresToolStripMenuItem
-            // 
-            this.reporteVerTodosLosAlquileresToolStripMenuItem.Name = "reporteVerTodosLosAlquileresToolStripMenuItem";
-            this.reporteVerTodosLosAlquileresToolStripMenuItem.Size = new System.Drawing.Size(317, 26);
-            this.reporteVerTodosLosAlquileresToolStripMenuItem.Text = "Reporte de Todos los Alquileres";
-            // 
-            // reporteHistorialDeAlquileresToolStripMenuItem
-            // 
-            this.reporteHistorialDeAlquileresToolStripMenuItem.Name = "reporteHistorialDeAlquileresToolStripMenuItem";
-            this.reporteHistorialDeAlquileresToolStripMenuItem.Size = new System.Drawing.Size(317, 26);
-            this.reporteHistorialDeAlquileresToolStripMenuItem.Text = "Reporte de Historial de Alquileres";
-            // 
             // Menu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1154, 597);
+            this.ClientSize = new System.Drawing.Size(1154, 609);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);

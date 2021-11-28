@@ -1,4 +1,5 @@
 ﻿using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento;
+using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes;
 using System;
 using System.Collections.Generic;
@@ -90,6 +91,24 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
         private void reporteTipoTransmisionToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void crearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CrearClienteForm crearClienteForm = new CrearClienteForm();
+            crearClienteForm.ShowDialog();
+        }
+
+        private void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ActualizarClienteForm actualizarClienteForm = new ActualizarClienteForm();
+            actualizarClienteForm.ShowDialog();
+        }
+
+        private void borrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BorrarClienteForm borrarClienteForm = new BorrarClienteForm();
+            borrarClienteForm.ShowDialog();
         }
     }
 }
