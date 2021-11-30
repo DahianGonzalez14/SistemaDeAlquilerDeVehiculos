@@ -309,6 +309,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.devoluciónDeVehiculoToolStripMenuItem.Name = "devoluciónDeVehiculoToolStripMenuItem";
             this.devoluciónDeVehiculoToolStripMenuItem.Size = new System.Drawing.Size(248, 26);
             this.devoluciónDeVehiculoToolStripMenuItem.Text = "Devolución de Vehículo";
+            this.devoluciónDeVehiculoToolStripMenuItem.Click += new System.EventHandler(this.devoluciónDeVehiculoToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -376,6 +377,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.reporteHistorialDeAlquileresToolStripMenuItem.Name = "reporteHistorialDeAlquileresToolStripMenuItem";
             this.reporteHistorialDeAlquileresToolStripMenuItem.Size = new System.Drawing.Size(317, 26);
             this.reporteHistorialDeAlquileresToolStripMenuItem.Text = "Reporte de Historial de Alquileres";
+            this.reporteHistorialDeAlquileresToolStripMenuItem.Click += new System.EventHandler(this.reporteHistorialDeAlquileresToolStripMenuItem_Click);
             // 
             // label2
             // 
@@ -383,7 +385,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.label2.Location = new System.Drawing.Point(282, 532);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(543, 16);
+            this.label2.Size = new System.Drawing.Size(578, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Copyright © 2021 Compañia de Alquiler de Vehiculos S.L. Todos los derechos reserv" +
     "ados.";

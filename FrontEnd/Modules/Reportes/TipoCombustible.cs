@@ -22,12 +22,17 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes
 
         private void ReporteTipoCombustible_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = tipoCombus.getAll();
+            Buscar.DataSource = tipoCombus.getAll();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = tipoCombus.findById(Int32.Parse(textBox1.Text));
+            
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            Buscar.DataSource = tipoCombus.findById(Int32.Parse(txt1.Text));
         }
     }
 }

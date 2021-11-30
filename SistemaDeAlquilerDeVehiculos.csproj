@@ -209,7 +209,13 @@
     <Compile Include="FrontEnd\Home\MenuPrincipalForm.Designer.cs">
       <DependentUpon>MenuPrincipalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Alquiler\Class1.cs" />
+    <Compile Include="FrontEnd\Modules\AlquilerModulo\Class1.cs" />
+    <Compile Include="FrontEnd\Modules\AlquilerModulo\DevolucionVehiculocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Modules\AlquilerModulo\DevolucionVehiculocs.Designer.cs">
+      <DependentUpon>DevolucionVehiculocs.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrontEnd\Modules\Mantenimiento\Clientes\ActualizarClienteForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -318,6 +324,12 @@
     <Compile Include="FrontEnd\Modules\Mantenimiento\Marcas\BorrarMarca.Designer.cs">
       <DependentUpon>BorrarMarca.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrontEnd\Modules\Reportes\HistorialAlquiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Modules\Reportes\HistorialAlquiler.Designer.cs">
+      <DependentUpon>HistorialAlquiler.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrontEnd\Modules\Reportes\Marca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -349,6 +361,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrontEnd\Home\MenuPrincipalForm.resx">
       <DependentUpon>MenuPrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Modules\AlquilerModulo\DevolucionVehiculocs.resx">
+      <DependentUpon>DevolucionVehiculocs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Clientes\ActualizarClienteForm.resx">
       <DependentUpon>ActualizarClienteForm.cs</DependentUpon>
@@ -403,6 +418,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Marcas\BorrarMarca.resx">
       <DependentUpon>BorrarMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Modules\Reportes\HistorialAlquiler.resx">
+      <DependentUpon>HistorialAlquiler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\Modules\Reportes\Marca.resx">
       <DependentUpon>Marca.cs</DependentUpon>
