@@ -26,7 +26,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = marca.findById(Int32.Parse(txt1.Text));
+            Buscar.DataSource = marca.findById(Int32.Parse(txt1.Text));
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

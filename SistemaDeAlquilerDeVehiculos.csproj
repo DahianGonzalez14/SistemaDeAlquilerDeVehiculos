@@ -209,11 +209,10 @@
     <Compile Include="FrontEnd\Home\MenuPrincipalForm.Designer.cs">
       <DependentUpon>MenuPrincipalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\AlquilerModulo\Class1.cs" />
-    <Compile Include="FrontEnd\Modules\AlquilerModulo\DevolucionVehiculocs.cs">
+    <Compile Include="FrontEnd\Modules\Alquiler\DevolucionVehiculocs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrontEnd\Modules\AlquilerModulo\DevolucionVehiculocs.Designer.cs">
+    <Compile Include="FrontEnd\Modules\Alquiler\DevolucionVehiculocs.Designer.cs">
       <DependentUpon>DevolucionVehiculocs.cs</DependentUpon>
     </Compile>
     <Compile Include="FrontEnd\Modules\Mantenimiento\Clientes\ActualizarClienteForm.cs">
@@ -362,7 +361,7 @@
     <EmbeddedResource Include="FrontEnd\Home\MenuPrincipalForm.resx">
       <DependentUpon>MenuPrincipalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrontEnd\Modules\AlquilerModulo\DevolucionVehiculocs.resx">
+    <EmbeddedResource Include="FrontEnd\Modules\Alquiler\DevolucionVehiculocs.resx">
       <DependentUpon>DevolucionVehiculocs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Clientes\ActualizarClienteForm.resx">
