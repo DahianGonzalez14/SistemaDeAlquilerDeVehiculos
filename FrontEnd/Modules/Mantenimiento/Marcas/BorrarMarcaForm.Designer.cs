@@ -1,6 +1,7 @@
-﻿namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Modelos
+﻿
+namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMantenimiento
 {
-    partial class BorrarModeloForm
+    partial class BorrarMarcaForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,26 +29,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BorrarModeloForm));
-            this.panelBorrarModelo = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BorrarMarcaForm));
+            this.panelBorrarMarca = new System.Windows.Forms.Panel();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lNombre = new System.Windows.Forms.Label();
-            this.dgvBorrarModelo = new System.Windows.Forms.DataGridView();
-            this.labelBorrarModeloMantenimiento = new System.Windows.Forms.Label();
-            this.panelBorrarModelo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBorrarModelo)).BeginInit();
+            this.dgvBorrarMarca = new System.Windows.Forms.DataGridView();
+            this.labelBorrarMarcaMantenimiento = new System.Windows.Forms.Label();
+            this.panelBorrarMarca.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBorrarMarca)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelBorrarModelo
+            // panelBorrarMarca
             // 
-            this.panelBorrarModelo.Controls.Add(this.btnBorrar);
-            this.panelBorrarModelo.Controls.Add(this.txtNombre);
-            this.panelBorrarModelo.Controls.Add(this.lNombre);
-            this.panelBorrarModelo.Location = new System.Drawing.Point(85, 63);
-            this.panelBorrarModelo.Name = "panelBorrarModelo";
-            this.panelBorrarModelo.Size = new System.Drawing.Size(1005, 168);
-            this.panelBorrarModelo.TabIndex = 47;
+            this.panelBorrarMarca.Controls.Add(this.btnBorrar);
+            this.panelBorrarMarca.Controls.Add(this.txtNombre);
+            this.panelBorrarMarca.Controls.Add(this.lNombre);
+            this.panelBorrarMarca.Location = new System.Drawing.Point(76, 91);
+            this.panelBorrarMarca.Name = "panelBorrarMarca";
+            this.panelBorrarMarca.Size = new System.Drawing.Size(1005, 168);
+            this.panelBorrarMarca.TabIndex = 50;
             // 
             // btnBorrar
             // 
@@ -84,46 +85,46 @@
             this.lNombre.TabIndex = 31;
             this.lNombre.Text = "Nombre";
             // 
-            // dgvBorrarModelo
+            // dgvBorrarMarca
             // 
-            this.dgvBorrarModelo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvBorrarModelo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBorrarModelo.Location = new System.Drawing.Point(85, 258);
-            this.dgvBorrarModelo.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvBorrarModelo.Name = "dgvBorrarModelo";
-            this.dgvBorrarModelo.RowHeadersWidth = 51;
-            this.dgvBorrarModelo.Size = new System.Drawing.Size(1005, 268);
-            this.dgvBorrarModelo.TabIndex = 46;
-            this.dgvBorrarModelo.SelectionChanged += new System.EventHandler(this.dgvBorrarModelo_SelectionChanged);
+            this.dgvBorrarMarca.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvBorrarMarca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBorrarMarca.Location = new System.Drawing.Point(76, 286);
+            this.dgvBorrarMarca.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvBorrarMarca.Name = "dgvBorrarMarca";
+            this.dgvBorrarMarca.RowHeadersWidth = 51;
+            this.dgvBorrarMarca.Size = new System.Drawing.Size(1005, 268);
+            this.dgvBorrarMarca.TabIndex = 49;
+            this.dgvBorrarMarca.SelectionChanged += new System.EventHandler(this.dgvBorrarMarca_SelectionChanged);
             // 
-            // labelBorrarModeloMantenimiento
+            // labelBorrarMarcaMantenimiento
             // 
-            this.labelBorrarModeloMantenimiento.AutoSize = true;
-            this.labelBorrarModeloMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBorrarModeloMantenimiento.Location = new System.Drawing.Point(82, 24);
-            this.labelBorrarModeloMantenimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelBorrarModeloMantenimiento.Name = "labelBorrarModeloMantenimiento";
-            this.labelBorrarModeloMantenimiento.Size = new System.Drawing.Size(117, 18);
-            this.labelBorrarModeloMantenimiento.TabIndex = 45;
-            this.labelBorrarModeloMantenimiento.Text = "Borrar Modelo";
+            this.labelBorrarMarcaMantenimiento.AutoSize = true;
+            this.labelBorrarMarcaMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBorrarMarcaMantenimiento.Location = new System.Drawing.Point(73, 52);
+            this.labelBorrarMarcaMantenimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelBorrarMarcaMantenimiento.Name = "labelBorrarMarcaMantenimiento";
+            this.labelBorrarMarcaMantenimiento.Size = new System.Drawing.Size(108, 18);
+            this.labelBorrarMarcaMantenimiento.TabIndex = 48;
+            this.labelBorrarMarcaMantenimiento.Text = "Borrar Marca";
             // 
-            // BorrarModeloForm
+            // BorrarMarcaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1154, 607);
-            this.Controls.Add(this.panelBorrarModelo);
-            this.Controls.Add(this.dgvBorrarModelo);
-            this.Controls.Add(this.labelBorrarModeloMantenimiento);
+            this.Controls.Add(this.panelBorrarMarca);
+            this.Controls.Add(this.dgvBorrarMarca);
+            this.Controls.Add(this.labelBorrarMarcaMantenimiento);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "BorrarModeloForm";
-            this.Text = "Borrar Modelo";
-            this.Load += new System.EventHandler(this.BorrarModeloForm_Load);
-            this.panelBorrarModelo.ResumeLayout(false);
-            this.panelBorrarModelo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBorrarModelo)).EndInit();
+            this.Name = "BorrarMarcaForm";
+            this.Text = "Borrar Marca";
+            this.Load += new System.EventHandler(this.DeleteMarca_Load);
+            this.panelBorrarMarca.ResumeLayout(false);
+            this.panelBorrarMarca.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBorrarMarca)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,11 +132,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panelBorrarModelo;
+        private System.Windows.Forms.Panel panelBorrarMarca;
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lNombre;
-        private System.Windows.Forms.DataGridView dgvBorrarModelo;
-        private System.Windows.Forms.Label labelBorrarModeloMantenimiento;
+        private System.Windows.Forms.DataGridView dgvBorrarMarca;
+        private System.Windows.Forms.Label labelBorrarMarcaMantenimiento;
     }
 }

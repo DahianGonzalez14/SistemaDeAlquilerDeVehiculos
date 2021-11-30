@@ -117,7 +117,7 @@
             // 
             this.labelCrearTipoTransmisionMantenimiento.AutoSize = true;
             this.labelCrearTipoTransmisionMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCrearTipoTransmisionMantenimiento.Location = new System.Drawing.Point(95, 21);
+            this.labelCrearTipoTransmisionMantenimiento.Location = new System.Drawing.Point(72, 26);
             this.labelCrearTipoTransmisionMantenimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCrearTipoTransmisionMantenimiento.Name = "labelCrearTipoTransmisionMantenimiento";
             this.labelCrearTipoTransmisionMantenimiento.Size = new System.Drawing.Size(262, 18);

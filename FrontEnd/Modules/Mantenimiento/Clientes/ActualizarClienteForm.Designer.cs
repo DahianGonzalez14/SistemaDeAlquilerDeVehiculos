@@ -253,7 +253,7 @@
             // 
             this.labelActualizarClienteMantenimiento.AutoSize = true;
             this.labelActualizarClienteMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelActualizarClienteMantenimiento.Location = new System.Drawing.Point(91, 21);
+            this.labelActualizarClienteMantenimiento.Location = new System.Drawing.Point(82, 22);
             this.labelActualizarClienteMantenimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelActualizarClienteMantenimiento.Name = "labelActualizarClienteMantenimiento";
             this.labelActualizarClienteMantenimiento.Size = new System.Drawing.Size(139, 18);

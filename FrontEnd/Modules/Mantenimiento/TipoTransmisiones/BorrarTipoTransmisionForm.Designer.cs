@@ -44,7 +44,7 @@
             this.panelBorrarTipoTransmision.Controls.Add(this.btnBorrar);
             this.panelBorrarTipoTransmision.Controls.Add(this.txtNombre);
             this.panelBorrarTipoTransmision.Controls.Add(this.lNombre);
-            this.panelBorrarTipoTransmision.Location = new System.Drawing.Point(75, 93);
+            this.panelBorrarTipoTransmision.Location = new System.Drawing.Point(85, 63);
             this.panelBorrarTipoTransmision.Name = "panelBorrarTipoTransmision";
             this.panelBorrarTipoTransmision.Size = new System.Drawing.Size(1005, 168);
             this.panelBorrarTipoTransmision.TabIndex = 47;
@@ -88,7 +88,7 @@
             // 
             this.dgvBorrarTipoTransmision.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBorrarTipoTransmision.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBorrarTipoTransmision.Location = new System.Drawing.Point(75, 288);
+            this.dgvBorrarTipoTransmision.Location = new System.Drawing.Point(85, 258);
             this.dgvBorrarTipoTransmision.Margin = new System.Windows.Forms.Padding(4);
             this.dgvBorrarTipoTransmision.Name = "dgvBorrarTipoTransmision";
             this.dgvBorrarTipoTransmision.RowHeadersWidth = 51;
@@ -100,7 +100,7 @@
             // 
             this.labelBorrarClienteMantenimiento.AutoSize = true;
             this.labelBorrarClienteMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBorrarClienteMantenimiento.Location = new System.Drawing.Point(81, 51);
+            this.labelBorrarClienteMantenimiento.Location = new System.Drawing.Point(82, 24);
             this.labelBorrarClienteMantenimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelBorrarClienteMantenimiento.Name = "labelBorrarClienteMantenimiento";
             this.labelBorrarClienteMantenimiento.Size = new System.Drawing.Size(215, 18);

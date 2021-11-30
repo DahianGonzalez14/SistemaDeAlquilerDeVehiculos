@@ -138,7 +138,7 @@
             // 
             this.labelCrearModeloMantenimiento.AutoSize = true;
             this.labelCrearModeloMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCrearModeloMantenimiento.Location = new System.Drawing.Point(95, 21);
+            this.labelCrearModeloMantenimiento.Location = new System.Drawing.Point(72, 22);
             this.labelCrearModeloMantenimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCrearModeloMantenimiento.Name = "labelCrearModeloMantenimiento";
             this.labelCrearModeloMantenimiento.Size = new System.Drawing.Size(164, 18);

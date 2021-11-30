@@ -1,6 +1,7 @@
-﻿namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.TipoTransmisiones
+﻿
+namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMantenimiento
 {
-    partial class ActualizarTipoTransmisionForm
+    partial class ActualizarMarcaForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +29,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActualizarTipoTransmisionForm));
-            this.panelActualizarTipoTransmision = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActualizarMarcaForm));
+            this.panelActualizarMarca = new System.Windows.Forms.Panel();
             this.comboBoxEstatus = new System.Windows.Forms.ComboBox();
             this.labelEstatus = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lNombre = new System.Windows.Forms.Label();
-            this.dgvActualizarTipoTransmision = new System.Windows.Forms.DataGridView();
-            this.labelActualizarTipoTransmisionMantenimiento = new System.Windows.Forms.Label();
-            this.panelActualizarTipoTransmision.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvActualizarTipoTransmision)).BeginInit();
+            this.dgvActualizarMarca = new System.Windows.Forms.DataGridView();
+            this.labelActualizarMarcaMantenimiento = new System.Windows.Forms.Label();
+            this.panelActualizarMarca.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvActualizarMarca)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelActualizarTipoTransmision
+            // panelActualizarMarca
             // 
-            this.panelActualizarTipoTransmision.Controls.Add(this.comboBoxEstatus);
-            this.panelActualizarTipoTransmision.Controls.Add(this.labelEstatus);
-            this.panelActualizarTipoTransmision.Controls.Add(this.btnLimpiar);
-            this.panelActualizarTipoTransmision.Controls.Add(this.btnGuardar);
-            this.panelActualizarTipoTransmision.Controls.Add(this.txtNombre);
-            this.panelActualizarTipoTransmision.Controls.Add(this.lNombre);
-            this.panelActualizarTipoTransmision.Location = new System.Drawing.Point(75, 63);
-            this.panelActualizarTipoTransmision.Name = "panelActualizarTipoTransmision";
-            this.panelActualizarTipoTransmision.Size = new System.Drawing.Size(1005, 153);
-            this.panelActualizarTipoTransmision.TabIndex = 47;
+            this.panelActualizarMarca.Controls.Add(this.comboBoxEstatus);
+            this.panelActualizarMarca.Controls.Add(this.labelEstatus);
+            this.panelActualizarMarca.Controls.Add(this.btnLimpiar);
+            this.panelActualizarMarca.Controls.Add(this.btnGuardar);
+            this.panelActualizarMarca.Controls.Add(this.txtNombre);
+            this.panelActualizarMarca.Controls.Add(this.lNombre);
+            this.panelActualizarMarca.Location = new System.Drawing.Point(76, 57);
+            this.panelActualizarMarca.Name = "panelActualizarMarca";
+            this.panelActualizarMarca.Size = new System.Drawing.Size(1005, 153);
+            this.panelActualizarMarca.TabIndex = 50;
             // 
             // comboBoxEstatus
             // 
@@ -123,46 +124,46 @@
             this.lNombre.Text = "Nombre";
             this.lNombre.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // dgvActualizarTipoTransmision
+            // dgvActualizarMarca
             // 
-            this.dgvActualizarTipoTransmision.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvActualizarTipoTransmision.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvActualizarTipoTransmision.Location = new System.Drawing.Point(75, 249);
-            this.dgvActualizarTipoTransmision.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvActualizarTipoTransmision.Name = "dgvActualizarTipoTransmision";
-            this.dgvActualizarTipoTransmision.RowHeadersWidth = 51;
-            this.dgvActualizarTipoTransmision.Size = new System.Drawing.Size(1005, 347);
-            this.dgvActualizarTipoTransmision.TabIndex = 46;
-            this.dgvActualizarTipoTransmision.SelectionChanged += new System.EventHandler(this.dgvActualizarTipoTransmision_SelectionChanged);
+            this.dgvActualizarMarca.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvActualizarMarca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvActualizarMarca.Location = new System.Drawing.Point(76, 243);
+            this.dgvActualizarMarca.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvActualizarMarca.Name = "dgvActualizarMarca";
+            this.dgvActualizarMarca.RowHeadersWidth = 51;
+            this.dgvActualizarMarca.Size = new System.Drawing.Size(1005, 347);
+            this.dgvActualizarMarca.TabIndex = 49;
+            this.dgvActualizarMarca.SelectionChanged += new System.EventHandler(this.dgvActualizarMarca_SelectionChanged);
             // 
-            // labelActualizarTipoTransmisionMantenimiento
+            // labelActualizarMarcaMantenimiento
             // 
-            this.labelActualizarTipoTransmisionMantenimiento.AutoSize = true;
-            this.labelActualizarTipoTransmisionMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelActualizarTipoTransmisionMantenimiento.Location = new System.Drawing.Point(72, 23);
-            this.labelActualizarTipoTransmisionMantenimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelActualizarTipoTransmisionMantenimiento.Name = "labelActualizarTipoTransmisionMantenimiento";
-            this.labelActualizarTipoTransmisionMantenimiento.Size = new System.Drawing.Size(241, 18);
-            this.labelActualizarTipoTransmisionMantenimiento.TabIndex = 45;
-            this.labelActualizarTipoTransmisionMantenimiento.Text = "Actualizar Tipo de Transmisión";
+            this.labelActualizarMarcaMantenimiento.AutoSize = true;
+            this.labelActualizarMarcaMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelActualizarMarcaMantenimiento.Location = new System.Drawing.Point(73, 17);
+            this.labelActualizarMarcaMantenimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelActualizarMarcaMantenimiento.Name = "labelActualizarMarcaMantenimiento";
+            this.labelActualizarMarcaMantenimiento.Size = new System.Drawing.Size(134, 18);
+            this.labelActualizarMarcaMantenimiento.TabIndex = 48;
+            this.labelActualizarMarcaMantenimiento.Text = "Actualizar Marca";
             // 
-            // ActualizarTipoTransmisionForm
+            // ActualizarMarcaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1154, 607);
-            this.Controls.Add(this.panelActualizarTipoTransmision);
-            this.Controls.Add(this.dgvActualizarTipoTransmision);
-            this.Controls.Add(this.labelActualizarTipoTransmisionMantenimiento);
+            this.Controls.Add(this.panelActualizarMarca);
+            this.Controls.Add(this.dgvActualizarMarca);
+            this.Controls.Add(this.labelActualizarMarcaMantenimiento);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "ActualizarTipoTransmisionForm";
-            this.Text = "Actualizar Tipo de Transmisión";
-            this.Load += new System.EventHandler(this.ActualizarTipoTransmisionForm_Load);
-            this.panelActualizarTipoTransmision.ResumeLayout(false);
-            this.panelActualizarTipoTransmision.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvActualizarTipoTransmision)).EndInit();
+            this.Name = "ActualizarMarcaForm";
+            this.Text = "Actualizar Marca";
+            this.Load += new System.EventHandler(this.ActualizarMarca_Load);
+            this.panelActualizarMarca.ResumeLayout(false);
+            this.panelActualizarMarca.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvActualizarMarca)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,14 +171,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panelActualizarTipoTransmision;
+        private System.Windows.Forms.Panel panelActualizarMarca;
         private System.Windows.Forms.ComboBox comboBoxEstatus;
         private System.Windows.Forms.Label labelEstatus;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lNombre;
-        private System.Windows.Forms.DataGridView dgvActualizarTipoTransmision;
-        private System.Windows.Forms.Label labelActualizarTipoTransmisionMantenimiento;
+        private System.Windows.Forms.DataGridView dgvActualizarMarca;
+        private System.Windows.Forms.Label labelActualizarMarcaMantenimiento;
     }
 }

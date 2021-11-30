@@ -26,75 +26,10 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             InitializeComponent();
         }
 
-        private void bunifuDropdown1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuPanel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuLabel3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuSeparator3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void mantenimientoTipoTransmisionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void mantenimientoTipoCombustibleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void mantenimientoMarcaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void reporteMarcaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void reporteTipoCobustibleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TipoCombustible ReporCombus = new TipoCombustible();
-            ReporCombus.Show();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Menu_Principal_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void reporteTipoTransmisionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+            TipoCombustible reporteTipoCombustible = new TipoCombustible();
+            reporteTipoCombustible.ShowDialog();
         }
 
         private void crearToolStripMenuItem_Click(object sender, EventArgs e)
@@ -135,20 +70,20 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
 
         private void crearToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            CrearMarca crearMarca = new CrearMarca();
-            crearMarca.ShowDialog();
+            CrearMarcaForm crearMarcaForm = new CrearMarcaForm();
+            crearMarcaForm.ShowDialog();
         }
 
         private void actualizarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            ActualizarMarca actualizarMarca = new ActualizarMarca();
-            actualizarMarca.ShowDialog();
+            ActualizarMarcaForm actualizarMarcaForm = new ActualizarMarcaForm();
+            actualizarMarcaForm.ShowDialog();
         }
 
         private void borrarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            DeleteMarca deleteMarca = new DeleteMarca();
-            deleteMarca.ShowDialog();
+            BorrarMarcaForm borrarMarcaForm = new BorrarMarcaForm();
+            borrarMarcaForm.ShowDialog();
         }
 
         private void crearToolStripMenuItem3_Click(object sender, EventArgs e)
@@ -220,6 +155,11 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
         {
             HistorialAlquiler historialAlquiler = new HistorialAlquiler();
             historialAlquiler.ShowDialog();
+        }
+
+        private void Menu_Principal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
