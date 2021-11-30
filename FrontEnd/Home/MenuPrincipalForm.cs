@@ -3,6 +3,7 @@ using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoTipoCombustible;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoVehiculo;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMantenimiento;
+using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.TipoTransmisiones;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes;
 using System;
 using System.Collections.Generic;
@@ -75,7 +76,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
 
         private void reporteTipoCobustibleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ReporteTipoCombustible ReporCombus = new ReporteTipoCombustible();
+            TipoCombustible ReporCombus = new TipoCombustible();
             ReporCombus.Show();
         }
 
@@ -168,8 +169,26 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
 
         private void reporteVehiculoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ReporteVehiculo reporteVehiculo = new ReporteVehiculo();
+            Vehiculo reporteVehiculo = new Vehiculo();
             reporteVehiculo.ShowDialog();
+        }
+
+        private void crearToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            CrearTipoTransmisionForm crearTipoTransmisionForm = new CrearTipoTransmisionForm();
+            crearTipoTransmisionForm.ShowDialog();
+        }
+
+        private void actualizarToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            ActualizarTipoTransmisionForm actualizarTipoTransmisionForm = new ActualizarTipoTransmisionForm();
+            actualizarTipoTransmisionForm.ShowDialog();
+        }
+
+        private void borrarToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            BorrarTipoTransmisionForm borrarTipoTransmisionForm = new BorrarTipoTransmisionForm();
+            borrarTipoTransmisionForm.ShowDialog();
         }
     }
 }
