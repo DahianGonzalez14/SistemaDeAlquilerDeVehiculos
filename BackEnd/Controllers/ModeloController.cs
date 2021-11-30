@@ -43,15 +43,18 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
         public OperationResult Edit(Modelo modelo)
         {
             var existsModelo = modeloRepository.Find(x => x.Nombre.Equals(modelo.Nombre) && x.MarcaId == modelo.MarcaId && x.Borrado == false);
-            if (existsModelo != null && existsModelo.Id == modelo.Id)
+            if (existsModelo != null && existsModelo.Id != modelo.Id)
             {
-                existsModelo.MarcaId = modelo.MarcaId;
-                existsModelo.Nombre = modelo.Nombre;
-                existsModelo.FechaModificacion = DateTime.Now;
-
-                return modeloRepository.Update(existsModelo);
+                return new OperationResult() { Data = null, Message = "Error existe un modelo con dicho nombre", Success = false };      
             }
-            return new OperationResult() { Data = null, Message = "Error existe un modelo con dicho nombre", Success = false };
+
+            var currentModelo = modeloRepository.FindById(modelo.Id);
+            currentModelo.MarcaId = modelo.MarcaId;
+            currentModelo.Nombre = modelo.Nombre;
+            currentModelo.Estatus = modelo.Estatus;
+            currentModelo.FechaModificacion = DateTime.Now;
+
+            return modeloRepository.Update(currentModelo);
         }
 
         public OperationResult Delete(Modelo modelo)

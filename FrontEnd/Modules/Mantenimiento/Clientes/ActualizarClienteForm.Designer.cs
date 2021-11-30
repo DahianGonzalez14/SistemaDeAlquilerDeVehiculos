@@ -78,9 +78,6 @@
             // comboBoxEstatus
             // 
             this.comboBoxEstatus.FormattingEnabled = true;
-            this.comboBoxEstatus.Items.AddRange(new object[] {
-            "Activo",
-            "Inactivo"});
             this.comboBoxEstatus.Location = new System.Drawing.Point(78, 179);
             this.comboBoxEstatus.Name = "comboBoxEstatus";
             this.comboBoxEstatus.Size = new System.Drawing.Size(282, 24);

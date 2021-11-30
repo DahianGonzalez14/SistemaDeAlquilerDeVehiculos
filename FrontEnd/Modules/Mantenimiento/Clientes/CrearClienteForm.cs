@@ -21,21 +21,6 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes
             InitializeComponent();
         }
 
-        private void txtAno_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtMarca_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lCedula_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void CrearClienteForm_Load(object sender, EventArgs e)
         {
             panelCrearCliente.BorderStyle = BorderStyle.FixedSingle;
@@ -57,12 +42,6 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes
             txtCorreo.Text = string.Empty;
             txtCedula.Text = string.Empty;
         }
-
-        private void lTelefono_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtApellido.Text)
@@ -111,11 +90,6 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes
                     }
                 }             
             }
-        }
-
-        private void panelCrearCliente_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)

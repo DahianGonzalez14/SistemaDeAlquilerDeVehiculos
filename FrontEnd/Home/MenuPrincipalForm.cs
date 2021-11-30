@@ -3,6 +3,7 @@ using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoTipoCombustible;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoVehiculo;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMantenimiento;
+using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Modelos;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.TipoTransmisiones;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes;
 using System;
@@ -189,6 +190,24 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
         {
             BorrarTipoTransmisionForm borrarTipoTransmisionForm = new BorrarTipoTransmisionForm();
             borrarTipoTransmisionForm.ShowDialog();
+        }
+
+        private void crearToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            CrearModeloForm crearModeloForm = new CrearModeloForm();
+            crearModeloForm.ShowDialog();
+        }
+
+        private void actualizarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            ActualizarModeloForm actualizarModeloForm= new ActualizarModeloForm();
+            actualizarModeloForm.ShowDialog();
+        }
+
+        private void borrarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            BorrarModeloForm borrarModeloForm= new BorrarModeloForm();
+            borrarModeloForm.ShowDialog();
         }
     }
 }

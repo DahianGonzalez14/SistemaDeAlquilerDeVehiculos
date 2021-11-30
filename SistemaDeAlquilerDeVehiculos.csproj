@@ -183,6 +183,7 @@
     <Compile Include="BackEnd\Controllers\VehiculoController.cs" />
     <Compile Include="BackEnd\Controllers\ClienteController.cs" />
     <Compile Include="BackEnd\Helpers\OperationResult.cs" />
+    <Compile Include="BackEnd\Helpers\PairValue.cs" />
     <Compile Include="BackEnd\Models\Context\Context.cs" />
     <Compile Include="BackEnd\Models\Entities\Alquiler.cs" />
     <Compile Include="BackEnd\Models\Entities\Cliente.cs" />
@@ -357,6 +358,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Clientes\CrearClienteForm.resx">
       <DependentUpon>CrearClienteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Modelos\ActualizarModeloForm.resx">
+      <DependentUpon>ActualizarModeloForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Modelos\BorrarModeloForm.resx">
+      <DependentUpon>BorrarModeloForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Modelos\CrearModeloForm.resx">
+      <DependentUpon>CrearModeloForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\ActualizarTipoCombustible.resx">
       <DependentUpon>ActualizarTipoCombustible.cs</DependentUpon>

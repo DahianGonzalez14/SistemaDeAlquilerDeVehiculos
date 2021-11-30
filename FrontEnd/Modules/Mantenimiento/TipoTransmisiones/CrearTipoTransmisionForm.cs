@@ -21,21 +21,6 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.TipoTransm
             InitializeComponent();
         }
 
-        private void labelCrearClienteMantenimiento_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvCrearCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panelCrearCliente_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void CrearTipoTransmisionForm_Load(object sender, EventArgs e)
         {
             panelCrearTipoTransmision.BorderStyle = BorderStyle.FixedSingle;

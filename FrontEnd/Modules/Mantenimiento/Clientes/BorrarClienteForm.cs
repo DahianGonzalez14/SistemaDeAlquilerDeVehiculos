@@ -25,14 +25,14 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes
         private void BorrarClienteForm_Load(object sender, EventArgs e)
         {
             panelBorrarCliente.BorderStyle = BorderStyle.FixedSingle;
-            LlenarDataTable();
-            dgvBorrarCliente.Columns["Id"].Visible = false;
+            LlenarDataTable();       
         }
 
         private void LlenarDataTable()
         {
             var showListCliente = clienteController.getAll().Select(x => new { x.Id, x.Nombre, x.Apellido, x.Direccion, x.Telefono, x.Correo, x.Cedula, x.Estatus }).ToList();
             dgvBorrarCliente.DataSource = showListCliente;
+            dgvBorrarCliente.Columns["Id"].Visible = false;
         }
 
         private void LimpiarCampos()
