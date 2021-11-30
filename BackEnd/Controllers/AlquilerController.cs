@@ -22,7 +22,10 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
         {
             return alquilerRepository.GetAll();
         }
-
+        public List<Alquiler> getAllHistory()
+        {
+            return alquilerRepository.GetAllBy(x=> x.Estatus =="I");
+        }
         public Alquiler findById(int id)
         {
             return alquilerRepository.FindById(id);
@@ -54,6 +57,23 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
                 existsAlquiler.FechaHasta  = alquiler.FechaHasta;
                 existsAlquiler.FechaDevolucion = alquiler.FechaDevolucion;
                 existsAlquiler.Penalidad = alquiler.Penalidad;
+                existsAlquiler.FechaModificacion = DateTime.Now;
+
+                return alquilerRepository.Update(existsAlquiler);
+            }
+            return new OperationResult() { Data = null, Message = "Error existe un alquiler con dicho vehiculo", Success = false };
+        }
+
+        public OperationResult EndAlquiler(Alquiler alquiler)
+        {
+            var existsAlquiler = alquilerRepository.Find(x => x.Id == alquiler.Id  && x.Borrado == false);
+            if (existsAlquiler != null )
+            {
+                existsAlquiler.Estatus = alquiler.Estatus;
+                if (alquiler.Penalidad != 0) {
+                    existsAlquiler.Penalidad = alquiler.Penalidad;
+                }
+                
                 existsAlquiler.FechaModificacion = DateTime.Now;
 
                 return alquilerRepository.Update(existsAlquiler);

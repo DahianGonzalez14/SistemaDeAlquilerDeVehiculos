@@ -21,12 +21,17 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes
 
         private void ReporteMarca_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = marca.getAll();
+            Buscar.DataSource = marca.getAll();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = marca.findById(Int32.Parse(textBox1.Text));
+            dataGridView1.DataSource = marca.findById(Int32.Parse(txt1.Text));
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            Buscar.DataSource = marca.findById(Int32.Parse(txt1.Text));
         }
     }
 }

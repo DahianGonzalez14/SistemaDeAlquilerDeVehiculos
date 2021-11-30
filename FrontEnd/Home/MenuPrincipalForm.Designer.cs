@@ -268,21 +268,21 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             // crearToolStripMenuItem5
             // 
             this.crearToolStripMenuItem5.Name = "crearToolStripMenuItem5";
-            this.crearToolStripMenuItem5.Size = new System.Drawing.Size(224, 26);
+            this.crearToolStripMenuItem5.Size = new System.Drawing.Size(158, 26);
             this.crearToolStripMenuItem5.Text = "Crear";
             this.crearToolStripMenuItem5.Click += new System.EventHandler(this.crearToolStripMenuItem5_Click);
             // 
             // actualizarToolStripMenuItem5
             // 
             this.actualizarToolStripMenuItem5.Name = "actualizarToolStripMenuItem5";
-            this.actualizarToolStripMenuItem5.Size = new System.Drawing.Size(224, 26);
+            this.actualizarToolStripMenuItem5.Size = new System.Drawing.Size(158, 26);
             this.actualizarToolStripMenuItem5.Text = "Actualizar";
             this.actualizarToolStripMenuItem5.Click += new System.EventHandler(this.actualizarToolStripMenuItem5_Click);
             // 
             // borrarToolStripMenuItem5
             // 
             this.borrarToolStripMenuItem5.Name = "borrarToolStripMenuItem5";
-            this.borrarToolStripMenuItem5.Size = new System.Drawing.Size(224, 26);
+            this.borrarToolStripMenuItem5.Size = new System.Drawing.Size(158, 26);
             this.borrarToolStripMenuItem5.Text = "Borrar";
             this.borrarToolStripMenuItem5.Click += new System.EventHandler(this.borrarToolStripMenuItem5_Click);
             // 
@@ -306,6 +306,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.devoluciónDeVehiculoToolStripMenuItem.Name = "devoluciónDeVehiculoToolStripMenuItem";
             this.devoluciónDeVehiculoToolStripMenuItem.Size = new System.Drawing.Size(248, 26);
             this.devoluciónDeVehiculoToolStripMenuItem.Text = "Devolución de Vehículo";
+            this.devoluciónDeVehiculoToolStripMenuItem.Click += new System.EventHandler(this.devoluciónDeVehiculoToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -373,6 +374,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.reporteHistorialDeAlquileresToolStripMenuItem.Name = "reporteHistorialDeAlquileresToolStripMenuItem";
             this.reporteHistorialDeAlquileresToolStripMenuItem.Size = new System.Drawing.Size(317, 26);
             this.reporteHistorialDeAlquileresToolStripMenuItem.Text = "Reporte de Historial de Alquileres";
+            this.reporteHistorialDeAlquileresToolStripMenuItem.Click += new System.EventHandler(this.reporteHistorialDeAlquileresToolStripMenuItem_Click);
             // 
             // label2
             // 
@@ -380,7 +382,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.label2.Location = new System.Drawing.Point(282, 532);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(543, 16);
+            this.label2.Size = new System.Drawing.Size(578, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Copyright © 2021 Compañia de Alquiler de Vehiculos S.L. Todos los derechos reserv" +
     "ados.";

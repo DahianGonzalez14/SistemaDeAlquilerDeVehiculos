@@ -29,60 +29,124 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panelCrearCliente = new System.Windows.Forms.Panel();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.txt1 = new System.Windows.Forms.TextBox();
+            this.lNombre = new System.Windows.Forms.Label();
+            this.Buscar = new System.Windows.Forms.DataGridView();
+            this.labelCrearClienteMantenimiento = new System.Windows.Forms.Label();
+            this.panelCrearCliente.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Buscar)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // panelCrearCliente
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(139, 210);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(704, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.panelCrearCliente.Controls.Add(this.btnLimpiar);
+            this.panelCrearCliente.Controls.Add(this.btnGuardar);
+            this.panelCrearCliente.Controls.Add(this.txt1);
+            this.panelCrearCliente.Controls.Add(this.lNombre);
+            this.panelCrearCliente.Location = new System.Drawing.Point(228, 78);
+            this.panelCrearCliente.Name = "panelCrearCliente";
+            this.panelCrearCliente.Size = new System.Drawing.Size(888, 273);
+            this.panelCrearCliente.TabIndex = 50;
             // 
-            // button1
+            // btnLimpiar
             // 
-            this.button1.Location = new System.Drawing.Point(695, 84);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "buscar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(74)))), ((int)(((byte)(59)))));
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnLimpiar.Location = new System.Drawing.Point(538, 152);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(282, 43);
+            this.btnLimpiar.TabIndex = 41;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // btnGuardar
             // 
-            this.textBox1.Location = new System.Drawing.Point(282, 86);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(383, 22);
-            this.textBox1.TabIndex = 3;
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btnGuardar.Location = new System.Drawing.Point(97, 152);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(282, 43);
+            this.btnGuardar.TabIndex = 40;
+            this.btnGuardar.Text = "Buscar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // ReporteTipoCombustible
+            // txt1
+            // 
+            this.txt1.Location = new System.Drawing.Point(304, 43);
+            this.txt1.Margin = new System.Windows.Forms.Padding(4);
+            this.txt1.Name = "txt1";
+            this.txt1.Size = new System.Drawing.Size(268, 22);
+            this.txt1.TabIndex = 22;
+            // 
+            // lNombre
+            // 
+            this.lNombre.AutoSize = true;
+            this.lNombre.Location = new System.Drawing.Point(172, 46);
+            this.lNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lNombre.Name = "lNombre";
+            this.lNombre.Size = new System.Drawing.Size(52, 17);
+            this.lNombre.TabIndex = 21;
+            this.lNombre.Text = "Buscar";
+            this.lNombre.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // Buscar
+            // 
+            this.Buscar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Buscar.Location = new System.Drawing.Point(147, 409);
+            this.Buscar.Margin = new System.Windows.Forms.Padding(4);
+            this.Buscar.Name = "Buscar";
+            this.Buscar.RowHeadersWidth = 51;
+            this.Buscar.Size = new System.Drawing.Size(985, 268);
+            this.Buscar.TabIndex = 49;
+            // 
+            // labelCrearClienteMantenimiento
+            // 
+            this.labelCrearClienteMantenimiento.AutoSize = true;
+            this.labelCrearClienteMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCrearClienteMantenimiento.Location = new System.Drawing.Point(55, 36);
+            this.labelCrearClienteMantenimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCrearClienteMantenimiento.Name = "labelCrearClienteMantenimiento";
+            this.labelCrearClienteMantenimiento.Size = new System.Drawing.Size(203, 18);
+            this.labelCrearClienteMantenimiento.TabIndex = 48;
+            this.labelCrearClienteMantenimiento.Text = "Buscar  Tipo Combustible";
+            // 
+            // TipoCombustible
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1113, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "ReporteTipoCombustible";
+            this.ClientSize = new System.Drawing.Size(1422, 728);
+            this.Controls.Add(this.panelCrearCliente);
+            this.Controls.Add(this.Buscar);
+            this.Controls.Add(this.labelCrearClienteMantenimiento);
+            this.Name = "TipoCombustible";
             this.Text = "ReporteTipoCombustible";
             this.Load += new System.EventHandler(this.ReporteTipoCombustible_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panelCrearCliente.ResumeLayout(false);
+            this.panelCrearCliente.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Buscar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panelCrearCliente;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.TextBox txt1;
+        private System.Windows.Forms.Label lNombre;
+        private System.Windows.Forms.DataGridView Buscar;
+        private System.Windows.Forms.Label labelCrearClienteMantenimiento;
     }
 }

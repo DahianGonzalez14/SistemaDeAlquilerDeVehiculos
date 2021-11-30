@@ -46,7 +46,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes
             this.panelCrearCliente.Controls.Add(this.btnGuardar);
             this.panelCrearCliente.Controls.Add(this.txt1);
             this.panelCrearCliente.Controls.Add(this.lNombre);
-            this.panelCrearCliente.Location = new System.Drawing.Point(191, 69);
+            this.panelCrearCliente.Location = new System.Drawing.Point(221, 78);
             this.panelCrearCliente.Name = "panelCrearCliente";
             this.panelCrearCliente.Size = new System.Drawing.Size(888, 273);
             this.panelCrearCliente.TabIndex = 47;
@@ -103,7 +103,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes
             // dgvCrearVehiculo
             // 
             this.dgvCrearVehiculo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCrearVehiculo.Location = new System.Drawing.Point(50, 413);
+            this.dgvCrearVehiculo.Location = new System.Drawing.Point(203, 396);
             this.dgvCrearVehiculo.Margin = new System.Windows.Forms.Padding(4);
             this.dgvCrearVehiculo.Name = "dgvCrearVehiculo";
             this.dgvCrearVehiculo.RowHeadersWidth = 51;
@@ -114,14 +114,14 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes
             // 
             this.labelCrearClienteMantenimiento.AutoSize = true;
             this.labelCrearClienteMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCrearClienteMantenimiento.Location = new System.Drawing.Point(18, 27);
+            this.labelCrearClienteMantenimiento.Location = new System.Drawing.Point(48, 36);
             this.labelCrearClienteMantenimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCrearClienteMantenimiento.Name = "labelCrearClienteMantenimiento";
             this.labelCrearClienteMantenimiento.Size = new System.Drawing.Size(130, 18);
             this.labelCrearClienteMantenimiento.TabIndex = 45;
             this.labelCrearClienteMantenimiento.Text = "Buscar Vehiculo";
             // 
-            // ReporteVehiculo
+            // Vehiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -129,7 +129,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes
             this.Controls.Add(this.panelCrearCliente);
             this.Controls.Add(this.dgvCrearVehiculo);
             this.Controls.Add(this.labelCrearClienteMantenimiento);
-            this.Name = "ReporteVehiculo";
+            this.Name = "Vehiculo";
             this.Text = "ReporteVehiculo";
             this.Load += new System.EventHandler(this.ReporteVehiculo_Load);
             this.panelCrearCliente.ResumeLayout(false);

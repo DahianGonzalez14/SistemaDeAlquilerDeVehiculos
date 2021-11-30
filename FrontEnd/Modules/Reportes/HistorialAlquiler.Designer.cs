@@ -1,7 +1,7 @@
 ﻿
 namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes
 {
-    partial class ReporteMarca
+    partial class HistorialAlquiler
     {
         /// <summary>
         /// Required designer variable.
@@ -34,10 +34,10 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes
             this.btnGuardar = new System.Windows.Forms.Button();
             this.txt1 = new System.Windows.Forms.TextBox();
             this.lNombre = new System.Windows.Forms.Label();
-            this.Buscar = new System.Windows.Forms.DataGridView();
+            this.dgvHistorial = new System.Windows.Forms.DataGridView();
             this.labelCrearClienteMantenimiento = new System.Windows.Forms.Label();
             this.panelCrearCliente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Buscar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHistorial)).BeginInit();
             this.SuspendLayout();
             // 
             // panelCrearCliente
@@ -46,7 +46,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes
             this.panelCrearCliente.Controls.Add(this.btnGuardar);
             this.panelCrearCliente.Controls.Add(this.txt1);
             this.panelCrearCliente.Controls.Add(this.lNombre);
-            this.panelCrearCliente.Location = new System.Drawing.Point(197, 67);
+            this.panelCrearCliente.Location = new System.Drawing.Point(224, 93);
             this.panelCrearCliente.Name = "panelCrearCliente";
             this.panelCrearCliente.Size = new System.Drawing.Size(888, 273);
             this.panelCrearCliente.TabIndex = 50;
@@ -100,53 +100,54 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes
             this.lNombre.Text = "Buscar";
             this.lNombre.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // Buscar
+            // dgvHistorial
             // 
-            this.Buscar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Buscar.Location = new System.Drawing.Point(179, 385);
-            this.Buscar.Margin = new System.Windows.Forms.Padding(4);
-            this.Buscar.Name = "Buscar";
-            this.Buscar.RowHeadersWidth = 51;
-            this.Buscar.Size = new System.Drawing.Size(985, 268);
-            this.Buscar.TabIndex = 49;
+            this.dgvHistorial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHistorial.Location = new System.Drawing.Point(83, 437);
+            this.dgvHistorial.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvHistorial.Name = "dgvHistorial";
+            this.dgvHistorial.RowHeadersWidth = 51;
+            this.dgvHistorial.Size = new System.Drawing.Size(985, 268);
+            this.dgvHistorial.TabIndex = 49;
             // 
             // labelCrearClienteMantenimiento
             // 
             this.labelCrearClienteMantenimiento.AutoSize = true;
             this.labelCrearClienteMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCrearClienteMantenimiento.Location = new System.Drawing.Point(24, 25);
+            this.labelCrearClienteMantenimiento.Location = new System.Drawing.Point(51, 51);
             this.labelCrearClienteMantenimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCrearClienteMantenimiento.Name = "labelCrearClienteMantenimiento";
-            this.labelCrearClienteMantenimiento.Size = new System.Drawing.Size(113, 18);
+            this.labelCrearClienteMantenimiento.Size = new System.Drawing.Size(127, 18);
             this.labelCrearClienteMantenimiento.TabIndex = 48;
-            this.labelCrearClienteMantenimiento.Text = "Buscar Marca";
+            this.labelCrearClienteMantenimiento.Text = "Historial Alquier";
             // 
-            // ReporteMarca
+            // HistorialAlquiler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1256, 623);
+            this.ClientSize = new System.Drawing.Size(1232, 797);
             this.Controls.Add(this.panelCrearCliente);
-            this.Controls.Add(this.Buscar);
+            this.Controls.Add(this.dgvHistorial);
             this.Controls.Add(this.labelCrearClienteMantenimiento);
-            this.Name = "ReporteMarca";
-            this.Text = "ReporteMarca";
-            this.Load += new System.EventHandler(this.ReporteMarca_Load);
+            this.Name = "HistorialAlquiler";
+            this.Text = "HistorialAlquiler";
+            this.Load += new System.EventHandler(this.HistorialAlquiler_Load);
             this.panelCrearCliente.ResumeLayout(false);
             this.panelCrearCliente.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Buscar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHistorial)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
         private System.Windows.Forms.Panel panelCrearCliente;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.TextBox txt1;
         private System.Windows.Forms.Label lNombre;
-        private System.Windows.Forms.DataGridView Buscar;
+        private System.Windows.Forms.DataGridView dgvHistorial;
         private System.Windows.Forms.Label labelCrearClienteMantenimiento;
     }
 }

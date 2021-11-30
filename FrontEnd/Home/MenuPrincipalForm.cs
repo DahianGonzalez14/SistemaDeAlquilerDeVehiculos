@@ -1,4 +1,5 @@
 ﻿
+using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.AlquilerModulo;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoTipoCombustible;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoVehiculo;
@@ -189,6 +190,18 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
         {
             BorrarTipoTransmisionForm borrarTipoTransmisionForm = new BorrarTipoTransmisionForm();
             borrarTipoTransmisionForm.ShowDialog();
+        }
+
+        private void devoluciónDeVehiculoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DevolucionVehiculocs devolucionVehiculocs = new DevolucionVehiculocs();
+            devolucionVehiculocs.ShowDialog();
+        }
+
+        private void reporteHistorialDeAlquileresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HistorialAlquiler historialAlquiler = new HistorialAlquiler();
+            historialAlquiler.ShowDialog();
         }
     }
 }
