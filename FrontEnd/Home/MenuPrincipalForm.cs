@@ -1,4 +1,5 @@
 ﻿
+using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.AlquilerVehiculo;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.AlquilerModulo;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoTipoCombustible;
@@ -160,6 +161,12 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
         private void Menu_Principal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void alquilerDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AlquilerVehiculoForm alquilerVehiculoForm = new AlquilerVehiculoForm();
+            alquilerVehiculoForm.ShowDialog();
         }
     }
 }

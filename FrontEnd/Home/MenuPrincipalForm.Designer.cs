@@ -300,6 +300,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.alquilerDeToolStripMenuItem.Name = "alquilerDeToolStripMenuItem";
             this.alquilerDeToolStripMenuItem.Size = new System.Drawing.Size(248, 26);
             this.alquilerDeToolStripMenuItem.Text = "Alquiler de Vehículo ";
+            this.alquilerDeToolStripMenuItem.Click += new System.EventHandler(this.alquilerDeToolStripMenuItem_Click);
             // 
             // devoluciónDeVehiculoToolStripMenuItem
             // 
