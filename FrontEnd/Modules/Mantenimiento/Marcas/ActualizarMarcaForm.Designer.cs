@@ -70,7 +70,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMante
             this.labelEstatus.Location = new System.Drawing.Point(449, 24);
             this.labelEstatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelEstatus.Name = "labelEstatus";
-            this.labelEstatus.Size = new System.Drawing.Size(51, 16);
+            this.labelEstatus.Size = new System.Drawing.Size(55, 17);
             this.labelEstatus.TabIndex = 42;
             this.labelEstatus.Text = "Estatus";
             // 
@@ -101,7 +101,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMante
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(282, 43);
             this.btnGuardar.TabIndex = 40;
-            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Text = "Actualizar";
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
@@ -119,7 +119,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMante
             this.lNombre.Location = new System.Drawing.Point(6, 24);
             this.lNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lNombre.Name = "lNombre";
-            this.lNombre.Size = new System.Drawing.Size(56, 16);
+            this.lNombre.Size = new System.Drawing.Size(58, 17);
             this.lNombre.TabIndex = 21;
             this.lNombre.Text = "Nombre";
             this.lNombre.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -134,6 +134,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMante
             this.dgvActualizarMarca.RowHeadersWidth = 51;
             this.dgvActualizarMarca.Size = new System.Drawing.Size(1005, 347);
             this.dgvActualizarMarca.TabIndex = 49;
+            this.dgvActualizarMarca.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvActualizarMarca_CellContentClick);
             this.dgvActualizarMarca.SelectionChanged += new System.EventHandler(this.dgvActualizarMarca_SelectionChanged);
             // 
             // labelActualizarMarcaMantenimiento

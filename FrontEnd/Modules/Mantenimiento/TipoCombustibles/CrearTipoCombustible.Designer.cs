@@ -29,23 +29,20 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearTipoCombustible));
             this.panelCrearCliente = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.dgvCrearTipoCombustible = new System.Windows.Forms.DataGridView();
             this.labelCrearClienteMantenimiento = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelCrearCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCrearTipoCombustible)).BeginInit();
             this.SuspendLayout();
             // 
             // panelCrearCliente
             // 
-            this.panelCrearCliente.Controls.Add(this.textBox2);
-            this.panelCrearCliente.Controls.Add(this.label2);
             this.panelCrearCliente.Controls.Add(this.textBox1);
             this.panelCrearCliente.Controls.Add(this.label1);
             this.panelCrearCliente.Controls.Add(this.btnLimpiar);
@@ -54,6 +51,23 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.panelCrearCliente.Name = "panelCrearCliente";
             this.panelCrearCliente.Size = new System.Drawing.Size(985, 238);
             this.panelCrearCliente.TabIndex = 44;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(325, 74);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(295, 22);
+            this.textBox1.TabIndex = 43;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(261, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 17);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Nombre";
             // 
             // btnLimpiar
             // 
@@ -68,6 +82,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.btnLimpiar.TabIndex = 41;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnGuardar
             // 
@@ -87,6 +102,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             // 
             // dgvCrearTipoCombustible
             // 
+            this.dgvCrearTipoCombustible.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCrearTipoCombustible.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCrearTipoCombustible.Location = new System.Drawing.Point(93, 300);
             this.dgvCrearTipoCombustible.Margin = new System.Windows.Forms.Padding(4);
@@ -106,40 +122,6 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.labelCrearClienteMantenimiento.TabIndex = 42;
             this.labelCrearClienteMantenimiento.Text = "Crear Nuevo  Tipo Combustible";
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(506, 77);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(295, 22);
-            this.textBox2.TabIndex = 45;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(442, 77);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 17);
-            this.label2.TabIndex = 44;
-            this.label2.Text = "Estatus";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(107, 77);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(295, 22);
-            this.textBox1.TabIndex = 43;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 17);
-            this.label1.TabIndex = 42;
-            this.label1.Text = "Nombre";
-            // 
             // CrearTipoCombustible
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -148,6 +130,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.Controls.Add(this.panelCrearCliente);
             this.Controls.Add(this.dgvCrearTipoCombustible);
             this.Controls.Add(this.labelCrearClienteMantenimiento);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CrearTipoCombustible";
             this.Text = "CrearTipoCombustible";
             this.Load += new System.EventHandler(this.CrearTipoCombustible_Load);
@@ -166,8 +149,6 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.DataGridView dgvCrearTipoCombustible;
         private System.Windows.Forms.Label labelCrearClienteMantenimiento;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
     }

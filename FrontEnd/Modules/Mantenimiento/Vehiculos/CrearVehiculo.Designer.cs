@@ -29,7 +29,20 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearVehiculo));
             this.panelCrearCliente = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt12 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt8 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt4 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt11 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt10 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt9 = new System.Windows.Forms.TextBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.txt7 = new System.Windows.Forms.TextBox();
@@ -38,32 +51,23 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.lCedula = new System.Windows.Forms.Label();
             this.txt6 = new System.Windows.Forms.TextBox();
             this.lCorreo = new System.Windows.Forms.Label();
-            this.txt3 = new System.Windows.Forms.TextBox();
             this.lDireccion = new System.Windows.Forms.Label();
-            this.txt2 = new System.Windows.Forms.TextBox();
             this.lApellido = new System.Windows.Forms.Label();
-            this.txt1 = new System.Windows.Forms.TextBox();
             this.lNombre = new System.Windows.Forms.Label();
             this.dgvCrearVehiculo = new System.Windows.Forms.DataGridView();
             this.labelCrearClienteMantenimiento = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt9 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt10 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt11 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txt8 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txt12 = new System.Windows.Forms.TextBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panelCrearCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCrearVehiculo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelCrearCliente
             // 
+            this.panelCrearCliente.Controls.Add(this.comboBox2);
+            this.panelCrearCliente.Controls.Add(this.comboBox1);
+            this.panelCrearCliente.Controls.Add(this.comboBox3);
             this.panelCrearCliente.Controls.Add(this.label6);
             this.panelCrearCliente.Controls.Add(this.txt12);
             this.panelCrearCliente.Controls.Add(this.label5);
@@ -84,16 +88,129 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.panelCrearCliente.Controls.Add(this.lCedula);
             this.panelCrearCliente.Controls.Add(this.txt6);
             this.panelCrearCliente.Controls.Add(this.lCorreo);
-            this.panelCrearCliente.Controls.Add(this.txt3);
             this.panelCrearCliente.Controls.Add(this.lDireccion);
-            this.panelCrearCliente.Controls.Add(this.txt2);
             this.panelCrearCliente.Controls.Add(this.lApellido);
-            this.panelCrearCliente.Controls.Add(this.txt1);
             this.panelCrearCliente.Controls.Add(this.lNombre);
             this.panelCrearCliente.Location = new System.Drawing.Point(34, 56);
             this.panelCrearCliente.Name = "panelCrearCliente";
             this.panelCrearCliente.Size = new System.Drawing.Size(1231, 314);
             this.panelCrearCliente.TabIndex = 44;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(813, 185);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(55, 17);
+            this.label6.TabIndex = 52;
+            this.label6.Text = "Estatus";
+            // 
+            // txt12
+            // 
+            this.txt12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt12.Location = new System.Drawing.Point(895, 182);
+            this.txt12.Margin = new System.Windows.Forms.Padding(4);
+            this.txt12.Name = "txt12";
+            this.txt12.Size = new System.Drawing.Size(282, 22);
+            this.txt12.TabIndex = 53;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(446, 187);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(48, 17);
+            this.label5.TabIndex = 50;
+            this.label5.Text = "Precio";
+            // 
+            // txt8
+            // 
+            this.txt8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt8.Location = new System.Drawing.Point(517, 184);
+            this.txt8.Margin = new System.Windows.Forms.Padding(4);
+            this.txt8.Name = "txt8";
+            this.txt8.Size = new System.Drawing.Size(282, 22);
+            this.txt8.TabIndex = 51;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(-3, 189);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(136, 17);
+            this.label4.TabIndex = 48;
+            this.label4.Text = "Cantidad de puertas";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // txt4
+            // 
+            this.txt4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt4.Location = new System.Drawing.Point(138, 186);
+            this.txt4.Margin = new System.Windows.Forms.Padding(4);
+            this.txt4.Name = "txt4";
+            this.txt4.Size = new System.Drawing.Size(282, 22);
+            this.txt4.TabIndex = 49;
+            this.txt4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(813, 124);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 17);
+            this.label3.TabIndex = 46;
+            this.label3.Text = "Kilometros";
+            // 
+            // txt11
+            // 
+            this.txt11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt11.Location = new System.Drawing.Point(895, 121);
+            this.txt11.Margin = new System.Windows.Forms.Padding(4);
+            this.txt11.Name = "txt11";
+            this.txt11.Size = new System.Drawing.Size(282, 22);
+            this.txt11.TabIndex = 47;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(813, 79);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 17);
+            this.label2.TabIndex = 44;
+            this.label2.Text = "Cilindraje";
+            // 
+            // txt10
+            // 
+            this.txt10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt10.Location = new System.Drawing.Point(888, 70);
+            this.txt10.Margin = new System.Windows.Forms.Padding(4);
+            this.txt10.Name = "txt10";
+            this.txt10.Size = new System.Drawing.Size(282, 22);
+            this.txt10.TabIndex = 45;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(813, 24);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 17);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Color";
+            // 
+            // txt9
+            // 
+            this.txt9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt9.Location = new System.Drawing.Point(888, 18);
+            this.txt9.Margin = new System.Windows.Forms.Padding(4);
+            this.txt9.Name = "txt9";
+            this.txt9.Size = new System.Drawing.Size(282, 22);
+            this.txt9.TabIndex = 43;
             // 
             // btnLimpiar
             // 
@@ -108,6 +225,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.btnLimpiar.TabIndex = 41;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnGuardar
             // 
@@ -182,32 +300,15 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.lCorreo.TabIndex = 29;
             this.lCorreo.Text = "Placa";
             // 
-            // txt3
-            // 
-            this.txt3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt3.Location = new System.Drawing.Point(124, 133);
-            this.txt3.Margin = new System.Windows.Forms.Padding(4);
-            this.txt3.Name = "txt3";
-            this.txt3.Size = new System.Drawing.Size(282, 22);
-            this.txt3.TabIndex = 26;
-            // 
             // lDireccion
             // 
             this.lDireccion.AutoSize = true;
             this.lDireccion.Location = new System.Drawing.Point(6, 133);
             this.lDireccion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lDireccion.Name = "lDireccion";
-            this.lDireccion.Size = new System.Drawing.Size(65, 17);
+            this.lDireccion.Size = new System.Drawing.Size(54, 17);
             this.lDireccion.TabIndex = 25;
-            this.lDireccion.Text = "ModeloId";
-            // 
-            // txt2
-            // 
-            this.txt2.Location = new System.Drawing.Point(138, 76);
-            this.txt2.Margin = new System.Windows.Forms.Padding(4);
-            this.txt2.Name = "txt2";
-            this.txt2.Size = new System.Drawing.Size(268, 22);
-            this.txt2.TabIndex = 24;
+            this.lDireccion.Text = "Modelo";
             // 
             // lApellido
             // 
@@ -215,17 +316,9 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.lApellido.Location = new System.Drawing.Point(6, 76);
             this.lApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lApellido.Name = "lApellido";
-            this.lApellido.Size = new System.Drawing.Size(124, 17);
+            this.lApellido.Size = new System.Drawing.Size(113, 17);
             this.lApellido.TabIndex = 23;
-            this.lApellido.Text = "TipoCombustibleId";
-            // 
-            // txt1
-            // 
-            this.txt1.Location = new System.Drawing.Point(138, 21);
-            this.txt1.Margin = new System.Windows.Forms.Padding(4);
-            this.txt1.Name = "txt1";
-            this.txt1.Size = new System.Drawing.Size(268, 22);
-            this.txt1.TabIndex = 22;
+            this.lApellido.Text = "TipoCombustible";
             // 
             // lNombre
             // 
@@ -233,13 +326,14 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.lNombre.Location = new System.Drawing.Point(6, 24);
             this.lNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lNombre.Name = "lNombre";
-            this.lNombre.Size = new System.Drawing.Size(124, 17);
+            this.lNombre.Size = new System.Drawing.Size(113, 17);
             this.lNombre.TabIndex = 21;
-            this.lNombre.Text = "TipoTransmisionId";
+            this.lNombre.Text = "TipoTransmision";
             this.lNombre.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // dgvCrearVehiculo
             // 
+            this.dgvCrearVehiculo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCrearVehiculo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCrearVehiculo.Location = new System.Drawing.Point(72, 400);
             this.dgvCrearVehiculo.Margin = new System.Windows.Forms.Padding(4);
@@ -255,125 +349,33 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.labelCrearClienteMantenimiento.Location = new System.Drawing.Point(40, 14);
             this.labelCrearClienteMantenimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCrearClienteMantenimiento.Name = "labelCrearClienteMantenimiento";
-            this.labelCrearClienteMantenimiento.Size = new System.Drawing.Size(215, 23);
+            this.labelCrearClienteMantenimiento.Size = new System.Drawing.Size(172, 18);
             this.labelCrearClienteMantenimiento.TabIndex = 42;
             this.labelCrearClienteMantenimiento.Text = "Crear Nuevo Vehiculo";
             // 
-            // label1
+            // comboBox3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(813, 24);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 17);
-            this.label1.TabIndex = 42;
-            this.label1.Text = "Color";
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(138, 121);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(282, 24);
+            this.comboBox3.TabIndex = 54;
             // 
-            // txt9
+            // comboBox1
             // 
-            this.txt9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt9.Location = new System.Drawing.Point(888, 18);
-            this.txt9.Margin = new System.Windows.Forms.Padding(4);
-            this.txt9.Name = "txt9";
-            this.txt9.Size = new System.Drawing.Size(282, 22);
-            this.txt9.TabIndex = 43;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(138, 21);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(282, 24);
+            this.comboBox1.TabIndex = 55;
             // 
-            // label2
+            // comboBox2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(813, 79);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 17);
-            this.label2.TabIndex = 44;
-            this.label2.Text = "Cilindraje";
-            // 
-            // txt10
-            // 
-            this.txt10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt10.Location = new System.Drawing.Point(888, 70);
-            this.txt10.Margin = new System.Windows.Forms.Padding(4);
-            this.txt10.Name = "txt10";
-            this.txt10.Size = new System.Drawing.Size(282, 22);
-            this.txt10.TabIndex = 45;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(813, 124);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 17);
-            this.label3.TabIndex = 46;
-            this.label3.Text = "Kilometros";
-            // 
-            // txt11
-            // 
-            this.txt11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt11.Location = new System.Drawing.Point(895, 121);
-            this.txt11.Margin = new System.Windows.Forms.Padding(4);
-            this.txt11.Name = "txt11";
-            this.txt11.Size = new System.Drawing.Size(282, 22);
-            this.txt11.TabIndex = 47;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(-3, 189);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 17);
-            this.label4.TabIndex = 48;
-            this.label4.Text = "Cantidad de puertas";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // txt4
-            // 
-            this.txt4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt4.Location = new System.Drawing.Point(138, 186);
-            this.txt4.Margin = new System.Windows.Forms.Padding(4);
-            this.txt4.Name = "txt4";
-            this.txt4.Size = new System.Drawing.Size(282, 22);
-            this.txt4.TabIndex = 49;
-            this.txt4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(446, 187);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 17);
-            this.label5.TabIndex = 50;
-            this.label5.Text = "Precio";
-            // 
-            // txt8
-            // 
-            this.txt8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt8.Location = new System.Drawing.Point(517, 184);
-            this.txt8.Margin = new System.Windows.Forms.Padding(4);
-            this.txt8.Name = "txt8";
-            this.txt8.Size = new System.Drawing.Size(282, 22);
-            this.txt8.TabIndex = 51;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(813, 185);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 17);
-            this.label6.TabIndex = 52;
-            this.label6.Text = "Estatus";
-            // 
-            // txt12
-            // 
-            this.txt12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt12.Location = new System.Drawing.Point(895, 182);
-            this.txt12.Margin = new System.Windows.Forms.Padding(4);
-            this.txt12.Name = "txt12";
-            this.txt12.Size = new System.Drawing.Size(282, 22);
-            this.txt12.TabIndex = 53;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(138, 73);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(282, 24);
+            this.comboBox2.TabIndex = 56;
             // 
             // CrearVehiculo
             // 
@@ -383,6 +385,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.Controls.Add(this.panelCrearCliente);
             this.Controls.Add(this.dgvCrearVehiculo);
             this.Controls.Add(this.labelCrearClienteMantenimiento);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CrearVehiculo";
             this.Text = "CrearVehiculo";
             this.Load += new System.EventHandler(this.CrearVehiculo_Load);
@@ -405,11 +408,8 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
         private System.Windows.Forms.Label lCedula;
         private System.Windows.Forms.TextBox txt6;
         private System.Windows.Forms.Label lCorreo;
-        private System.Windows.Forms.TextBox txt3;
         private System.Windows.Forms.Label lDireccion;
-        private System.Windows.Forms.TextBox txt2;
         private System.Windows.Forms.Label lApellido;
-        private System.Windows.Forms.TextBox txt1;
         private System.Windows.Forms.Label lNombre;
         private System.Windows.Forms.DataGridView dgvCrearVehiculo;
         private System.Windows.Forms.Label labelCrearClienteMantenimiento;
@@ -425,5 +425,8 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
         private System.Windows.Forms.TextBox txt12;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt8;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }

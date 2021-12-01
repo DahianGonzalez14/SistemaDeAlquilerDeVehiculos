@@ -29,6 +29,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeleteTipoCombustible));
             this.panelCrearCliente = new System.Windows.Forms.Panel();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -127,6 +128,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.Controls.Add(this.panelCrearCliente);
             this.Controls.Add(this.dgvCrearTipoCombustible);
             this.Controls.Add(this.labelCrearClienteMantenimiento);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DeleteTipoCombustible";
             this.Text = "DeleteTipoCombustible";
             this.Load += new System.EventHandler(this.DeleteTipoCombustible_Load);
