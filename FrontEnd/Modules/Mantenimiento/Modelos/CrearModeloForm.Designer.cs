@@ -62,7 +62,6 @@
             this.comboBoxMarca.Name = "comboBoxMarca";
             this.comboBoxMarca.Size = new System.Drawing.Size(282, 24);
             this.comboBoxMarca.TabIndex = 42;
-            this.comboBoxMarca.SelectedIndexChanged += new System.EventHandler(this.comboBoxMarca_SelectedIndexChanged);
             // 
             // btnLimpiar
             // 

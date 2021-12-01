@@ -110,11 +110,11 @@
     <Compile Include="FrontEnd\Modules\Alquiler\AlquilerVehiculoForm.Designer.cs">
       <DependentUpon>AlquilerVehiculoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Alquiler\DevolucionVehiculocs.cs">
+    <Compile Include="FrontEnd\Modules\Alquiler\DevolucionVehiculocsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Alquiler\DevolucionVehiculocs.Designer.cs">
-      <DependentUpon>DevolucionVehiculocs.cs</DependentUpon>
+    <Compile Include="FrontEnd\Modules\Alquiler\DevolucionVehiculocsForm.Designer.cs">
+      <DependentUpon>DevolucionVehiculocsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FrontEnd\Modules\Mantenimiento\Clientes\ActualizarClienteForm.cs">
       <SubType>Form</SubType>
@@ -152,23 +152,23 @@
     <Compile Include="FrontEnd\Modules\Mantenimiento\Modelos\CrearModeloForm.Designer.cs">
       <DependentUpon>CrearModeloForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\ActualizarTipoCombustible.cs">
+    <Compile Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\ActualizarTipoCombustibleForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\ActualizarTipoCombustible.Designer.cs">
-      <DependentUpon>ActualizarTipoCombustible.cs</DependentUpon>
+    <Compile Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\ActualizarTipoCombustibleForm.Designer.cs">
+      <DependentUpon>ActualizarTipoCombustibleForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\CrearTipoCombustible.cs">
+    <Compile Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\CrearTipoCombustibleForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\CrearTipoCombustible.Designer.cs">
-      <DependentUpon>CrearTipoCombustible.cs</DependentUpon>
+    <Compile Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\CrearTipoCombustibleForm.Designer.cs">
+      <DependentUpon>CrearTipoCombustibleForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\BorrarTipoCombustible.cs">
+    <Compile Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\BorrarTipoCombustibleForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\BorrarTipoCombustible.Designer.cs">
-      <DependentUpon>BorrarTipoCombustible.cs</DependentUpon>
+    <Compile Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\BorrarTipoCombustibleForm.Designer.cs">
+      <DependentUpon>BorrarTipoCombustibleForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FrontEnd\Modules\Mantenimiento\TipoTransmisiones\ActualizarTipoTransmisionForm.cs">
       <SubType>Form</SubType>
@@ -188,23 +188,23 @@
     <Compile Include="FrontEnd\Modules\Mantenimiento\TipoTransmisiones\CrearTipoTransmisionForm.Designer.cs">
       <DependentUpon>CrearTipoTransmisionForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\Vehiculos\ActualizarVehiculo.cs">
+    <Compile Include="FrontEnd\Modules\Mantenimiento\Vehiculos\ActualizarVehiculoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\Vehiculos\ActualizarVehiculo.Designer.cs">
-      <DependentUpon>ActualizarVehiculo.cs</DependentUpon>
+    <Compile Include="FrontEnd\Modules\Mantenimiento\Vehiculos\ActualizarVehiculoForm.Designer.cs">
+      <DependentUpon>ActualizarVehiculoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\Vehiculos\CrearVehiculo.cs">
+    <Compile Include="FrontEnd\Modules\Mantenimiento\Vehiculos\CrearVehiculoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\Vehiculos\CrearVehiculo.Designer.cs">
-      <DependentUpon>CrearVehiculo.cs</DependentUpon>
+    <Compile Include="FrontEnd\Modules\Mantenimiento\Vehiculos\CrearVehiculoForm.Designer.cs">
+      <DependentUpon>CrearVehiculoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\Vehiculos\BorrarVehiculo.cs">
+    <Compile Include="FrontEnd\Modules\Mantenimiento\Vehiculos\BorrarVehiculoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\Vehiculos\BorrarVehiculo.Designer.cs">
-      <DependentUpon>BorrarVehiculo.cs</DependentUpon>
+    <Compile Include="FrontEnd\Modules\Mantenimiento\Vehiculos\BorrarVehiculoForm.Designer.cs">
+      <DependentUpon>BorrarVehiculoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FrontEnd\Modules\Mantenimiento\Marcas\ActualizarMarcaForm.cs">
       <SubType>Form</SubType>
@@ -265,8 +265,8 @@
     <EmbeddedResource Include="FrontEnd\Modules\Alquiler\AlquilerVehiculoForm.resx">
       <DependentUpon>AlquilerVehiculoForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrontEnd\Modules\Alquiler\DevolucionVehiculocs.resx">
-      <DependentUpon>DevolucionVehiculocs.cs</DependentUpon>
+    <EmbeddedResource Include="FrontEnd\Modules\Alquiler\DevolucionVehiculocsForm.resx">
+      <DependentUpon>DevolucionVehiculocsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Clientes\ActualizarClienteForm.resx">
       <DependentUpon>ActualizarClienteForm.cs</DependentUpon>
@@ -286,14 +286,14 @@
     <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Modelos\CrearModeloForm.resx">
       <DependentUpon>CrearModeloForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\ActualizarTipoCombustible.resx">
-      <DependentUpon>ActualizarTipoCombustible.cs</DependentUpon>
+    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\ActualizarTipoCombustibleForm.resx">
+      <DependentUpon>ActualizarTipoCombustibleForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\CrearTipoCombustible.resx">
-      <DependentUpon>CrearTipoCombustible.cs</DependentUpon>
+    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\CrearTipoCombustibleForm.resx">
+      <DependentUpon>CrearTipoCombustibleForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\BorrarTipoCombustible.resx">
-      <DependentUpon>BorrarTipoCombustible.cs</DependentUpon>
+    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\BorrarTipoCombustibleForm.resx">
+      <DependentUpon>BorrarTipoCombustibleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\TipoTransmisiones\ActualizarTipoTransmisionForm.resx">
       <DependentUpon>ActualizarTipoTransmisionForm.cs</DependentUpon>
@@ -304,14 +304,14 @@
     <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\TipoTransmisiones\CrearTipoTransmisionForm.resx">
       <DependentUpon>CrearTipoTransmisionForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Vehiculos\ActualizarVehiculo.resx">
-      <DependentUpon>ActualizarVehiculo.cs</DependentUpon>
+    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Vehiculos\ActualizarVehiculoForm.resx">
+      <DependentUpon>ActualizarVehiculoForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Vehiculos\CrearVehiculo.resx">
-      <DependentUpon>CrearVehiculo.cs</DependentUpon>
+    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Vehiculos\CrearVehiculoForm.resx">
+      <DependentUpon>CrearVehiculoForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Vehiculos\BorrarVehiculo.resx">
-      <DependentUpon>BorrarVehiculo.cs</DependentUpon>
+    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Vehiculos\BorrarVehiculoForm.resx">
+      <DependentUpon>BorrarVehiculoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Marcas\ActualizarMarcaForm.resx">
       <DependentUpon>ActualizarMarcaForm.cs</DependentUpon>

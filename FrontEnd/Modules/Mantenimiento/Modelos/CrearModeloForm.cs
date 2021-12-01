@@ -64,8 +64,6 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Modelos
             }
             else
             {
-                var value = comboBoxMarca.SelectedValue;
-                Console.WriteLine(value);
                 Modelo nuevoModelo = new Modelo()
                 {
                     Nombre = txtNombre.Text,
@@ -89,9 +87,5 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Modelos
             }
         }
 
-        private void comboBoxMarca_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

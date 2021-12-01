@@ -41,25 +41,28 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
 
         public OperationResult Edit(Vehiculo vehiculo)
         {
-            var existsVehiculo = vehiculoRepository.Find(x => x.Chasis.Equals(vehiculo.Chasis) || x.Placa.Equals(vehiculo.Placa) && x.Borrado == false);
-            if (existsVehiculo != null && existsVehiculo.Id == vehiculo.Id)
+            var existsVehiculo = vehiculoRepository.Find(x => (x.Chasis.Equals(vehiculo.Chasis) || x.Placa.Equals(vehiculo.Placa)) && x.Borrado == false);
+            if (existsVehiculo != null && existsVehiculo.Id != vehiculo.Id)
             {
-                existsVehiculo.TipoTransmisionId = vehiculo.TipoTransmisionId;
-                existsVehiculo.TipoCombustibleId = vehiculo.TipoCombustibleId;
-                existsVehiculo.ModeloId = vehiculo.ModeloId;
-                existsVehiculo.Chasis = vehiculo.Chasis;
-                existsVehiculo.Placa = vehiculo.Placa;
-                existsVehiculo.Anio = vehiculo.Anio;
-                existsVehiculo.Color = vehiculo.Color;
-                existsVehiculo.Cilindraje = vehiculo.Cilindraje;
-                existsVehiculo.KilometrosTablero = vehiculo.KilometrosTablero;
-                existsVehiculo.CantidadPuerta = vehiculo.CantidadPuerta;
-                existsVehiculo.Precio = vehiculo.Precio;
-                existsVehiculo.FechaModificacion = DateTime.Now;
-
-                return vehiculoRepository.Update(existsVehiculo);
+                return new OperationResult() { Data = null, Message = "Error existe un vehiculo con dicha placa o chasís", Success = false };
             }
-            return new OperationResult() { Data = null, Message = "Error existe un vehiculo con dicha placa o chasís", Success = false };
+
+            var currentVehiculo = vehiculoRepository.FindById(vehiculo.Id);
+            currentVehiculo.TipoTransmisionId = vehiculo.TipoTransmisionId;
+            currentVehiculo.TipoCombustibleId = vehiculo.TipoCombustibleId;
+            currentVehiculo.ModeloId = vehiculo.ModeloId;
+            currentVehiculo.Chasis = vehiculo.Chasis;
+            currentVehiculo.Placa = vehiculo.Placa;
+            currentVehiculo.Anio = vehiculo.Anio;
+            currentVehiculo.Color = vehiculo.Color;
+            currentVehiculo.Cilindraje = vehiculo.Cilindraje;
+            currentVehiculo.KilometrosTablero = vehiculo.KilometrosTablero;
+            currentVehiculo.CantidadPuerta = vehiculo.CantidadPuerta;
+            currentVehiculo.Precio = vehiculo.Precio;
+            currentVehiculo.Estatus = vehiculo.Estatus;
+            currentVehiculo.FechaModificacion = DateTime.Now;
+
+            return vehiculoRepository.Update(currentVehiculo);
         }
 
         public OperationResult Delete(Vehiculo vehiculo)

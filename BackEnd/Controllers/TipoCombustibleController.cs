@@ -41,16 +41,19 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities
 
         public OperationResult Edit(TipoCombustible tipoCombustible)
         {
-            var existsTipoCombustible = tipoCombustibleRepository.Find(x => x.Id.Equals(tipoCombustible.Id) && x.Borrado == false);
-            if (existsTipoCombustible != null && existsTipoCombustible.Id == tipoCombustible.Id)
+            var existsTipoCombustible = tipoCombustibleRepository.Find(x => x.Nombre.Equals(tipoCombustible.Nombre) && x.Borrado == false);
+            if (existsTipoCombustible != null && existsTipoCombustible.Id != tipoCombustible.Id)
             {
-                existsTipoCombustible.Nombre = tipoCombustible.Nombre;
-                existsTipoCombustible.FechaModificacion = tipoCombustible.FechaModificacion;
-
-                return tipoCombustibleRepository.Update(existsTipoCombustible);
+                return new OperationResult() { Data = null, Message = "Error existe un tipo de combustible con dicho nombre", Success = false };
             }
 
-            return new OperationResult() { Data = null, Message = "Error existe un tipo de combustible con dicho nombre", Success = false };
+            var currentTipoCombustible = tipoCombustibleRepository.FindById(tipoCombustible.Id);
+            currentTipoCombustible.Nombre = tipoCombustible.Nombre;
+            currentTipoCombustible.Estatus = tipoCombustible.Estatus;
+            currentTipoCombustible.FechaModificacion = DateTime.Now;
+
+            return tipoCombustibleRepository.Update(currentTipoCombustible);
+
         }
 
         public OperationResult Delete(TipoCombustible tipoCombustible)

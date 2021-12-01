@@ -53,20 +53,20 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
 
         private void crearToolStripMenuItem4_Click(object sender, EventArgs e)
         {
-            CrearTipoCombustible crearTipoCombustible = new CrearTipoCombustible();
-            crearTipoCombustible.ShowDialog();
+            CrearTipoCombustibleForm crearTipoCombustibleForm = new CrearTipoCombustibleForm();
+            crearTipoCombustibleForm.ShowDialog();
         }
 
         private void actualizarToolStripMenuItem4_Click(object sender, EventArgs e)
         {
-            ActualizarTipoCombustible actualizarTipoCombustible = new ActualizarTipoCombustible();
-            actualizarTipoCombustible.ShowDialog();
+            ActualizarTipoCombustibleForm actualizarTipoCombustibleForm = new ActualizarTipoCombustibleForm();
+            actualizarTipoCombustibleForm.ShowDialog();
         }
 
         private void borrarToolStripMenuItem4_Click(object sender, EventArgs e)
         {
-            DeleteTipoCombustible deleteTipoCombustible = new DeleteTipoCombustible();
-            deleteTipoCombustible.ShowDialog();
+            BorrarTipoCombustibleForm borrarTipoCombustibleForm = new BorrarTipoCombustibleForm();
+            borrarTipoCombustibleForm.ShowDialog();
         }
 
         private void crearToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -89,20 +89,20 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
 
         private void crearToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            CrearVehiculo crearVehiculo = new CrearVehiculo();
-            crearVehiculo.ShowDialog();
+            CrearVehiculoForm crearVehiculoForm = new CrearVehiculoForm();
+            crearVehiculoForm.ShowDialog();
         }
 
         private void actualizarToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            ActualizarVehiculo actualizarVehiculo = new ActualizarVehiculo();
-            actualizarVehiculo.ShowDialog();
+            ActualizarVehiculoForm actualizarVehiculoForm = new ActualizarVehiculoForm();
+            actualizarVehiculoForm.ShowDialog();
         }
 
         private void borrarToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            DeleteVehiculo deleteVehiculo = new DeleteVehiculo();
-            deleteVehiculo.ShowDialog();
+            BorrarVehiculoForm borrarVehiculoForm = new BorrarVehiculoForm();
+            borrarVehiculoForm.ShowDialog();
         }
 
         private void reporteVehiculoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -148,8 +148,8 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
         }
         private void devoluciónDeVehiculoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DevolucionVehiculocs devolucionVehiculocs = new DevolucionVehiculocs();
-            devolucionVehiculocs.ShowDialog();
+            DevolucionVehiculoForm devolucionVehiculoForm = new DevolucionVehiculoForm();
+            devolucionVehiculoForm.ShowDialog();
         }
 
         private void reporteHistorialDeAlquileresToolStripMenuItem_Click(object sender, EventArgs e)

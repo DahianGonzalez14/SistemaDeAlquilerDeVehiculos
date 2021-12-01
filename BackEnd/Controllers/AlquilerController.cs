@@ -33,7 +33,7 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
 
         public OperationResult Create(Alquiler alquiler)
         {
-            var existsAlquiler = alquilerRepository.Find(x => x.ClienteId == alquiler.ClienteId && x.VehiculoId == alquiler.VehiculoId && x.FechaDesde.ToString("dd/MMM/yyyy").Equals(alquiler.FechaDesde.ToString("dd/MMM/yyyy")) && x.FechaHasta.ToString("dd/MMM/yyyy").Equals(alquiler.FechaHasta.ToString("dd/MMM/yyyy")) && x.Borrado == false);
+            var existsAlquiler = alquilerRepository.Find(x => x.VehiculoId == alquiler.VehiculoId  && x.Estatus.Equals("A") && x.Borrado == false);
 
             if (existsAlquiler != null)
             {
@@ -46,22 +46,21 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
 
         public OperationResult Edit(Alquiler alquiler)
         {
-            var existsAlquiler = alquilerRepository.Find(x => x.ClienteId == alquiler.ClienteId && x.VehiculoId == alquiler.VehiculoId && x.FechaDesde.ToString("dd/MMM/yyyy").Equals(alquiler.FechaDesde.ToString("dd/MMM/yyyy")) && x.FechaHasta.ToString("dd/MMM/yyyy").Equals(alquiler.FechaHasta.ToString("dd/MMM/yyyy")) && x.Borrado == false);
-            if (existsAlquiler != null && existsAlquiler.Id == alquiler.Id)
+            var existsAlquiler = alquilerRepository.Find(x => x.VehiculoId == alquiler.VehiculoId && x.Estatus.Equals("A") && x.Borrado == false);
+            if (existsAlquiler != null && existsAlquiler.Id != alquiler.Id)
             {
-                existsAlquiler.ClienteId = alquiler.ClienteId;
-                existsAlquiler.VehiculoId = alquiler.VehiculoId;
-                existsAlquiler.MetodoPago = alquiler.MetodoPago;
-                existsAlquiler.Costo = alquiler.Costo;
-                existsAlquiler.FechaDesde = alquiler.FechaDesde;
-                existsAlquiler.FechaHasta  = alquiler.FechaHasta;
-                existsAlquiler.FechaDevolucion = alquiler.FechaDevolucion;
-                existsAlquiler.Penalidad = alquiler.Penalidad;
-                existsAlquiler.FechaModificacion = DateTime.Now;
-
-                return alquilerRepository.Update(existsAlquiler);
+                return new OperationResult() { Data = null, Message = "Error existe un alquiler con dicho vehiculo", Success = false };
             }
-            return new OperationResult() { Data = null, Message = "Error existe un alquiler con dicho vehiculo", Success = false };
+
+            var currentAlquiler = alquilerRepository.FindById(alquiler.Id);
+            currentAlquiler.FechaDevolucion = alquiler.FechaDevolucion;
+            currentAlquiler.Penalidad = alquiler.Penalidad;
+            currentAlquiler.Estatus = alquiler.Estatus;
+            currentAlquiler.FechaModificacion = alquiler.FechaModificacion;
+
+            return alquilerRepository.Update(currentAlquiler);
+
+            
         }
 
         public OperationResult EndAlquiler(Alquiler alquiler)
