@@ -329,18 +329,21 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.reporteClienteToolStripMenuItem.Name = "reporteClienteToolStripMenuItem";
             this.reporteClienteToolStripMenuItem.Size = new System.Drawing.Size(317, 26);
             this.reporteClienteToolStripMenuItem.Text = "Reporte de Clientes";
+            this.reporteClienteToolStripMenuItem.Click += new System.EventHandler(this.reporteClienteToolStripMenuItem_Click);
             // 
             // reporteMarcaToolStripMenuItem
             // 
             this.reporteMarcaToolStripMenuItem.Name = "reporteMarcaToolStripMenuItem";
             this.reporteMarcaToolStripMenuItem.Size = new System.Drawing.Size(317, 26);
             this.reporteMarcaToolStripMenuItem.Text = "Reporte de Marcas";
+            this.reporteMarcaToolStripMenuItem.Click += new System.EventHandler(this.reporteMarcaToolStripMenuItem_Click);
             // 
             // reporteModeloToolStripMenuItem
             // 
             this.reporteModeloToolStripMenuItem.Name = "reporteModeloToolStripMenuItem";
             this.reporteModeloToolStripMenuItem.Size = new System.Drawing.Size(317, 26);
             this.reporteModeloToolStripMenuItem.Text = "Reporte de Modelos";
+            this.reporteModeloToolStripMenuItem.Click += new System.EventHandler(this.reporteModeloToolStripMenuItem_Click);
             // 
             // reporteVehiculoToolStripMenuItem
             // 
@@ -361,12 +364,14 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.reporteTipoTransmisionToolStripMenuItem.Name = "reporteTipoTransmisionToolStripMenuItem";
             this.reporteTipoTransmisionToolStripMenuItem.Size = new System.Drawing.Size(317, 26);
             this.reporteTipoTransmisionToolStripMenuItem.Text = "Reporte de Tipo de Transmisiones";
+            this.reporteTipoTransmisionToolStripMenuItem.Click += new System.EventHandler(this.reporteTipoTransmisionToolStripMenuItem_Click);
             // 
             // reporteVerTodosLosAlquileresToolStripMenuItem
             // 
             this.reporteVerTodosLosAlquileresToolStripMenuItem.Name = "reporteVerTodosLosAlquileresToolStripMenuItem";
             this.reporteVerTodosLosAlquileresToolStripMenuItem.Size = new System.Drawing.Size(317, 26);
             this.reporteVerTodosLosAlquileresToolStripMenuItem.Text = "Reporte de Todos los Alquileres";
+            this.reporteVerTodosLosAlquileresToolStripMenuItem.Click += new System.EventHandler(this.reporteVerTodosLosAlquileresToolStripMenuItem_Click);
             // 
             // reporteHistorialDeAlquileresToolStripMenuItem
             // 

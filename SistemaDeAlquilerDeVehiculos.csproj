@@ -51,15 +51,32 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.95.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ClosedXML.0.95.4\lib\net46\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>packages\DocumentFormat.OpenXml.2.7.2\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.Packaging.4.0.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -69,6 +86,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BackEnd\Controllers\AlquilerController.cs" />
@@ -224,29 +242,53 @@
     <Compile Include="FrontEnd\Modules\Mantenimiento\Marcas\BorrarMarcaForm.Designer.cs">
       <DependentUpon>BorrarMarcaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Reportes\HistorialAlquiler.cs">
+    <Compile Include="FrontEnd\Modules\Reportes\AlquileresForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Reportes\HistorialAlquiler.Designer.cs">
-      <DependentUpon>HistorialAlquiler.cs</DependentUpon>
+    <Compile Include="FrontEnd\Modules\Reportes\AlquileresForm.Designer.cs">
+      <DependentUpon>AlquileresForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Reportes\Marca.cs">
+    <Compile Include="FrontEnd\Modules\Reportes\ClientesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Reportes\Marca.Designer.cs">
-      <DependentUpon>Marca.cs</DependentUpon>
+    <Compile Include="FrontEnd\Modules\Reportes\ClientesForm.Designer.cs">
+      <DependentUpon>ClientesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Reportes\TipoCombustible.cs">
+    <Compile Include="FrontEnd\Modules\Reportes\HistorialAlquileresForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Reportes\TipoCombustible.Designer.cs">
-      <DependentUpon>TipoCombustible.cs</DependentUpon>
+    <Compile Include="FrontEnd\Modules\Reportes\HistorialAlquileresForm.Designer.cs">
+      <DependentUpon>HistorialAlquileresForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Reportes\Vehiculo.cs">
+    <Compile Include="FrontEnd\Modules\Reportes\MarcasForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Reportes\Vehiculo.Designer.cs">
-      <DependentUpon>Vehiculo.cs</DependentUpon>
+    <Compile Include="FrontEnd\Modules\Reportes\MarcasForm.Designer.cs">
+      <DependentUpon>MarcasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Modules\Reportes\ModelosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Modules\Reportes\ModelosForm.Designer.cs">
+      <DependentUpon>ModelosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Modules\Reportes\TipoCombustiblesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Modules\Reportes\TipoCombustiblesForm.Designer.cs">
+      <DependentUpon>TipoCombustiblesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Modules\Reportes\TipoTransmisionesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Modules\Reportes\TipoTransmisionesForm.Designer.cs">
+      <DependentUpon>TipoTransmisionesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Modules\Reportes\VehiculosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Modules\Reportes\VehiculosForm.Designer.cs">
+      <DependentUpon>VehiculosForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202111211740484_initial.cs" />
     <Compile Include="Migrations\202111211740484_initial.designer.cs">
@@ -322,17 +364,29 @@
     <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Marcas\BorrarMarcaForm.resx">
       <DependentUpon>BorrarMarcaForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrontEnd\Modules\Reportes\HistorialAlquiler.resx">
-      <DependentUpon>HistorialAlquiler.cs</DependentUpon>
+    <EmbeddedResource Include="FrontEnd\Modules\Reportes\AlquileresForm.resx">
+      <DependentUpon>AlquileresForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrontEnd\Modules\Reportes\Marca.resx">
-      <DependentUpon>Marca.cs</DependentUpon>
+    <EmbeddedResource Include="FrontEnd\Modules\Reportes\ClientesForm.resx">
+      <DependentUpon>ClientesForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrontEnd\Modules\Reportes\TipoCombustible.resx">
-      <DependentUpon>TipoCombustible.cs</DependentUpon>
+    <EmbeddedResource Include="FrontEnd\Modules\Reportes\HistorialAlquileresForm.resx">
+      <DependentUpon>HistorialAlquileresForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrontEnd\Modules\Reportes\Vehiculo.resx">
-      <DependentUpon>Vehiculo.cs</DependentUpon>
+    <EmbeddedResource Include="FrontEnd\Modules\Reportes\MarcasForm.resx">
+      <DependentUpon>MarcasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Modules\Reportes\ModelosForm.resx">
+      <DependentUpon>ModelosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Modules\Reportes\TipoCombustiblesForm.resx">
+      <DependentUpon>TipoCombustiblesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Modules\Reportes\TipoTransmisionesForm.resx">
+      <DependentUpon>TipoTransmisionesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Modules\Reportes\VehiculosForm.resx">
+      <DependentUpon>VehiculosForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111211740484_initial.resx">
       <DependentUpon>202111211740484_initial.cs</DependentUpon>

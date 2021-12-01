@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaDeAlquilerDeVehiculos.BackEnd.Controllers;
 using SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities;
 namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoTipoCombustible
 {

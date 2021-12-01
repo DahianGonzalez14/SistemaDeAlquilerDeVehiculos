@@ -24,7 +24,7 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
         }
         public List<Alquiler> getAllHistory()
         {
-            return alquilerRepository.GetAllBy(x=> x.Estatus =="I");
+            return alquilerRepository.GetAllBy(x=> x.Estatus.Equals("I"));
         }
         public Alquiler findById(int id)
         {

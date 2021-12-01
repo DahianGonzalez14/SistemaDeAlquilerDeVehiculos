@@ -78,24 +78,17 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.AlquilerModulo
             alquilerId = Convert.ToInt32(dgvDevolucionVehiculo.CurrentRow.Cells["Id"].Value.ToString());
             txtVehiculo.Text = dgvDevolucionVehiculo.CurrentRow.Cells["Vehiculo"].Value.ToString();
             var fechaHasta = Convert.ToDateTime(dgvDevolucionVehiculo.CurrentRow.Cells["FechaHasta"].Value.ToString());
-            if(DateTime.Now.Year >= fechaHasta.Year)
+            if(DateTime.Now > fechaHasta)
             {
-                if(DateTime.Now.Month >= fechaHasta.Month)
-                {
-                    if (DateTime.Now.Day < fechaHasta.Day)
-                    {
-                        labelPenalidad.Visible = true;
-                        txtPenalidad.Visible = true;
-                        toogleIsPenalty = 1;
-                    }
-                    else
-                    {
-                        labelPenalidad.Visible = false;
-                        txtPenalidad.Visible = false;
-                        toogleIsPenalty = 0;
-                    }
-                }
-
+                labelPenalidad.Visible = true;
+                txtPenalidad.Visible = true;
+                toogleIsPenalty = 1;
+            }
+            else
+            {
+                labelPenalidad.Visible = false;
+                txtPenalidad.Visible = false;
+                toogleIsPenalty = 0;
             }
         }
 

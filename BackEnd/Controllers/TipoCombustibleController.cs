@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SegundoParcial.Helpers;
-namespace SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities
+namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
 {
     public class TipoCombustibleController
     {

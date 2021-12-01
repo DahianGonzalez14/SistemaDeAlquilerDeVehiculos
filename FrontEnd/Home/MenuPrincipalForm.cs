@@ -7,7 +7,6 @@ using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MantenimientoV
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMantenimiento;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Modelos;
 using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.TipoTransmisiones;
-using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +16,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Reportes;
 
 namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
 {
@@ -29,8 +29,8 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
 
         private void reporteTipoCobustibleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TipoCombustible reporteTipoCombustible = new TipoCombustible();
-            reporteTipoCombustible.ShowDialog();
+            TipoCombustiblesForm tipoCombustiblesForm = new TipoCombustiblesForm();
+            tipoCombustiblesForm.ShowDialog();
         }
 
         private void crearToolStripMenuItem_Click(object sender, EventArgs e)
@@ -107,8 +107,8 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
 
         private void reporteVehiculoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Vehiculo reporteVehiculo = new Vehiculo();
-            reporteVehiculo.ShowDialog();
+            VehiculosForm vehiculosForm = new VehiculosForm();
+            vehiculosForm.ShowDialog();
         }
 
         private void crearToolStripMenuItem5_Click(object sender, EventArgs e)
@@ -154,8 +154,8 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
 
         private void reporteHistorialDeAlquileresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            HistorialAlquiler historialAlquiler = new HistorialAlquiler();
-            historialAlquiler.ShowDialog();
+            HistorialAlquileresForm historialAlquileresForm = new HistorialAlquileresForm();
+            historialAlquileresForm.ShowDialog();
         }
 
         private void Menu_Principal_Load(object sender, EventArgs e)
@@ -167,6 +167,36 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
         {
             AlquilerVehiculoForm alquilerVehiculoForm = new AlquilerVehiculoForm();
             alquilerVehiculoForm.ShowDialog();
+        }
+
+        private void reporteClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ClientesForm clientesForm = new ClientesForm();
+            clientesForm.ShowDialog();
+        }
+
+        private void reporteMarcaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MarcasForm marcasForm = new MarcasForm();
+            marcasForm.ShowDialog();
+        }
+
+        private void reporteModeloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ModelosForm modelosForm = new ModelosForm();
+            modelosForm.ShowDialog();
+        }
+
+        private void reporteTipoTransmisionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TipoTransmisionesForm tipoTransmisionesForm = new TipoTransmisionesForm();
+            tipoTransmisionesForm.ShowDialog();
+        }
+
+        private void reporteVerTodosLosAlquileresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AlquileresForm alquileresForm = new AlquileresForm();
+            alquileresForm.ShowDialog();
         }
     }
 }
