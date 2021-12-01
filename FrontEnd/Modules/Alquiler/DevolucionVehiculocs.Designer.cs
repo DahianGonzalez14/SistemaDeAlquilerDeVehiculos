@@ -29,29 +29,26 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.AlquilerModulo
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DevolucionVehiculocs));
             this.panelCrearCliente = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.dgvDevolverAlquiler = new System.Windows.Forms.DataGridView();
             this.labelCrearClienteMantenimiento = new System.Windows.Forms.Label();
+            this.comboBoxAlquiler = new System.Windows.Forms.ComboBox();
             this.panelCrearCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDevolverAlquiler)).BeginInit();
             this.SuspendLayout();
             // 
             // panelCrearCliente
             // 
-            this.panelCrearCliente.Controls.Add(this.textBox5);
+            this.panelCrearCliente.Controls.Add(this.comboBoxAlquiler);
             this.panelCrearCliente.Controls.Add(this.label7);
             this.panelCrearCliente.Controls.Add(this.textBox3);
             this.panelCrearCliente.Controls.Add(this.label5);
-            this.panelCrearCliente.Controls.Add(this.textBox4);
-            this.panelCrearCliente.Controls.Add(this.label6);
             this.panelCrearCliente.Controls.Add(this.btnLimpiar);
             this.panelCrearCliente.Controls.Add(this.btnGuardar);
             this.panelCrearCliente.Location = new System.Drawing.Point(108, 82);
@@ -59,22 +56,14 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.AlquilerModulo
             this.panelCrearCliente.Size = new System.Drawing.Size(985, 238);
             this.panelCrearCliente.TabIndex = 50;
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(152, 45);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(284, 22);
-            this.textBox5.TabIndex = 47;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(80, 45);
+            this.label7.Location = new System.Drawing.Point(78, 79);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 17);
+            this.label7.Size = new System.Drawing.Size(55, 17);
             this.label7.TabIndex = 46;
-            this.label7.Text = "IdAlquiler";
+            this.label7.Text = "Alquiler";
             // 
             // textBox3
             // 
@@ -92,24 +81,6 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.AlquilerModulo
             this.label5.Size = new System.Drawing.Size(71, 17);
             this.label5.TabIndex = 44;
             this.label5.Text = "Penalidad";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(133, 84);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(295, 22);
-            this.textBox4.TabIndex = 43;
-            // 
-            // label6
-            // 
-            this.label6.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(69, 84);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 17);
-            this.label6.TabIndex = 42;
-            this.label6.Text = "Estatus";
             // 
             // btnLimpiar
             // 
@@ -162,6 +133,14 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.AlquilerModulo
             this.labelCrearClienteMantenimiento.TabIndex = 48;
             this.labelCrearClienteMantenimiento.Text = "Devolver Alquiler";
             // 
+            // comboBoxAlquiler
+            // 
+            this.comboBoxAlquiler.FormattingEnabled = true;
+            this.comboBoxAlquiler.Location = new System.Drawing.Point(152, 72);
+            this.comboBoxAlquiler.Name = "comboBoxAlquiler";
+            this.comboBoxAlquiler.Size = new System.Drawing.Size(282, 24);
+            this.comboBoxAlquiler.TabIndex = 47;
+            // 
             // DevolucionVehiculocs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -170,6 +149,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.AlquilerModulo
             this.Controls.Add(this.panelCrearCliente);
             this.Controls.Add(this.dgvDevolverAlquiler);
             this.Controls.Add(this.labelCrearClienteMantenimiento);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DevolucionVehiculocs";
             this.Text = "DevolucionVehiculocs";
             this.Load += new System.EventHandler(this.DevolucionVehiculocs_Load);
@@ -184,15 +164,13 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.AlquilerModulo
         #endregion
 
         private System.Windows.Forms.Panel panelCrearCliente;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.DataGridView dgvDevolverAlquiler;
         private System.Windows.Forms.Label labelCrearClienteMantenimiento;
+        private System.Windows.Forms.ComboBox comboBoxAlquiler;
     }
 }

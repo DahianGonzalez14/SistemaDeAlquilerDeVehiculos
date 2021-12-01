@@ -29,6 +29,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeleteVehiculo));
             this.panelCrearCliente = new System.Windows.Forms.Panel();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -129,6 +130,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.Controls.Add(this.panelCrearCliente);
             this.Controls.Add(this.dgvCrearVehiculo);
             this.Controls.Add(this.labelCrearClienteMantenimiento);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DeleteVehiculo";
             this.Text = "DeleteVehiculo";
             this.Load += new System.EventHandler(this.DeleteVehiculo_Load);

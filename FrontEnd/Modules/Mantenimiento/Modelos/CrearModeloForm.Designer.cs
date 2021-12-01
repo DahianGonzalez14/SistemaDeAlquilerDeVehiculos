@@ -62,6 +62,7 @@
             this.comboBoxMarca.Name = "comboBoxMarca";
             this.comboBoxMarca.Size = new System.Drawing.Size(282, 24);
             this.comboBoxMarca.TabIndex = 42;
+            this.comboBoxMarca.SelectedIndexChanged += new System.EventHandler(this.comboBoxMarca_SelectedIndexChanged);
             // 
             // btnLimpiar
             // 
@@ -100,7 +101,7 @@
             this.lMarca.Location = new System.Drawing.Point(444, 24);
             this.lMarca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lMarca.Name = "lMarca";
-            this.lMarca.Size = new System.Drawing.Size(45, 16);
+            this.lMarca.Size = new System.Drawing.Size(47, 17);
             this.lMarca.TabIndex = 27;
             this.lMarca.Text = "Marca";
             // 
@@ -118,7 +119,7 @@
             this.lNombre.Location = new System.Drawing.Point(6, 24);
             this.lNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lNombre.Name = "lNombre";
-            this.lNombre.Size = new System.Drawing.Size(56, 16);
+            this.lNombre.Size = new System.Drawing.Size(58, 17);
             this.lNombre.TabIndex = 21;
             this.lNombre.Text = "Nombre";
             this.lNombre.TextAlign = System.Drawing.ContentAlignment.TopCenter;

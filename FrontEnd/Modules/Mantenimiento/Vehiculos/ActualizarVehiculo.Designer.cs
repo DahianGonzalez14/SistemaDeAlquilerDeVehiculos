@@ -29,6 +29,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActualizarVehiculo));
             this.panelCrearCliente = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.txt12 = new System.Windows.Forms.TextBox();
@@ -45,8 +46,6 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.txt7 = new System.Windows.Forms.TextBox();
-            this.lTelefono = new System.Windows.Forms.Label();
-            this.txt5 = new System.Windows.Forms.TextBox();
             this.lCedula = new System.Windows.Forms.Label();
             this.txt6 = new System.Windows.Forms.TextBox();
             this.lCorreo = new System.Windows.Forms.Label();
@@ -79,8 +78,6 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.panelCrearCliente.Controls.Add(this.btnLimpiar);
             this.panelCrearCliente.Controls.Add(this.btnGuardar);
             this.panelCrearCliente.Controls.Add(this.txt7);
-            this.panelCrearCliente.Controls.Add(this.lTelefono);
-            this.panelCrearCliente.Controls.Add(this.txt5);
             this.panelCrearCliente.Controls.Add(this.lCedula);
             this.panelCrearCliente.Controls.Add(this.txt6);
             this.panelCrearCliente.Controls.Add(this.lCorreo);
@@ -117,7 +114,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(446, 187);
+            this.label5.Location = new System.Drawing.Point(441, 148);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 17);
@@ -127,7 +124,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             // txt8
             // 
             this.txt8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt8.Location = new System.Drawing.Point(517, 184);
+            this.txt8.Location = new System.Drawing.Point(512, 145);
             this.txt8.Margin = new System.Windows.Forms.Padding(4);
             this.txt8.Name = "txt8";
             this.txt8.Size = new System.Drawing.Size(282, 22);
@@ -222,6 +219,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.btnLimpiar.TabIndex = 41;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnGuardar
             // 
@@ -242,35 +240,16 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             // txt7
             // 
             this.txt7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt7.Location = new System.Drawing.Point(517, 127);
+            this.txt7.Location = new System.Drawing.Point(512, 88);
             this.txt7.Margin = new System.Windows.Forms.Padding(4);
             this.txt7.Name = "txt7";
             this.txt7.Size = new System.Drawing.Size(282, 22);
             this.txt7.TabIndex = 32;
             // 
-            // lTelefono
-            // 
-            this.lTelefono.AutoSize = true;
-            this.lTelefono.Location = new System.Drawing.Point(444, 24);
-            this.lTelefono.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lTelefono.Name = "lTelefono";
-            this.lTelefono.Size = new System.Drawing.Size(50, 17);
-            this.lTelefono.TabIndex = 27;
-            this.lTelefono.Text = "Chasis";
-            // 
-            // txt5
-            // 
-            this.txt5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt5.Location = new System.Drawing.Point(519, 18);
-            this.txt5.Margin = new System.Windows.Forms.Padding(4);
-            this.txt5.Name = "txt5";
-            this.txt5.Size = new System.Drawing.Size(282, 22);
-            this.txt5.TabIndex = 28;
-            // 
             // lCedula
             // 
             this.lCedula.AutoSize = true;
-            this.lCedula.Location = new System.Drawing.Point(442, 130);
+            this.lCedula.Location = new System.Drawing.Point(437, 91);
             this.lCedula.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lCedula.Name = "lCedula";
             this.lCedula.Size = new System.Drawing.Size(38, 17);
@@ -280,7 +259,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             // txt6
             // 
             this.txt6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt6.Location = new System.Drawing.Point(517, 70);
+            this.txt6.Location = new System.Drawing.Point(512, 33);
             this.txt6.Margin = new System.Windows.Forms.Padding(4);
             this.txt6.Name = "txt6";
             this.txt6.Size = new System.Drawing.Size(282, 22);
@@ -289,7 +268,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             // lCorreo
             // 
             this.lCorreo.AutoSize = true;
-            this.lCorreo.Location = new System.Drawing.Point(442, 76);
+            this.lCorreo.Location = new System.Drawing.Point(437, 37);
             this.lCorreo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lCorreo.Name = "lCorreo";
             this.lCorreo.Size = new System.Drawing.Size(43, 17);
@@ -359,8 +338,9 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.dgvCrearVehiculo.Margin = new System.Windows.Forms.Padding(4);
             this.dgvCrearVehiculo.Name = "dgvCrearVehiculo";
             this.dgvCrearVehiculo.RowHeadersWidth = 51;
-            this.dgvCrearVehiculo.Size = new System.Drawing.Size(985, 268);
+            this.dgvCrearVehiculo.Size = new System.Drawing.Size(1158, 268);
             this.dgvCrearVehiculo.TabIndex = 46;
+            this.dgvCrearVehiculo.SelectionChanged += new System.EventHandler(this.dgvCrearVehiculo_SelectionChanged);
             // 
             // labelCrearClienteMantenimiento
             // 
@@ -381,6 +361,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
             this.Controls.Add(this.panelCrearCliente);
             this.Controls.Add(this.dgvCrearVehiculo);
             this.Controls.Add(this.labelCrearClienteMantenimiento);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ActualizarVehiculo";
             this.Text = "ActualizarVehiculo";
             this.Load += new System.EventHandler(this.ActualizarVehiculo_Load);
@@ -410,18 +391,16 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.TextBox txt7;
-        private System.Windows.Forms.Label lTelefono;
-        private System.Windows.Forms.TextBox txt5;
         private System.Windows.Forms.Label lCedula;
         private System.Windows.Forms.TextBox txt6;
         private System.Windows.Forms.Label lCorreo;
-        private System.Windows.Forms.TextBox txt3;
         private System.Windows.Forms.Label lDireccion;
-        private System.Windows.Forms.TextBox txt2;
         private System.Windows.Forms.Label lApellido;
-        private System.Windows.Forms.TextBox txt1;
         private System.Windows.Forms.Label lNombre;
         private System.Windows.Forms.DataGridView dgvCrearVehiculo;
         private System.Windows.Forms.Label labelCrearClienteMantenimiento;
+        private System.Windows.Forms.TextBox txt3;
+        private System.Windows.Forms.TextBox txt2;
+        private System.Windows.Forms.TextBox txt1;
     }
 }

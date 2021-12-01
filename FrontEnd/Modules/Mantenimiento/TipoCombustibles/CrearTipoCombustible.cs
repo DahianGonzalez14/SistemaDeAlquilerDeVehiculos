@@ -18,12 +18,19 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
         {
             InitializeComponent();
         }
-
-
+        private void LlenarDataTable()
+        {
+            dgvCrearTipoCombustible.DataSource = combustible.getAll().Select(x => new { x.Nombre, x.Estatus }).ToList();
+        }
+        private void LimpiarCampos()
+        {
+            textBox1.Text = string.Empty;
+         
+        }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             
-            if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text))
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
             {
 
                 MessageBox.Show("completa los campos faltan");
@@ -33,16 +40,18 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
                 TipoCombustible nuevoCombustible = new TipoCombustible()
                 {
                     Nombre = textBox1.Text,
-                    Estatus = textBox2.Text,
+                    Estatus = "A",
                     FechaRegistro = DateTime.Now,
                     FechaModificacion = null,
                     Borrado = false,
                 };
 
                 var crear = combustible.Create(nuevoCombustible);
-                LlenarDataTable();
+              
                 if (crear.Success)
                 {
+                    LimpiarCampos();
+                    LlenarDataTable();
                     MessageBox.Show(crear.Message);
                 }
                 else
@@ -55,12 +64,14 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Mantenimie
 
         private void CrearTipoCombustible_Load(object sender, EventArgs e)
         {
-            dgvCrearTipoCombustible.DataSource = combustible.getAll();
+            LlenarDataTable();
         }
 
-        private void LlenarDataTable()
+       
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            dgvCrearTipoCombustible.DataSource = combustible.getAll();
+            LimpiarCampos();
         }
     }
 }
