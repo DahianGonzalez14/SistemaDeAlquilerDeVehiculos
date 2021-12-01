@@ -95,7 +95,6 @@
             this.lCedula.Size = new System.Drawing.Size(50, 16);
             this.lCedula.TabIndex = 31;
             this.lCedula.Text = "Cédula";
-            this.lCedula.Click += new System.EventHandler(this.lCedula_Click);
             // 
             // txtCorreo
             // 
@@ -124,7 +123,6 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(282, 22);
             this.txtTelefono.TabIndex = 28;
-            this.txtTelefono.TextChanged += new System.EventHandler(this.txtMarca_TextChanged);
             // 
             // lTelefono
             // 
@@ -135,7 +133,6 @@
             this.lTelefono.Size = new System.Drawing.Size(61, 16);
             this.lTelefono.TabIndex = 27;
             this.lTelefono.Text = "Teléfono";
-            this.lTelefono.Click += new System.EventHandler(this.lTelefono_Click);
             // 
             // txtDireccion
             // 
@@ -145,7 +142,6 @@
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(282, 22);
             this.txtDireccion.TabIndex = 26;
-            this.txtDireccion.TextChanged += new System.EventHandler(this.txtAno_TextChanged);
             // 
             // lDireccion
             // 
@@ -214,7 +210,6 @@
             this.panelCrearCliente.Name = "panelCrearCliente";
             this.panelCrearCliente.Size = new System.Drawing.Size(1005, 238);
             this.panelCrearCliente.TabIndex = 41;
-            this.panelCrearCliente.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCrearCliente_Paint);
             // 
             // btnLimpiar
             // 
@@ -235,7 +230,7 @@
             // 
             this.labelCrearClienteMantenimiento.AutoSize = true;
             this.labelCrearClienteMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCrearClienteMantenimiento.Location = new System.Drawing.Point(111, 20);
+            this.labelCrearClienteMantenimiento.Location = new System.Drawing.Point(88, 21);
             this.labelCrearClienteMantenimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCrearClienteMantenimiento.Name = "labelCrearClienteMantenimiento";
             this.labelCrearClienteMantenimiento.Size = new System.Drawing.Size(160, 18);

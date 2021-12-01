@@ -25,14 +25,14 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.TipoTransm
         private void BorrarTipoTransmisionForm_Load(object sender, EventArgs e)
         {
             panelBorrarTipoTransmision.BorderStyle = BorderStyle.FixedSingle;
-            LlenarDataTable();
-            dgvBorrarTipoTransmision.Columns["Id"].Visible = false;
+            LlenarDataTable();      
         }
 
         private void LlenarDataTable()
         {
             var showListTipoTransmision = tipoTransmisionController.getAll().Select(x => new { x.Id, x.Nombre, x.Estatus }).ToList();
             dgvBorrarTipoTransmision.DataSource = showListTipoTransmision;
+            dgvBorrarTipoTransmision.Columns["Id"].Visible = false;
         }
 
         private void LimpiarCampos()

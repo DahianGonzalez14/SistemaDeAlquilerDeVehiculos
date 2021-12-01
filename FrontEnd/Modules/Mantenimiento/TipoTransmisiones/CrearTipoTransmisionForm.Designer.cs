@@ -50,7 +50,6 @@
             this.panelCrearTipoTransmision.Name = "panelCrearTipoTransmision";
             this.panelCrearTipoTransmision.Size = new System.Drawing.Size(1005, 153);
             this.panelCrearTipoTransmision.TabIndex = 44;
-            this.panelCrearTipoTransmision.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCrearCliente_Paint);
             // 
             // btnLimpiar
             // 
@@ -113,19 +112,17 @@
             this.dgvCrearTransmision.RowHeadersWidth = 51;
             this.dgvCrearTransmision.Size = new System.Drawing.Size(1005, 347);
             this.dgvCrearTransmision.TabIndex = 43;
-            this.dgvCrearTransmision.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCrearCliente_CellContentClick);
             // 
             // labelCrearTipoTransmisionMantenimiento
             // 
             this.labelCrearTipoTransmisionMantenimiento.AutoSize = true;
             this.labelCrearTipoTransmisionMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCrearTipoTransmisionMantenimiento.Location = new System.Drawing.Point(95, 21);
+            this.labelCrearTipoTransmisionMantenimiento.Location = new System.Drawing.Point(72, 26);
             this.labelCrearTipoTransmisionMantenimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCrearTipoTransmisionMantenimiento.Name = "labelCrearTipoTransmisionMantenimiento";
             this.labelCrearTipoTransmisionMantenimiento.Size = new System.Drawing.Size(262, 18);
             this.labelCrearTipoTransmisionMantenimiento.TabIndex = 42;
             this.labelCrearTipoTransmisionMantenimiento.Text = "Crear Nuevo Tipo de Transmisión";
-            this.labelCrearTipoTransmisionMantenimiento.Click += new System.EventHandler(this.labelCrearClienteMantenimiento_Click);
             // 
             // CrearTipoTransmisionForm
             // 

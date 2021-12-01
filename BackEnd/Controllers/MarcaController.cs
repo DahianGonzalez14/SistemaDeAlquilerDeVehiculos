@@ -8,7 +8,6 @@ using SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities;
 using SistemaDeAlquilerDeVehiculos.BackEnd.Repositories.Implementations;
 namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
 {
-  
     public class MarcaController
 
     {
@@ -42,15 +41,18 @@ namespace SistemaDeAlquilerDeVehiculos.BackEnd.Controllers
 
         public OperationResult Edit(Marca marca)
         {
-            var existMarca = marcaRepository.Find(x => x.Id.Equals(marca.Id) && x.Borrado == false);
-            if (existMarca != null && existMarca.Id == marca.Id)
+            var existsMarca = marcaRepository.Find(x => x.Nombre.Equals(marca.Nombre) && x.Borrado == false);
+            if (existsMarca != null && existsMarca.Id != marca.Id)
             {
-                existMarca.Nombre = marca.Nombre;
-                existMarca.FechaModificacion = DateTime.Now;
-
-                return marcaRepository.Update(existMarca);
+                return new OperationResult() { Data = null, Message = "Error existe una marca con dicho nombre", Success = false };
             }
-            return new OperationResult() { Data = null, Message = "Error existe una marca con dicho nombre", Success = false };
+
+            var currentMarca = marcaRepository.FindById(marca.Id);
+            currentMarca.Nombre = marca.Nombre;
+            currentMarca.Estatus = marca.Estatus;
+            currentMarca.FechaModificacion = DateTime.Now;
+
+            return marcaRepository.Update(currentMarca);           
         }
 
         public OperationResult Delete(Marca marca)

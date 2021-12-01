@@ -140,7 +140,6 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.mantenimientoMarcaToolStripMenuItem.Name = "mantenimientoMarcaToolStripMenuItem";
             this.mantenimientoMarcaToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
             this.mantenimientoMarcaToolStripMenuItem.Text = "Marcas";
-            this.mantenimientoMarcaToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoMarcaToolStripMenuItem_Click);
             // 
             // crearToolStripMenuItem1
             // 
@@ -178,18 +177,21 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.crearToolStripMenuItem2.Name = "crearToolStripMenuItem2";
             this.crearToolStripMenuItem2.Size = new System.Drawing.Size(158, 26);
             this.crearToolStripMenuItem2.Text = "Crear";
+            this.crearToolStripMenuItem2.Click += new System.EventHandler(this.crearToolStripMenuItem2_Click);
             // 
             // actualizarToolStripMenuItem2
             // 
             this.actualizarToolStripMenuItem2.Name = "actualizarToolStripMenuItem2";
             this.actualizarToolStripMenuItem2.Size = new System.Drawing.Size(158, 26);
             this.actualizarToolStripMenuItem2.Text = "Actualizar";
+            this.actualizarToolStripMenuItem2.Click += new System.EventHandler(this.actualizarToolStripMenuItem2_Click);
             // 
             // borrarToolStripMenuItem2
             // 
             this.borrarToolStripMenuItem2.Name = "borrarToolStripMenuItem2";
             this.borrarToolStripMenuItem2.Size = new System.Drawing.Size(158, 26);
             this.borrarToolStripMenuItem2.Text = "Borrar";
+            this.borrarToolStripMenuItem2.Click += new System.EventHandler(this.borrarToolStripMenuItem2_Click);
             // 
             // mantenimientoVehiculoToolStripMenuItem
             // 
@@ -231,7 +233,6 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.mantenimientoTipoCombustibleToolStripMenuItem.Name = "mantenimientoTipoCombustibleToolStripMenuItem";
             this.mantenimientoTipoCombustibleToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
             this.mantenimientoTipoCombustibleToolStripMenuItem.Text = "Tipos de Combustibles";
-            this.mantenimientoTipoCombustibleToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoTipoCombustibleToolStripMenuItem_Click);
             // 
             // crearToolStripMenuItem4
             // 
@@ -263,7 +264,6 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.mantenimientoTipoTransmisionToolStripMenuItem.Name = "mantenimientoTipoTransmisionToolStripMenuItem";
             this.mantenimientoTipoTransmisionToolStripMenuItem.Size = new System.Drawing.Size(245, 26);
             this.mantenimientoTipoTransmisionToolStripMenuItem.Text = "Tipos de Transmisiones";
-            this.mantenimientoTipoTransmisionToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoTipoTransmisionToolStripMenuItem_Click);
             // 
             // crearToolStripMenuItem5
             // 
@@ -334,7 +334,6 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.reporteMarcaToolStripMenuItem.Name = "reporteMarcaToolStripMenuItem";
             this.reporteMarcaToolStripMenuItem.Size = new System.Drawing.Size(317, 26);
             this.reporteMarcaToolStripMenuItem.Text = "Reporte de Marcas";
-            this.reporteMarcaToolStripMenuItem.Click += new System.EventHandler(this.reporteMarcaToolStripMenuItem_Click);
             // 
             // reporteModeloToolStripMenuItem
             // 
@@ -361,7 +360,6 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.reporteTipoTransmisionToolStripMenuItem.Name = "reporteTipoTransmisionToolStripMenuItem";
             this.reporteTipoTransmisionToolStripMenuItem.Size = new System.Drawing.Size(317, 26);
             this.reporteTipoTransmisionToolStripMenuItem.Text = "Reporte de Tipo de Transmisiones";
-            this.reporteTipoTransmisionToolStripMenuItem.Click += new System.EventHandler(this.reporteTipoTransmisionToolStripMenuItem_Click);
             // 
             // reporteVerTodosLosAlquileresToolStripMenuItem
             // 
@@ -382,11 +380,10 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Home
             this.label2.Location = new System.Drawing.Point(282, 532);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(578, 17);
+            this.label2.Size = new System.Drawing.Size(543, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Copyright © 2021 Compañia de Alquiler de Vehiculos S.L. Todos los derechos reserv" +
     "ados.";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel1
             // 

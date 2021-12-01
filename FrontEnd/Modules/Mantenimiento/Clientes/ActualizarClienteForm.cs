@@ -1,4 +1,5 @@
 ﻿using SistemaDeAlquilerDeVehiculos.BackEnd.Controllers;
+using SistemaDeAlquilerDeVehiculos.BackEnd.Helpers;
 using SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities;
 using System;
 using System.Collections.Generic;
@@ -16,17 +17,30 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes
     {
         ClienteController clienteController;
         int clienteId;
+        List<PairValue> pairValueList;
         public ActualizarClienteForm()
         {
             clienteController = new ClienteController();
+            pairValueList = new List<PairValue>
+            {
+                new PairValue { Key = "A", Value = "Activo" },
+                new PairValue { Key = "I", Value = "Inactivo"}
+            };
             InitializeComponent();
         }
 
         private void ActualizarClienteForm_Load(object sender, EventArgs e)
         {
             panelActualizarCliente.BorderStyle = BorderStyle.FixedSingle;
-            LlenarDataTable();
-            dgvActualizarCliente.Columns["Id"].Visible = false;
+            LlenarComboBoxEstatus();          
+            LlenarDataTable();                  
+        }
+
+        private void LlenarComboBoxEstatus()
+        {
+            comboBoxEstatus.DataSource = pairValueList;
+            comboBoxEstatus.DisplayMember = "Value";
+            comboBoxEstatus.ValueMember = "Key";
         }
 
         private void LimpiarCampos()
@@ -44,6 +58,11 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes
         {
             var showListCliente = clienteController.getAll().Select(x => new { x.Id, x.Nombre, x.Apellido, x.Direccion, x.Telefono, x.Correo, x.Cedula, x.Estatus }).ToList();
             dgvActualizarCliente.DataSource = showListCliente;
+            dgvActualizarCliente.Columns["Id"].Visible = false;
+            if (showListCliente.Count() == 0)
+            {
+                LimpiarCampos();
+            }
         }
 
         private void dgvActualizarCliente_SelectionChanged(object sender, EventArgs e)
@@ -55,20 +74,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes
             txtTelefono.Text = dgvActualizarCliente.CurrentRow.Cells["Telefono"].Value.ToString();
             txtCorreo.Text = dgvActualizarCliente.CurrentRow.Cells["Correo"].Value.ToString();
             txtCedula.Text = dgvActualizarCliente.CurrentRow.Cells["Cedula"].Value.ToString();
-            comboBoxEstatus.SelectedIndex = getIndexByEstatus();
-        }
-
-        private int getIndexByEstatus()
-        {
-            var estatus = dgvActualizarCliente.CurrentRow.Cells["Estatus"].Value.ToString();
-            if (estatus.Equals("A"))
-            {
-                return 0;
-            }
-            else
-            {
-                return 1;
-            }
+            comboBoxEstatus.SelectedValue = dgvActualizarCliente.CurrentRow.Cells["Estatus"].Value.ToString();
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -76,24 +82,12 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes
             LimpiarCampos();
         }
 
-        private string getValueByEstatus(string estatus)
-        {
-            if (estatus.Equals("Activo"))
-            {
-                return "A";
-            }
-            else
-            {
-                return "I";
-            }
-        }
-
         private void btnGuardar_Click(object sender, EventArgs e)
         {
 
             if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtApellido.Text)
                 || string.IsNullOrWhiteSpace(txtDireccion.Text) || string.IsNullOrWhiteSpace(txtTelefono.Text)
-                || string.IsNullOrWhiteSpace(txtCorreo.Text) || string.IsNullOrWhiteSpace(txtCedula.Text))
+                || string.IsNullOrWhiteSpace(txtCorreo.Text) || string.IsNullOrWhiteSpace(txtCedula.Text) || string.IsNullOrWhiteSpace(comboBoxEstatus.Text))
             {
                 MessageBox.Show("Debe completar todos los campos");
             }
@@ -124,7 +118,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.Clientes
                         Telefono = txtTelefono.Text,
                         Correo = txtCorreo.Text,
                         Cedula = txtCedula.Text,
-                        Estatus = getValueByEstatus(comboBoxEstatus.Text)
+                        Estatus = comboBoxEstatus.SelectedValue.ToString()
                     };
 
                     var updatedCliente = clienteController.Edit(cliente);

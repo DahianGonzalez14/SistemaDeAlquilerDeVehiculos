@@ -100,7 +100,7 @@
             // 
             this.labelBorrarClienteMantenimiento.AutoSize = true;
             this.labelBorrarClienteMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBorrarClienteMantenimiento.Location = new System.Drawing.Point(91, 21);
+            this.labelBorrarClienteMantenimiento.Location = new System.Drawing.Point(82, 24);
             this.labelBorrarClienteMantenimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelBorrarClienteMantenimiento.Name = "labelBorrarClienteMantenimiento";
             this.labelBorrarClienteMantenimiento.Size = new System.Drawing.Size(113, 18);

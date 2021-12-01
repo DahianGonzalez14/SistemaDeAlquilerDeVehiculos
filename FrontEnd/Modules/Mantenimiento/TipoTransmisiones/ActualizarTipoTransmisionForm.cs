@@ -1,4 +1,5 @@
 ﻿using SistemaDeAlquilerDeVehiculos.BackEnd.Controllers;
+using SistemaDeAlquilerDeVehiculos.BackEnd.Helpers;
 using SistemaDeAlquilerDeVehiculos.BackEnd.Models.Entities;
 using System;
 using System.Collections.Generic;
@@ -16,23 +17,41 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.TipoTransm
     {
         TipoTransmisionController tipoTransmisionController;
         int tipoTransmisionId;
+        List<PairValue> pairValueList;
         public ActualizarTipoTransmisionForm()
         {
             tipoTransmisionController = new TipoTransmisionController();
+            pairValueList = new List<PairValue>()
+            {
+                new PairValue { Key = "A", Value = "Activo" },
+                new PairValue { Key = "I", Value = "Inactivo"}
+            };
             InitializeComponent();
         }
 
         private void ActualizarTipoTransmisionForm_Load(object sender, EventArgs e)
         {
             panelActualizarTipoTransmision.BorderStyle = BorderStyle.FixedSingle;
-            LlenarDataTable();
-            dgvActualizarTipoTransmision.Columns["Id"].Visible = false;
+            LlenarComboBoxEstatus();          
+            LlenarDataTable();               
+        }
+
+        private void LlenarComboBoxEstatus()
+        {
+            comboBoxEstatus.DataSource = pairValueList;
+            comboBoxEstatus.DisplayMember = "Value";
+            comboBoxEstatus.ValueMember = "Key";
         }
 
         private void LlenarDataTable()
         {
             var showListTipoTransmision = tipoTransmisionController.getAll().Select(x => new { x.Id, x.Nombre, x.Estatus }).ToList();
             dgvActualizarTipoTransmision.DataSource = showListTipoTransmision;
+            dgvActualizarTipoTransmision.Columns["Id"].Visible = false;
+            if (showListTipoTransmision.Count() == 0)
+            {
+                LimpiarCampos();
+            }
         }
 
         private void LimpiarCampos()
@@ -47,35 +66,10 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.TipoTransm
         }
 
         private void dgvActualizarTipoTransmision_SelectionChanged(object sender, EventArgs e)
-        {
+        {       
             tipoTransmisionId = Convert.ToInt32(dgvActualizarTipoTransmision.CurrentRow.Cells["Id"].Value.ToString());
             txtNombre.Text = dgvActualizarTipoTransmision.CurrentRow.Cells["Nombre"].Value.ToString();
-            comboBoxEstatus.SelectedIndex = getIndexByEstatus();
-        }
-
-        private int getIndexByEstatus()
-        {
-            var estatus = dgvActualizarTipoTransmision.CurrentRow.Cells["Estatus"].Value.ToString();
-            if (estatus.Equals("A"))
-            {
-                return 0;
-            }
-            else
-            {
-                return 1;
-            }
-        }
-
-        private string getValueByEstatus(string estatus)
-        {
-            if (estatus.Equals("Activo"))
-            {
-                return "A";
-            }
-            else
-            {
-                return "I";
-            }
+            comboBoxEstatus.SelectedValue = dgvActualizarTipoTransmision.CurrentRow.Cells["Estatus"].Value.ToString();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -90,7 +84,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.TipoTransm
                 {
                     Id = tipoTransmisionId,
                     Nombre = txtNombre.Text,
-                    Estatus = getValueByEstatus(comboBoxEstatus.Text)
+                    Estatus = comboBoxEstatus.SelectedValue.ToString()
                 };
 
                 var updatedTipoTransmision = tipoTransmisionController.Edit(tipoTransmision);

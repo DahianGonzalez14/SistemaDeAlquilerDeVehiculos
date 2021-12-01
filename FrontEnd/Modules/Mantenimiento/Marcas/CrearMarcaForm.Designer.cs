@@ -1,7 +1,7 @@
 ﻿
 namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMantenimiento
 {
-    partial class CrearMarca
+    partial class CrearMarcaForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,65 +29,45 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMante
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelCrearCliente = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearMarcaForm));
+            this.panelCrearMarca = new System.Windows.Forms.Panel();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lNombre = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.dgvCrearMarca = new System.Windows.Forms.DataGridView();
             this.labelCrearClienteMantenimiento = new System.Windows.Forms.Label();
-            this.panelCrearCliente.SuspendLayout();
+            this.panelCrearMarca.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCrearMarca)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelCrearCliente
+            // panelCrearMarca
             // 
-            this.panelCrearCliente.Controls.Add(this.textBox2);
-            this.panelCrearCliente.Controls.Add(this.label2);
-            this.panelCrearCliente.Controls.Add(this.textBox1);
-            this.panelCrearCliente.Controls.Add(this.label1);
-            this.panelCrearCliente.Controls.Add(this.btnLimpiar);
-            this.panelCrearCliente.Controls.Add(this.btnGuardar);
-            this.panelCrearCliente.Location = new System.Drawing.Point(129, 55);
-            this.panelCrearCliente.Name = "panelCrearCliente";
-            this.panelCrearCliente.Size = new System.Drawing.Size(985, 238);
-            this.panelCrearCliente.TabIndex = 47;
+            this.panelCrearMarca.Controls.Add(this.txtNombre);
+            this.panelCrearMarca.Controls.Add(this.lNombre);
+            this.panelCrearMarca.Controls.Add(this.btnLimpiar);
+            this.panelCrearMarca.Controls.Add(this.btnGuardar);
+            this.panelCrearMarca.Location = new System.Drawing.Point(75, 63);
+            this.panelCrearMarca.Name = "panelCrearMarca";
+            this.panelCrearMarca.Size = new System.Drawing.Size(1005, 153);
+            this.panelCrearMarca.TabIndex = 47;
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(506, 77);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(295, 22);
-            this.textBox2.TabIndex = 45;
+            this.txtNombre.Location = new System.Drawing.Point(78, 18);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(282, 22);
+            this.txtNombre.TabIndex = 43;
             // 
-            // label2
+            // lNombre
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(442, 77);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 17);
-            this.label2.TabIndex = 44;
-            this.label2.Text = "Estatus";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(107, 77);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(295, 22);
-            this.textBox1.TabIndex = 43;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 17);
-            this.label1.TabIndex = 42;
-            this.label1.Text = "Nombre";
+            this.lNombre.AutoSize = true;
+            this.lNombre.Location = new System.Drawing.Point(6, 24);
+            this.lNombre.Name = "lNombre";
+            this.lNombre.Size = new System.Drawing.Size(56, 16);
+            this.lNombre.TabIndex = 42;
+            this.lNombre.Text = "Nombre";
             // 
             // btnLimpiar
             // 
@@ -95,13 +75,14 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMante
             this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLimpiar.Location = new System.Drawing.Point(519, 176);
+            this.btnLimpiar.Location = new System.Drawing.Point(519, 77);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(282, 43);
             this.btnLimpiar.TabIndex = 41;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnGuardar
             // 
@@ -110,7 +91,7 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMante
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btnGuardar.Location = new System.Drawing.Point(78, 176);
+            this.btnGuardar.Location = new System.Drawing.Point(78, 77);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(282, 43);
@@ -121,19 +102,20 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMante
             // 
             // dgvCrearMarca
             // 
+            this.dgvCrearMarca.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCrearMarca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCrearMarca.Location = new System.Drawing.Point(129, 309);
+            this.dgvCrearMarca.Location = new System.Drawing.Point(75, 238);
             this.dgvCrearMarca.Margin = new System.Windows.Forms.Padding(4);
             this.dgvCrearMarca.Name = "dgvCrearMarca";
             this.dgvCrearMarca.RowHeadersWidth = 51;
-            this.dgvCrearMarca.Size = new System.Drawing.Size(985, 268);
+            this.dgvCrearMarca.Size = new System.Drawing.Size(1005, 347);
             this.dgvCrearMarca.TabIndex = 46;
             // 
             // labelCrearClienteMantenimiento
             // 
             this.labelCrearClienteMantenimiento.AutoSize = true;
             this.labelCrearClienteMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCrearClienteMantenimiento.Location = new System.Drawing.Point(135, 13);
+            this.labelCrearClienteMantenimiento.Location = new System.Drawing.Point(72, 25);
             this.labelCrearClienteMantenimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCrearClienteMantenimiento.Name = "labelCrearClienteMantenimiento";
             this.labelCrearClienteMantenimiento.Size = new System.Drawing.Size(154, 18);
@@ -144,15 +126,18 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1242, 591);
-            this.Controls.Add(this.panelCrearCliente);
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(1154, 607);
+            this.Controls.Add(this.panelCrearMarca);
             this.Controls.Add(this.dgvCrearMarca);
             this.Controls.Add(this.labelCrearClienteMantenimiento);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "CrearMarca";
-            this.Text = "CrearMarca";
+            this.Text = "Crear Marca";
             this.Load += new System.EventHandler(this.CrearMarca_Load);
-            this.panelCrearCliente.ResumeLayout(false);
-            this.panelCrearCliente.PerformLayout();
+            this.panelCrearMarca.ResumeLayout(false);
+            this.panelCrearMarca.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCrearMarca)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -161,11 +146,9 @@ namespace SistemaDeAlquilerDeVehiculos.FrontEnd.Modules.Mantenimiento.MarcaMante
 
         #endregion
 
-        private System.Windows.Forms.Panel panelCrearCliente;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelCrearMarca;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label lNombre;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.DataGridView dgvCrearMarca;

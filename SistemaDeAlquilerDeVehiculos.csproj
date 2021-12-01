@@ -183,6 +183,7 @@
     <Compile Include="BackEnd\Controllers\VehiculoController.cs" />
     <Compile Include="BackEnd\Controllers\ClienteController.cs" />
     <Compile Include="BackEnd\Helpers\OperationResult.cs" />
+    <Compile Include="BackEnd\Helpers\PairValue.cs" />
     <Compile Include="BackEnd\Models\Context\Context.cs" />
     <Compile Include="BackEnd\Models\Entities\Alquiler.cs" />
     <Compile Include="BackEnd\Models\Entities\Cliente.cs" />
@@ -208,11 +209,10 @@
     <Compile Include="FrontEnd\Home\MenuPrincipalForm.Designer.cs">
       <DependentUpon>MenuPrincipalForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\AlquilerModulo\Class1.cs" />
-    <Compile Include="FrontEnd\Modules\AlquilerModulo\DevolucionVehiculocs.cs">
+    <Compile Include="FrontEnd\Modules\Alquiler\DevolucionVehiculocs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrontEnd\Modules\AlquilerModulo\DevolucionVehiculocs.Designer.cs">
+    <Compile Include="FrontEnd\Modules\Alquiler\DevolucionVehiculocs.Designer.cs">
       <DependentUpon>DevolucionVehiculocs.cs</DependentUpon>
     </Compile>
     <Compile Include="FrontEnd\Modules\Mantenimiento\Clientes\ActualizarClienteForm.cs">
@@ -305,23 +305,23 @@
     <Compile Include="FrontEnd\Modules\Mantenimiento\Vehiculos\BorrarVehiculo.Designer.cs">
       <DependentUpon>BorrarVehiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\Marcas\ActualizarMarca.cs">
+    <Compile Include="FrontEnd\Modules\Mantenimiento\Marcas\ActualizarMarcaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\Marcas\ActualizarMarca.Designer.cs">
-      <DependentUpon>ActualizarMarca.cs</DependentUpon>
+    <Compile Include="FrontEnd\Modules\Mantenimiento\Marcas\ActualizarMarcaForm.Designer.cs">
+      <DependentUpon>ActualizarMarcaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\Marcas\CrearMarca.cs">
+    <Compile Include="FrontEnd\Modules\Mantenimiento\Marcas\CrearMarcaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\Marcas\CrearMarca.Designer.cs">
-      <DependentUpon>CrearMarca.cs</DependentUpon>
+    <Compile Include="FrontEnd\Modules\Mantenimiento\Marcas\CrearMarcaForm.Designer.cs">
+      <DependentUpon>CrearMarcaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\Marcas\BorrarMarca.cs">
+    <Compile Include="FrontEnd\Modules\Mantenimiento\Marcas\BorrarMarcaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrontEnd\Modules\Mantenimiento\Marcas\BorrarMarca.Designer.cs">
-      <DependentUpon>BorrarMarca.cs</DependentUpon>
+    <Compile Include="FrontEnd\Modules\Mantenimiento\Marcas\BorrarMarcaForm.Designer.cs">
+      <DependentUpon>BorrarMarcaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FrontEnd\Modules\Reportes\HistorialAlquiler.cs">
       <SubType>Form</SubType>
@@ -361,7 +361,7 @@
     <EmbeddedResource Include="FrontEnd\Home\MenuPrincipalForm.resx">
       <DependentUpon>MenuPrincipalForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrontEnd\Modules\AlquilerModulo\DevolucionVehiculocs.resx">
+    <EmbeddedResource Include="FrontEnd\Modules\Alquiler\DevolucionVehiculocs.resx">
       <DependentUpon>DevolucionVehiculocs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Clientes\ActualizarClienteForm.resx">
@@ -372,6 +372,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Clientes\CrearClienteForm.resx">
       <DependentUpon>CrearClienteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Modelos\ActualizarModeloForm.resx">
+      <DependentUpon>ActualizarModeloForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Modelos\BorrarModeloForm.resx">
+      <DependentUpon>BorrarModeloForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Modelos\CrearModeloForm.resx">
+      <DependentUpon>CrearModeloForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\TipoCombustibles\ActualizarTipoCombustible.resx">
       <DependentUpon>ActualizarTipoCombustible.cs</DependentUpon>
@@ -400,14 +409,14 @@
     <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Vehiculos\BorrarVehiculo.resx">
       <DependentUpon>BorrarVehiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Marcas\ActualizarMarca.resx">
-      <DependentUpon>ActualizarMarca.cs</DependentUpon>
+    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Marcas\ActualizarMarcaForm.resx">
+      <DependentUpon>ActualizarMarcaForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Marcas\CrearMarca.resx">
-      <DependentUpon>CrearMarca.cs</DependentUpon>
+    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Marcas\CrearMarcaForm.resx">
+      <DependentUpon>CrearMarcaForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Marcas\BorrarMarca.resx">
-      <DependentUpon>BorrarMarca.cs</DependentUpon>
+    <EmbeddedResource Include="FrontEnd\Modules\Mantenimiento\Marcas\BorrarMarcaForm.resx">
+      <DependentUpon>BorrarMarcaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\Modules\Reportes\HistorialAlquiler.resx">
       <DependentUpon>HistorialAlquiler.cs</DependentUpon>
